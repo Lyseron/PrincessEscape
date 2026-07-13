@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/main.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/main.cpp.o.d"
+  "Princess_Escape"
+  "Princess_Escape.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Princess_Escape.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
