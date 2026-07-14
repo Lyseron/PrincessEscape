@@ -12,6 +12,7 @@ bool	Textures::load(TextureID id)
 
 	switch (id)
 	{
+// ---------------------------- PLAYER ------------------------------ //
 		case TextureID::Player_Idle_Down:
 			path = "assets/Player/idle_armed.png";
 			break;
@@ -25,24 +26,51 @@ bool	Textures::load(TextureID id)
 			path = "assets/Player/drop_down.png";
 			break;
 
-		case TextureID::Chest_Close:
-			path = "assets/Chest/chest_close.png";
+		case TextureID::Player_Idle_Up:
+			path = "assets/Player/idle_up.png";
 			break;
-		case TextureID::Chest_Opening:
-			path = "assets/Chest/chest_opening.png";
+		case TextureID::Player_Lift_Up:
+			path = "assets/Player/lift_up.png";
 			break;
-		case TextureID::Chest_Opened:
-			path = "assets/Chest/chest_open.png";
+		case TextureID::Player_Walk_Up:
+			path = "assets/Player/walk_up.png";
+			break;
+		case TextureID::Player_Drop_Up:
+			path = "assets/Player/drop_up.png";
 			break;
 
+		case TextureID::Player_Idle_Right:
+			path = "assets/Player/idle_right.png";
+			break;
+		case TextureID::Player_Lift_Right:
+			path = "assets/Player/lift_right.png";
+			break;
+		case TextureID::Player_Walk_Right:
+			path = "assets/Player/walk_right.png";
+			break;
+		case TextureID::Player_Drop_Right:
+			path = "assets/Player/drop_right.png";
+			break;
+
+		case TextureID::Player_Idle_Left:
+			path = "assets/Player/idle_left.png";
+			break;
+		case TextureID::Player_Lift_Left:
+			path = "assets/Player/lift_left.png";
+			break;
+		case TextureID::Player_Walk_Left:
+			path = "assets/Player/walk_left.png";
+			break;
+		case TextureID::Player_Drop_Left:
+			path = "assets/Player/drop_left.png";
+			break;
+
+// ---------------------------- WALL ------------------------------ //
 		case TextureID::FrontWall:
 			path = "assets/Wall/front/FrontWall.png";
 			break;
 		case TextureID::FrontWall2:
 			path = "assets/Wall/front/FrontWall2.png";
-			break;
-		case TextureID::FrontMovingCandle:
-			path = "assets/Wall/front/moving_candle.png";
 			break;
 		case TextureID::LeftWall:
 			path = "assets/Wall/left/wall_left.png";
@@ -77,48 +105,28 @@ bool	Textures::load(TextureID id)
 			path = "assets/Wall/Down/wall_down2.png";
 			break;
 
+// ---------------------------- FLOOR ------------------------------ //
 		case TextureID::Floor:
 			path = "assets/floor/floor.png";
 			break;
 
-		// case TextureID::Player_Idle_up:
-		// 	path = "assets/sprites/idle_armed.png";
-		// 	break;
-		// case TextureID::Player_Lift_up:
-		// 	path = "assets/sprites/lift_up.png";
-		// 	break;
-		// case TextureID::Player_Walk_up:
-		// 	path = "assets/sprites/walk_up.png";
-		// 	break;
-		// case TextureID::Player_Drop_up:
-		// 	path = "assets/sprites/drop_up.png";
-		// 	break;
+// ---------------------------- ANIM ------------------------------ //
 
-		// case TextureID::Player_Idle_Right:
-		// 	path = "assets/sprites/idle_armed.png";
-		// 	break;
-		// case TextureID::Player_Lift_Right:
-		// 	path = "assets/sprites/lift_right.png";
-		// 	break;
-		// case TextureID::Player_Walk_Right:
-		// 	path = "assets/sprites/walk_right.png";
-		// 	break;
-		// case TextureID::Player_Drop_Right:
-		// 	path = "assets/sprites/drop_right.png";
-		// 	break;
-
-		// case TextureID::Player_Idle_Left:
-		// 	path = "assets/sprites/idle_armed.png";
-		// 	break;
-		// case TextureID::Player_Lift_Left:
-		// 	path = "assets/sprites/lift_left.png";
-		// 	break;
-		// case TextureID::Player_Walk_Left:
-		// 	path = "assets/sprites/walk_left.png";
-		// 	break;
-		// case TextureID::Player_Drop_Left:
-		// 	path = "assets/sprites/drop_left.png";
-		// 	break;
+		case TextureID::Chest_Close:
+			path = "assets/Chest/chest_close.png";
+			break;
+		case TextureID::Chest_Opening:
+			path = "assets/Chest/chest_opening.png";
+			break;
+		case TextureID::Chest_Opened:
+			path = "assets/Chest/chest_open.png";
+			break;
+		case TextureID::FrontMovingCandle:
+			path = "assets/Wall/front/moving_candle.png";
+			break;
+		case TextureID::Chandelier:
+			path = "assets/decor/chandelier.png";
+			break;
 		default:
 			break;
 	}

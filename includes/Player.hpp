@@ -1,39 +1,41 @@
 #pragma once
 
 #include "Animation.hpp"
+#include "Textures.hpp"
+#include <filesystem>
 
 enum class PlayerState
 {
-	Idle_Down,
-	Lift_Down,
-	Walk_Down,
-	Drop_Down
+	Idle,
+	Lift,
+	Walk,
+	Drop
+};
 
-	// Idle_Up,
-	// Lift_Up,
-	// Walk_Up,
-	// Drop_Up,
-
-	// Idle_Left,
-	// Lift_Left,
-	// Walk_Left,
-	// Drop_Left,
-
-	// Idle_Right,
-	// Lift_Right,
-	// Walk_Right,
-	// Drop_Right
+enum class Direction
+{
+	Up,
+	Left,
+	Right,
+	Down
 };
 
 class Player
 {
 private:
+
+	static constexpr	int	TIMER_DURATION_IDLE = 0;
+	static constexpr	int	TIMER_DURATION_LIFT = 400;
+	static constexpr	int	TIMER_DURATION_WALK = 400;
+	static constexpr	int	TIMER_DURATION_DROP = 400;
+
 	double		m_x;
 	double		m_y;
 	int			m_dirX;
 	int			m_dirY;
 
 	PlayerState	m_state;
+	Direction	m_direction;
 	Animation	m_animation;
 
 public:
@@ -48,12 +50,14 @@ public:
 	void	setDirY(int dirY);
 
 	void	setState(PlayerState state);
+	void	setDirection(Direction direction, int dirX, int dirY);
 
 // ---------------------- GETTER ------------------------ //
 	double	getPosX()	const;
 	double	getPosY()	const;
 
 	PlayerState	getState()		const;
+	TextureID	getTexture()	const;
 	int		getCurrentFrame()	const;
 
 	int		getDirY()	const;

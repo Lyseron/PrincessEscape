@@ -13,22 +13,22 @@ enum	class TextureID			// class -> use TextureID::
 	Player_Walk_Down,
 	Player_Drop_Down,
 
-	// Player_Idle_up,
-	// Player_Lift_up,
-	// Player_Walk_up,
-	// Player_Drop_up,
+	Player_Idle_Up,
+	Player_Lift_Up,
+	Player_Walk_Up,
+	Player_Drop_Up,
 
-	// Player_Idle_Left,
-	// Player_Lift_Left,
-	// Player_Walk_Left,
-	// Player_Drop_Left,
+	Player_Idle_Left,
+	Player_Lift_Left,
+	Player_Walk_Left,
+	Player_Drop_Left,
 
-	// Player_Idle_Right,
-	// Player_Lift_Right,
-	// Player_Walk_Right,
-	// Player_Drop_Right,
+	Player_Idle_Right,
+	Player_Lift_Right,
+	Player_Walk_Right,
+	Player_Drop_Right,
 
-	FrontMovingCandle,
+// --------------------- WALL ------------------ //
 	FrontWall,
 	FrontWall2,
 	CornerLeftWall,
@@ -42,12 +42,20 @@ enum	class TextureID			// class -> use TextureID::
 	DownWall,
 	DownWall2,
 
+// --------------------- FLOOR ------------------ //
+	Floor,
+
+// --------------------- ANIM ------------------ //
+	FrontMovingCandle,
+	Chandelier,
+
 	Chest_Close,
 	Chest_Opening,
 	Chest_Opened,
+
 	Enemy,
 	Wall,
-	Floor,
+	
 	Door,
 	Count
 };

@@ -63,14 +63,7 @@ private:
 	void	handleEvent();								// for the event like keypress, mouse ect
 	void	keyPress(SDL_Event event);
 	void	keyRelease(SDL_Event event);
-	bool 	movePlayer(
-		double dirX,
-		double dirY,
-		PlayerState idle,
-		PlayerState lift,
-		PlayerState walk,
-		PlayerState drop
-	);
+	bool 	movePlayer(double dirX, double dirY);
 	void	actionInMap();
 
 // ---------------------- UPDATE ------------------------ //

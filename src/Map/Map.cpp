@@ -19,7 +19,8 @@ char	Map::getCharFromTile(int x, int y)	const { return (this->m_map[y][x]); }
 int 	Map::getFirstPlayerPosX()			const { return (this->firstPlayerPosX); }
 int		Map::getFirstPlayerPosY()			const { return (this->firstPlayerPosY); }
 
-int		Map::getCurrentFrame()	const { return (m_animFloatingCandle.getCurrentFrame()); }
+int		Map::getCurrentFrameCandle()		const { return (m_animFloatingCandle.getCurrentFrame()); }
+int		Map::getCurrentFrameChandelier()	const { return (m_animChandelier.getCurrentFrame()); }
 
 size_t	Map::getChestCount()					const { return (this->m_chest.size()); }
 const	std::vector<Chest> &Map::getChests()	const { return (this->m_chest); }
@@ -28,11 +29,13 @@ std::vector<Chest> &Map::getChestsNotConst() { return (this->m_chest); }
 void	Map::anim()
 {
 	m_animFloatingCandle.moveOnLoop();
+	m_animChandelier.moveOnLoop();
 }
 
 void	Map::initAnimations()
 {
 	m_animFloatingCandle.reset(4, 1600);
+	m_animChandelier.reset(2, 1000);
 }
 
 bool	Map::load(const std::string& filename)

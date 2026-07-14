@@ -41,23 +41,23 @@ bool	Game::loadPlayer()
 		TextureID::Player_Drop_Down) == false)
 			return (false);
 
-	// if (initPlayerTextureFromSide(TextureID::Player_Idle_up,
-	// 	TextureID::Player_Lift_up,
-	// 	TextureID::Player_Walk_up,
-	// 	TextureID::Player_Drop_up) == false)
-	// 		return (false);
+	if (initPlayerTextureFromSide(TextureID::Player_Idle_Up,
+		TextureID::Player_Lift_Up,
+		TextureID::Player_Walk_Up,
+		TextureID::Player_Drop_Up) == false)
+			return (false);
 
-	// if (initPlayerTextureFromSide(TextureID::Player_Idle_Left,
-	// 	TextureID::Player_Lift_Left,
-	// 	TextureID::Player_Walk_Left,
-	// 	TextureID::Player_Drop_Left) == false)
-	// 		return (false);
+	if (initPlayerTextureFromSide(TextureID::Player_Idle_Left,
+		TextureID::Player_Lift_Left,
+		TextureID::Player_Walk_Left,
+		TextureID::Player_Drop_Left) == false)
+			return (false);
 
-	// if (initPlayerTextureFromSide(TextureID::Player_Idle_Right,
-	// 	TextureID::Player_Lift_Right,
-	// 	TextureID::Player_Walk_Right,
-	// 	TextureID::Player_Drop_Right) == false)
-	// 		return (false);
+	if (initPlayerTextureFromSide(TextureID::Player_Idle_Right,
+		TextureID::Player_Lift_Right,
+		TextureID::Player_Walk_Right,
+		TextureID::Player_Drop_Right) == false)
+			return (false);
 	return (true);
 }
 
@@ -117,6 +117,10 @@ bool	Game::loadWall()
 
 	m_texture->load(TextureID::Floor);
 	if (!m_texture->load(TextureID::Floor))
+		return (std::cerr << "Texture not load\n", false);
+
+	m_texture->load(TextureID::Chandelier);
+	if (!m_texture->load(TextureID::Chandelier))
 		return (std::cerr << "Texture not load\n", false);
 	return (true);
 }

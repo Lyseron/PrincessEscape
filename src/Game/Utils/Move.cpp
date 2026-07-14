@@ -30,7 +30,8 @@ bool	isWall(char c)
 		|| c == 'R' || c == 'r'
 		|| c == '{' || c == '}'
 		|| c == '(' || c == ')'
-		|| c == 'Q')
+		|| c == 'Q' || c == 'K'
+		|| c == 'b' || c == 'B')
 		return (true);
 	return (false);
 }
@@ -40,7 +41,7 @@ bool	Game::inCollisionWall(double nextX, double nextY)
 	double	playerTop		= nextY - 0.0;
 	double	playerLeft		= nextX - 0.4;
 	double	playerRight		= nextX + 0.2;
-	double	playerBottom	= nextY + 0.5;
+	double	playerBottom	= nextY + 0.0;
 
 	int		intPlayerTop	= static_cast<int>(playerTop);
 	int		intPlayerLeft	= static_cast<int>(playerLeft);
@@ -87,20 +88,49 @@ bool	Game::move(double dirX, double dirY)
 	return (moved);
 }
 
-bool Game::movePlayer(
-	double dirX,
-	double dirY,
-	PlayerState idle,
-	PlayerState lift,
-	PlayerState walk,
-	PlayerState drop)
+bool Game::movePlayer(double dirX, double dirY)
 {
 	
 	if (move(dirX, dirY))
 	{
-		if (m_player.getState() == idle)
-			m_player.setState(lift);
+		if (m_player.getState() == PlayerState::Idle)
+			m_player.setState(PlayerState::Lift);
 		return (true);
 	}
 	return (false);
+}
+
+void	Game::handleMovement()
+{
+	bool	moving = false;
+
+	if (m_upPressed)
+	{
+		m_player.setDirection(Direction::Up, 0, -1); // a changer
+		moving = movePlayer(0, -1);
+	}
+
+	if (m_leftPressed)
+	{
+		m_player.setDirection(Direction::Left, -1, 0); // a changer
+		moving = movePlayer(-1, 0);
+	}
+
+	if (m_rightPressed)
+	{
+		m_player.setDirection(Direction::Right, 1, 0);
+		moving = movePlayer(1, 0);
+	}
+
+	if (m_downPressed)
+	{
+		m_player.setDirection(Direction::Down, 0, 1);
+		moving = movePlayer(0, 1);
+	}
+
+	if (moving == false)
+	{
+		if (m_player.getState() == PlayerState::Walk)
+			m_player.setState(PlayerState::Drop);
+	}
 }

@@ -35,12 +35,6 @@ void	Game::drawRectangle(int x_win, int y_win,
 
 void	Game::drawTexture(int win_x, int win_y, TextureID id, int frame)
 {
-	// SDL_Texture *tex = m_texture->get(id);
-	// if (tex == nullptr)
-	// {
-	// 	std::cout << "Texture NULL !" << std::endl;
-	// 	return ;
-	// }
 	SDL_FRect	src;
 
 	src.x = frame * SPRITE_WIDTH;
@@ -84,6 +78,7 @@ void	Game::drawMap()
 		{
 			int	win_x = x * CASE_TILE;
 			int	win_y = y * CASE_TILE;
+// ---------------------------------------------------- WALL ---------------------------------------------------- //
 			drawMapComponent(x, y, TextureID::FrontWall, 'h', 0);
 			drawMapComponent(x, y, TextureID::FrontWall2, 'H', 0);
 			drawMapComponent(x, y, TextureID::LeftWall, 'L', 0);
@@ -92,80 +87,30 @@ void	Game::drawMap()
 			drawMapComponent(x, y, TextureID::CornerRightWall2, '}', 0);
 			drawMapComponent(x, y, TextureID::CornerLeftWall2, '(', 0);
 			drawMapComponent(x, y, TextureID::CornerRightWall, ')', 0);
-			drawMapComponent(x, y, TextureID::FrontMovingCandle, 'Q', m_map.getCurrentFrame());
-			drawMapComponent(x, y, TextureID::Floor, '.', 0);
 			drawMapComponent(x, y, TextureID::DownWall, 'b', 0);
 			drawMapComponent(x, y, TextureID::DownWall2, 'B', 0);
 			drawMapComponent(x, y, TextureID::RightWall, 'r', 0);
 			drawMapComponent(x, y, TextureID::RightWall2, 'R', 0);
+
+// ---------------------------------------------------- FLOOR ---------------------------------------------------- //
+			drawMapComponent(x, y, TextureID::Floor, '.', 0);
+			drawMapComponent(x, y, TextureID::Floor, 'K', 0);
+
+// ---------------------------------------------------- DECOR ---------------------------------------------------- //
+			drawMapComponent(x, y, TextureID::FrontMovingCandle, 'Q', m_map.getCurrentFrameCandle());
+			drawMapComponent(x, y, TextureID::Chandelier, 'K', m_map.getCurrentFrameChandelier());
 		}
 	}
 }
 
 void	Game::drawPlayer()
 {
-	TextureID	texture;
-
-	switch (m_player.getState())
-	{
-		case PlayerState::Idle_Down:
-			texture = TextureID::Player_Idle_Down;
-			break;
-		case PlayerState::Lift_Down:
-			texture = TextureID::Player_Lift_Down;
-			break;
-		case PlayerState::Walk_Down:
-			texture = TextureID::Player_Walk_Down;
-			break;
-		case PlayerState::Drop_Down:
-			texture = TextureID::Player_Drop_Down;
-			break;
-
-		// case PlayerState::Idle_Up:
-		// 	texture = TextureID::Player_Idle_up;
-		// 	break;
-		// case PlayerState::Lift_Up:
-		// 	texture = TextureID::Player_Lift_up;
-		// 	break;
-		// case PlayerState::Walk_Up:
-		// 	texture = TextureID::Player_Walk_up;
-		// 	break;
-		// case PlayerState::Drop_Up:
-		// 	texture = TextureID::Player_Drop_up;
-		// 	break;
-
-		// case PlayerState::Idle_Right:
-		// 	texture = TextureID::Player_Idle_Right;
-		// 	break;
-		// case PlayerState::Lift_Right:
-		// 	texture = TextureID::Player_Lift_Right;
-		// 	break;
-		// case PlayerState::Walk_Right:
-		// 	texture = TextureID::Player_Walk_Right;
-		// 	break;
-		// case PlayerState::Drop_Right:
-		// 	texture = TextureID::Player_Drop_Right;
-		// 	break;
-
-		// case PlayerState::Idle_Left:
-		// 	texture = TextureID::Player_Idle_Left;
-		// 	break;
-		// case PlayerState::Lift_Left:
-		// 	texture = TextureID::Player_Lift_Left;
-		// 	break;
-		// case PlayerState::Walk_Left:
-		// 	texture = TextureID::Player_Walk_Left;
-		// 	break;
-		// case PlayerState::Drop_Left:
-		// 	texture = TextureID::Player_Drop_Left;
-		// 	break;
-	}
 	drawTexture((
-				m_player.getPosX() - 0.5) * CASE_TILE,
-				(m_player.getPosY() - 0.5) * CASE_TILE, 
-				texture,
-				m_player.getCurrentFrame()
-			);
+		m_player.getPosX() - 0.5) * CASE_TILE,
+		(m_player.getPosY() - 0.5) * CASE_TILE, 
+		m_player.getTexture(),
+		m_player.getCurrentFrame()
+	);
 }
 
 void	Game::drawChests()

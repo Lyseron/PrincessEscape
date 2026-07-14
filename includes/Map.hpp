@@ -11,6 +11,7 @@ private:
 	int 						firstPlayerPosX;
 	int 						firstPlayerPosY;
 	Animation					m_animFloatingCandle;
+	Animation					m_animChandelier;
 
 	std::vector<Chest>			m_chest;
 public:
@@ -25,7 +26,8 @@ public:
 	int 	getFirstPlayerPosX()	const;
 	int		getFirstPlayerPosY()	const;
 
-	int		getCurrentFrame()	const;
+	int		getCurrentFrameCandle()		const;
+	int		getCurrentFrameChandelier()	const;
 
 	size_t	getChestCount()					const;
 	const std::vector<Chest> &getChests()	const;
