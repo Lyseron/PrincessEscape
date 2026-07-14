@@ -56,15 +56,12 @@ bool	isWall(char c)
 
 bool	Game::inCollisionWall(double nextX, double nextY)
 {
-	double	playerTop		= nextY - 0.0;
-	double	playerLeft		= nextX - 0.4;
-	double	playerRight		= nextX + 0.2;
-	double	playerBottom	= nextY + 0.0;
+	Bound player = m_player.getCollision().getBounds(nextX, nextY);
 
-	int		intPlayerTop	= static_cast<int>(playerTop);
-	int		intPlayerLeft	= static_cast<int>(playerLeft);
-	int		intPlayerRight	= static_cast<int>(playerRight);
-	int		intPlayerBottom	= static_cast<int>(playerBottom);
+	int		intPlayerTop	= static_cast<int>(player.top);
+	int		intPlayerLeft	= static_cast<int>(player.left);
+	int		intPlayerRight	= static_cast<int>(player.right);
+	int		intPlayerBottom	= static_cast<int>(player.bottom);
 
 	if (isWall(m_map.getCharFromTile(intPlayerLeft, intPlayerTop))
 		|| isWall(m_map.getCharFromTile(intPlayerRight, intPlayerTop))

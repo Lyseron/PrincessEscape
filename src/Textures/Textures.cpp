@@ -127,6 +127,9 @@ bool	Textures::load(TextureID id)
 		case TextureID::Chandelier:
 			path = "assets/decor/chandelier.png";
 			break;
+		case TextureID::Armure:
+			path = "assets/decor/armure.png";
+			break;
 		default:
 			break;
 	}

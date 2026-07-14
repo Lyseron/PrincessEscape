@@ -6,6 +6,7 @@
 #include "Textures.hpp"
 #include "Player.hpp"
 #include "Map.hpp"
+#include "Collision.hpp"
 
 class	Game
 {
@@ -15,7 +16,6 @@ private:
 	static constexpr	double	SPRITE_HEIGHT = 56;
 	static constexpr	int		CASE_TILE = 64;
 	static constexpr	double	SPEED_PLAYER = 0.001;
-	
 
 	Map 	m_map;
 
@@ -88,6 +88,8 @@ private:
 
 // ---------------------- PLAYER ------------------------ //
 	Player	m_player;
+	Collision	m_walCollision;
+
 
 	bool	move(double dirX, double dirY);
 	bool	inCollisionWall(double nextX, double nextY);

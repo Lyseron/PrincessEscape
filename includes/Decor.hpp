@@ -11,12 +11,12 @@ enum class DecorType
 	Armure
 };
 
-
 class Decor
 {
 private:
 	int	m_caseY;
 	int	m_caseX;
+
 
 	int	m_offsetX;
 	int	m_offsetY;

@@ -9,7 +9,8 @@ Game::Game()
 	m_leftPressed(false),
 	m_rightPressed(false),
 	m_downPressed(false),
-	m_openChest(false)
+	m_openChest(false),
+	m_walCollision({0,0,1,1})
 {
 	if (!initAll())
 		return ;

@@ -45,18 +45,19 @@ bool	Map::load(const std::string& filename)
 	{
 		for (int x = 0;x < getWidth(); x++)
 		{
-			if (getCharFromTile(x, y) == 'P')
+			char	charCase = getCharFromTile(x, y);
+			if (charCase == 'P')
 			{
 				this->firstPlayerPosX = x;
 				this->firstPlayerPosY = y;
 				this->m_map[y][x] = '.';
 			}
-			if (getCharFromTile(x, y) == 'C')
+			if (charCase == 'C')
 			{
 				m_chest.emplace_back(x, y);
 				this->m_map[y][x] = '.';
 			}
-			createDecor(getCharFromTile(x, y), x, y);
+			createDecor(charCase, x, y);
 		}
 	}
 	return (true);

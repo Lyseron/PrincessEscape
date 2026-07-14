@@ -13,13 +13,14 @@ Decor::Decor(DecorType decor, int caseX, int caseY)
 	case DecorType::Chandelier:
 		m_texture = TextureID::Chandelier;
 		m_animation.reset(2, 1000);
-		m_blockingObject = true;
 		m_offsetY = -50;
-		m_collision.setHitbox({-0.15, -0.23, 0.2, -0.27});
+		m_blockingObject = true;
+		m_collision.setHitbox({-0.15, -0.23, 0.2, 0.27});
 		break;
 	case DecorType::Armure:
 		m_texture = TextureID::Armure;
-		m_animation.reset(2, 1000);
+		m_animation.reset(1, 1000);
+		m_offsetY = -40;
 		m_blockingObject = true;
 		break;
 	case DecorType::FloatingCandle:
@@ -34,6 +35,7 @@ Decor::Decor(DecorType decor, int caseX, int caseY)
 
 int		Decor::getCaseX()	const { return (this->m_caseX); }
 int		Decor::getCaseY()	const { return (this->m_caseY); }
+
 
 int		Decor::getOffsetX()	const { return (this->m_offsetX); }
 int		Decor::getOffsetY()	const { return (this->m_offsetY); }

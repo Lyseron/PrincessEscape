@@ -127,6 +127,9 @@ bool	Game::loadDecor()
 	if (!m_texture->load(TextureID::FloatingCandle))
 		return (std::cerr << "Texture not load\n", false);
 
+	m_texture->load(TextureID::Armure);
+	if (!m_texture->load(TextureID::Armure))
+		return (std::cerr << "Texture not load\n", false);
 	return (true);
 }
 

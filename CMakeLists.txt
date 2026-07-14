@@ -41,6 +41,7 @@ add_executable(
 
 # ---------- CHEST -------- #
 	src/Map/Chest/Chest.cpp
+	src/Map/Door/Door.cpp
 
 # ---------- DECOR -------- #
 	src/Decor/Decor.cpp
