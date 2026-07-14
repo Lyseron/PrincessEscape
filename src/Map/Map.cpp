@@ -19,23 +19,18 @@ char	Map::getCharFromTile(int x, int y)	const { return (this->m_map[y][x]); }
 int 	Map::getFirstPlayerPosX()			const { return (this->firstPlayerPosX); }
 int		Map::getFirstPlayerPosY()			const { return (this->firstPlayerPosY); }
 
-int		Map::getCurrentFrameCandle()		const { return (m_animFloatingCandle.getCurrentFrame()); }
-int		Map::getCurrentFrameChandelier()	const { return (m_animChandelier.getCurrentFrame()); }
+const	std::vector<Decor>		&Map::getDecors()	const { return (this->m_decors); }
+std::vector<Decor>				&Map::getDecorsNotConst() { return (this->m_decors); }
 
 size_t	Map::getChestCount()					const { return (this->m_chest.size()); }
+
 const	std::vector<Chest> &Map::getChests()	const { return (this->m_chest); }
-std::vector<Chest> &Map::getChestsNotConst() { return (this->m_chest); }
+std::vector<Chest> 			&Map::getChestsNotConst() { return (this->m_chest); }
 
 void	Map::anim()
 {
-	m_animFloatingCandle.moveOnLoop();
-	m_animChandelier.moveOnLoop();
-}
-
-void	Map::initAnimations()
-{
-	m_animFloatingCandle.reset(4, 1600);
-	m_animChandelier.reset(2, 1000);
+	for (Decor &decor : m_decors)
+		decor.update();
 }
 
 bool	Map::load(const std::string& filename)
@@ -61,7 +56,40 @@ bool	Map::load(const std::string& filename)
 				m_chest.emplace_back(x, y);
 				this->m_map[y][x] = '.';
 			}
+			createDecor(getCharFromTile(x, y), x, y);
 		}
 	}
 	return (true);
+}
+
+void	Map::createDecor(char tile, int x, int y)
+{
+	switch (tile)
+	{
+	case 'K':
+		m_decors.emplace_back(
+			DecorType::Chandelier,
+			x,
+			y
+		);
+		m_map[y][x] = '.';
+		break;
+	case 'A':
+		m_decors.emplace_back(
+			DecorType::Armure,
+			x,
+			y
+		);
+		m_map[y][x] = '.';
+		break ;
+	case 'Q':
+		m_decors.emplace_back(
+			DecorType::FloatingCandle,
+			x,
+			y
+		);
+		m_map[y][x] = '.';
+	default:
+		break;
+	}
 }

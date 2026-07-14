@@ -91,6 +91,12 @@
 },
 {
   "directory": "/Users/lyseron/Desktop/princessEscape/build",
+  "command": "/usr/bin/c++  -I/Users/lyseron/Desktop/princessEscape/includes -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp",
+  "file": "/Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp",
+  "output": "CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o"
+},
+{
+  "directory": "/Users/lyseron/Desktop/princessEscape/build",
   "command": "/usr/bin/c++  -I/Users/lyseron/Desktop/princessEscape/includes -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp",
   "file": "/Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp",
   "output": "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o"

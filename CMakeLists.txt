@@ -42,6 +42,9 @@ add_executable(
 # ---------- CHEST -------- #
 	src/Map/Chest/Chest.cpp
 
+# ---------- DECOR -------- #
+	src/Decor/Decor.cpp
+
 # ---------- ANIM -------- #
 	src/Animation/Animation.cpp
 

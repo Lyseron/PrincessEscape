@@ -997,6 +997,9 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
+  /opt/homebrew/include/SDL3_image/SDL_image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \

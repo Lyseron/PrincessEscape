@@ -1,11 +1,36 @@
 #include "Game.hpp"
 
+bool	Game::inCollisionDecor(double nextX, double nextY)
+{
+	double	playerTop		= nextY - 0.0;
+	double	playerLeft		= nextX - 0.0;
+	double	playerRight		= nextX + 0.0;
+	double	playerBottom	= nextY + 0.0;
+
+	int		intPlayerTop	= static_cast<int>(playerTop);
+	int		intPlayerLeft	= static_cast<int>(playerLeft);
+	int		intPlayerRight	= static_cast<int>(playerRight);
+	int		intPlayerBottom	= static_cast<int>(playerBottom);
+
+	for (const Decor &decor : m_map.getDecors())
+	{
+		if (decor.isblockingObject() == false)
+			continue;
+		if ((decor.getCaseX() == intPlayerLeft  && decor.getCaseY() == intPlayerTop)
+			|| (decor.getCaseX() == intPlayerRight && decor.getCaseY() == intPlayerTop)
+			|| (decor.getCaseX() == intPlayerLeft  && decor.getCaseY() == intPlayerBottom)
+			|| (decor.getCaseX() == intPlayerRight && decor.getCaseY() == intPlayerBottom))
+			return true;
+	}
+	return (false);
+}
+
 bool	Game::inCollisionChest(double nextX, double nextY)
 {
 	double	playerTop		= nextY - 0.0;
-	double	playerLeft		= nextX - 0.2;
-	double	playerRight		= nextX + 0.2;
-	double	playerBottom	= nextY + 0.2;
+	double	playerLeft		= nextX - 0.0;
+	double	playerRight		= nextX + 0.0;
+	double	playerBottom	= nextY + 0.0;
 
 	int		intPlayerTop	= static_cast<int>(playerTop);
 	int		intPlayerLeft	= static_cast<int>(playerLeft);
@@ -18,7 +43,7 @@ bool	Game::inCollisionChest(double nextX, double nextY)
 			|| chest.getCaseX() == intPlayerRight)
 			&& (chest.getCaseY() == intPlayerTop
 			|| chest.getCaseY() == intPlayerBottom))
-			return (true);
+			return true;
 	}
 	return (false);
 }
@@ -30,7 +55,7 @@ bool	isWall(char c)
 		|| c == 'R' || c == 'r'
 		|| c == '{' || c == '}'
 		|| c == '(' || c == ')'
-		|| c == 'Q' || c == 'K'
+		|| c == 'Q'
 		|| c == 'b' || c == 'B')
 		return (true);
 	return (false);
@@ -59,6 +84,7 @@ bool	Game::inCollisionWall(double nextX, double nextY)
 bool	Game::collisionPlayer(double nextX, double nextY)
 {
 	return (inCollisionWall(nextX, nextY)
+		|| inCollisionDecor(nextX, nextY)
 		|| inCollisionChest(nextX, nextY));
 }
 
@@ -106,13 +132,13 @@ void	Game::handleMovement()
 
 	if (m_upPressed)
 	{
-		m_player.setDirection(Direction::Up, 0, -1); // a changer
+		m_player.setDirection(Direction::Up, 0, -1);
 		moving = movePlayer(0, -1);
 	}
 
 	if (m_leftPressed)
 	{
-		m_player.setDirection(Direction::Left, -1, 0); // a changer
+		m_player.setDirection(Direction::Left, -1, 0);
 		moving = movePlayer(-1, 0);
 	}
 

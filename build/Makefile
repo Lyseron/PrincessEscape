@@ -153,6 +153,30 @@ src/Animation/Animation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.s
 .PHONY : src/Animation/Animation.cpp.s
 
+src/Decor/Decor.o: src/Decor/Decor.cpp.o
+.PHONY : src/Decor/Decor.o
+
+# target to build an object file
+src/Decor/Decor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o
+.PHONY : src/Decor/Decor.cpp.o
+
+src/Decor/Decor.i: src/Decor/Decor.cpp.i
+.PHONY : src/Decor/Decor.i
+
+# target to preprocess a source file
+src/Decor/Decor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.i
+.PHONY : src/Decor/Decor.cpp.i
+
+src/Decor/Decor.s: src/Decor/Decor.cpp.s
+.PHONY : src/Decor/Decor.s
+
+# target to generate assembly for a file
+src/Decor/Decor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.s
+.PHONY : src/Decor/Decor.cpp.s
+
 src/Game/Events.o: src/Game/Events.cpp.o
 .PHONY : src/Game/Events.o
 
@@ -525,6 +549,9 @@ help:
 	@echo "... src/Animation/Animation.o"
 	@echo "... src/Animation/Animation.i"
 	@echo "... src/Animation/Animation.s"
+	@echo "... src/Decor/Decor.o"
+	@echo "... src/Decor/Decor.i"
+	@echo "... src/Decor/Decor.s"
 	@echo "... src/Game/Events.o"
 	@echo "... src/Game/Events.i"
 	@echo "... src/Game/Events.s"

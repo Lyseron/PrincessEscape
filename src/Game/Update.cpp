@@ -10,5 +10,4 @@ void	Game::update()
 		chest.anim();
 		m_openChest = false;
 	}
-	
 }

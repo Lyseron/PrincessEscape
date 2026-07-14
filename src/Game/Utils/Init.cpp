@@ -87,6 +87,5 @@ bool	Game::initAll()
 	}
 	if (!loadAllImg())
 		return (false);
-	m_map.initAnimations();
 	return (true);
 }

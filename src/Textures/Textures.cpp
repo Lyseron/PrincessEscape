@@ -110,7 +110,7 @@ bool	Textures::load(TextureID id)
 			path = "assets/floor/floor.png";
 			break;
 
-// ---------------------------- ANIM ------------------------------ //
+// ---------------------------- DECOR ------------------------------ //
 
 		case TextureID::Chest_Close:
 			path = "assets/Chest/chest_close.png";
@@ -121,8 +121,8 @@ bool	Textures::load(TextureID id)
 		case TextureID::Chest_Opened:
 			path = "assets/Chest/chest_open.png";
 			break;
-		case TextureID::FrontMovingCandle:
-			path = "assets/Wall/front/moving_candle.png";
+		case TextureID::FloatingCandle:
+			path = "assets/decor/moving_candle.png";
 			break;
 		case TextureID::Chandelier:
 			path = "assets/decor/chandelier.png";

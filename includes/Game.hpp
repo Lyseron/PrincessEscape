@@ -38,6 +38,7 @@ private:
 	bool		loadChest();
 	bool		loadPlayer();
 	bool		loadWall();
+	bool		loadDecor();
 	bool		loadAllImg();								// load all the necessary img once
 	bool		initPlayerTextureFromSide(
 			TextureID idle,
@@ -85,6 +86,7 @@ private:
 	);
 	void	drawMapComponent(int x, int y, TextureID texture, char c, int frame);
 	void	drawMap();
+	void	drawDecor();
 	void	drawPlayer();
 	void	drawChests();
 
@@ -93,6 +95,7 @@ private:
 
 	bool	move(double dirX, double dirY);
 	bool	inCollisionWall(double nextX, double nextY);
+	bool	inCollisionDecor(double nextX, double nextY);
 	bool	inCollisionChest(double nextX, double nextY);
 	bool	collisionPlayer(double nextX, double nextY);
 

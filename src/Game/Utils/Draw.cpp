@@ -1,37 +1,37 @@
 #include "Game.hpp"
 #include "Textures.hpp"
 
-void	Game::drawRectangle(int x_win, int y_win,
-	SDL_Color color)
-{
-	// if (x_win < 0 
-	// 	|| x_win > MAP_WIDTH)
-	// 	return ;
-	// if (y_win < 0 
-	// 	|| y_win > MAP_HEIGHT)
-	// 	return ;
-	if ((color.r < 0 || color.r > 255)
-		|| (color.g < 0 || color.g > 255)
-		|| (color.b < 0 || color.b > 255)
-		|| (color.a < 0 || color.a > 255))
-		return ;
+// void	Game::drawRectangle(int x_win, int y_win,
+// 	SDL_Color color)
+// {
+// 	// if (x_win < 0 
+// 	// 	|| x_win > MAP_WIDTH)
+// 	// 	return ;
+// 	// if (y_win < 0 
+// 	// 	|| y_win > MAP_HEIGHT)
+// 	// 	return ;
+// 	if ((color.r < 0 || color.r > 255)
+// 		|| (color.g < 0 || color.g > 255)
+// 		|| (color.b < 0 || color.b > 255)
+// 		|| (color.a < 0 || color.a > 255))
+// 		return ;
 
-	SDL_FRect	rect;
+// 	SDL_FRect	rect;
 
-	rect.x = x_win;
-	rect.y = y_win;
-	rect.w = CASE_TILE;
-	rect.h = CASE_TILE;
+// 	rect.x = x_win;
+// 	rect.y = y_win;
+// 	rect.w = CASE_TILE;
+// 	rect.h = CASE_TILE;
 
-	SDL_SetRenderDrawColor(
-		m_renderer,
-		color.r, color.g, color.b, color.a
-	);
-	SDL_RenderFillRect(
-		m_renderer,
-		&rect
-	);
-}
+// 	SDL_SetRenderDrawColor(
+// 		m_renderer,
+// 		color.r, color.g, color.b, color.a
+// 	);
+// 	SDL_RenderFillRect(
+// 		m_renderer,
+// 		&rect
+// 	);
+// }
 
 void	Game::drawTexture(int win_x, int win_y, TextureID id, int frame)
 {
@@ -94,11 +94,6 @@ void	Game::drawMap()
 
 // ---------------------------------------------------- FLOOR ---------------------------------------------------- //
 			drawMapComponent(x, y, TextureID::Floor, '.', 0);
-			drawMapComponent(x, y, TextureID::Floor, 'K', 0);
-
-// ---------------------------------------------------- DECOR ---------------------------------------------------- //
-			drawMapComponent(x, y, TextureID::FrontMovingCandle, 'Q', m_map.getCurrentFrameCandle());
-			drawMapComponent(x, y, TextureID::Chandelier, 'K', m_map.getCurrentFrameChandelier());
 		}
 	}
 }
@@ -133,9 +128,22 @@ void	Game::drawChests()
 		}
 			drawTexture(
 				chest.getCaseX() * CASE_TILE,
-				chest.getCaseY() * CASE_TILE,
+				chest.getCaseY() * CASE_TILE + -20,
 				texture,
 				chest.getCurrentFrame()
 			);
+	}
+}
+
+void	Game::drawDecor()
+{
+	for (const Decor &decor : m_map.getDecors())
+	{
+		drawTexture(
+			decor.getCaseX() * CASE_TILE + decor.getOffsetX(),
+			decor.getCaseY() * CASE_TILE + decor.getOffsetY(),
+			decor.getTexture(),
+			decor.getCurrentFrame()
+		);
 	}
 }

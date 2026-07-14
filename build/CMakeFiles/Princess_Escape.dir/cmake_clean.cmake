@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o"
   "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o.d"
   "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o"
   "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o.d"
   "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o"

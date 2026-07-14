@@ -46,8 +46,9 @@ enum	class TextureID			// class -> use TextureID::
 	Floor,
 
 // --------------------- ANIM ------------------ //
-	FrontMovingCandle,
 	Chandelier,
+	Armure,
+	FloatingCandle,
 
 	Chest_Close,
 	Chest_Opening,

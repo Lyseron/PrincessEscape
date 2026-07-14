@@ -2,6 +2,7 @@
 
 #include <vector>
 #include "Chest.hpp"
+#include "Decor.hpp"
 
 class Map
 {
@@ -10,10 +11,9 @@ private:
 
 	int 						firstPlayerPosX;
 	int 						firstPlayerPosY;
-	Animation					m_animFloatingCandle;
-	Animation					m_animChandelier;
 
 	std::vector<Chest>			m_chest;
+	std::vector<Decor>	m_decors;
 public:
 	Map();
 	~Map();
@@ -25,16 +25,17 @@ public:
 
 	int 	getFirstPlayerPosX()	const;
 	int		getFirstPlayerPosY()	const;
-
-	int		getCurrentFrameCandle()		const;
-	int		getCurrentFrameChandelier()	const;
+	
+	const	std::vector<Decor>	&getDecors()	const;
+	std::vector<Decor>			&getDecorsNotConst();
 
 	size_t	getChestCount()					const;
-	const std::vector<Chest> &getChests()	const;
-	std::vector<Chest>		 &getChestsNotConst();
+
+	const	std::vector<Chest> &getChests()	const;
+	std::vector<Chest>			&getChestsNotConst();
 
 	bool	load(const std::string& filename);
-	void	initAnimations();
 	void	anim();
+	void	createDecor(char tile, int x, int y);
 };
 

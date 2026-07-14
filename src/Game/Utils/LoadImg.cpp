@@ -70,10 +70,6 @@ bool	Game::loadWall()
 	m_texture->load(TextureID::FrontWall2);
 	if (!m_texture->load(TextureID::FrontWall2))
 		return (std::cerr << "Texture not load\n", false);
-	
-	m_texture->load(TextureID::FrontMovingCandle);
-	if (!m_texture->load(TextureID::FrontMovingCandle))
-		return (std::cerr << "Texture not load\n", false);
 
 	m_texture->load(TextureID::LeftWall);
 	if (!m_texture->load(TextureID::LeftWall))
@@ -118,10 +114,19 @@ bool	Game::loadWall()
 	m_texture->load(TextureID::Floor);
 	if (!m_texture->load(TextureID::Floor))
 		return (std::cerr << "Texture not load\n", false);
+	return (true);
+}
 
+bool	Game::loadDecor()
+{
 	m_texture->load(TextureID::Chandelier);
 	if (!m_texture->load(TextureID::Chandelier))
 		return (std::cerr << "Texture not load\n", false);
+
+	m_texture->load(TextureID::FloatingCandle);
+	if (!m_texture->load(TextureID::FloatingCandle))
+		return (std::cerr << "Texture not load\n", false);
+
 	return (true);
 }
 
@@ -149,6 +154,8 @@ bool	Game::loadAllImg()
 	if (loadChest() == false)
 		return (false);
 	if (loadWall() == false)
+		return (false);
+	if (loadDecor() == false)
 		return (false);
 	return (true);
 }

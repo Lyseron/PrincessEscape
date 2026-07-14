@@ -12,6 +12,7 @@ void	Game::render()
 	SDL_RenderClear(m_renderer);	// Clear the img
 
 	drawMap();
+	drawDecor();
 	drawChests();
 	drawPlayer();
 	

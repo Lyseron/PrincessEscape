@@ -1019,4 +1019,5 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
