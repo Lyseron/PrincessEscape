@@ -23,6 +23,18 @@ bool	Game::inCollisionChest(double nextX, double nextY)
 	return (false);
 }
 
+bool	isWall(char c)
+{
+	if (c == 'h' || c == 'H'
+		|| c == 'l' || c == 'L'
+		|| c == 'R' || c == 'r'
+		|| c == '{' || c == '}'
+		|| c == '(' || c == ')'
+		|| c == 'Q')
+		return (true);
+	return (false);
+}
+
 bool	Game::inCollisionWall(double nextX, double nextY)
 {
 	double	playerTop		= nextY - 0.0;
@@ -35,10 +47,10 @@ bool	Game::inCollisionWall(double nextX, double nextY)
 	int		intPlayerRight	= static_cast<int>(playerRight);
 	int		intPlayerBottom	= static_cast<int>(playerBottom);
 
-	if (m_map.getCharFromTile(intPlayerLeft, intPlayerTop) == '1'
-		|| m_map.getCharFromTile(intPlayerRight, intPlayerTop) == '1'
-		|| m_map.getCharFromTile(intPlayerLeft, intPlayerBottom) == '1'
-		|| m_map.getCharFromTile(intPlayerRight, intPlayerBottom) == '1')
+	if (isWall(m_map.getCharFromTile(intPlayerLeft, intPlayerTop))
+		|| isWall(m_map.getCharFromTile(intPlayerRight, intPlayerTop))
+		|| isWall(m_map.getCharFromTile(intPlayerLeft, intPlayerBottom))
+		|| isWall(m_map.getCharFromTile(intPlayerRight, intPlayerBottom)))
 		return (true);
 	return (false);
 }

@@ -19,10 +19,21 @@ char	Map::getCharFromTile(int x, int y)	const { return (this->m_map[y][x]); }
 int 	Map::getFirstPlayerPosX()			const { return (this->firstPlayerPosX); }
 int		Map::getFirstPlayerPosY()			const { return (this->firstPlayerPosY); }
 
+int		Map::getCurrentFrame()	const { return (m_animFloatingCandle.getCurrentFrame()); }
+
 size_t	Map::getChestCount()					const { return (this->m_chest.size()); }
 const	std::vector<Chest> &Map::getChests()	const { return (this->m_chest); }
 std::vector<Chest> &Map::getChestsNotConst() { return (this->m_chest); }
 
+void	Map::anim()
+{
+	m_animFloatingCandle.moveOnLoop();
+}
+
+void	Map::initAnimations()
+{
+	m_animFloatingCandle.reset(4, 1600);
+}
 
 bool	Map::load(const std::string& filename)
 {
@@ -40,12 +51,12 @@ bool	Map::load(const std::string& filename)
 			{
 				this->firstPlayerPosX = x;
 				this->firstPlayerPosY = y;
-				this->m_map[y][x] = '0';
+				this->m_map[y][x] = '.';
 			}
 			if (getCharFromTile(x, y) == 'C')
 			{
 				m_chest.emplace_back(x, y);
-				this->m_map[y][x] = '0';
+				this->m_map[y][x] = '.';
 			}
 		}
 	}

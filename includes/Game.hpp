@@ -35,6 +35,9 @@ private:
 	bool	initMaps();
 
 	Textures*	m_texture;								// pointeur to the Textures class
+	bool		loadChest();
+	bool		loadPlayer();
+	bool		loadWall();
 	bool		loadAllImg();								// load all the necessary img once
 	bool		initPlayerTextureFromSide(
 			TextureID idle,
@@ -87,6 +90,7 @@ private:
 		TextureID id,
 		int frame
 	);
+	void	drawMapComponent(int x, int y, TextureID texture, char c, int frame);
 	void	drawMap();
 	void	drawPlayer();
 	void	drawChests();

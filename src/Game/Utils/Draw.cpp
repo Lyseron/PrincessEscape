@@ -1,4 +1,5 @@
 #include "Game.hpp"
+#include "Textures.hpp"
 
 void	Game::drawRectangle(int x_win, int y_win,
 	SDL_Color color)
@@ -61,6 +62,20 @@ void	Game::drawTexture(int win_x, int win_y, TextureID id, int frame)
 	);
 }
 
+void	Game::drawMapComponent(int x, int y, TextureID texture, char c, int frame)
+{
+	int	win_x = x * CASE_TILE;
+	int	win_y = y * CASE_TILE;
+
+	if (m_map.getCharFromTile(x, y) == c)
+		drawTexture(
+			win_x,
+			win_y,
+			texture,
+			frame
+		);
+}
+
 void	Game::drawMap()
 {
 	for (int y = 0; y < m_map.getHeight(); y++)
@@ -69,11 +84,20 @@ void	Game::drawMap()
 		{
 			int	win_x = x * CASE_TILE;
 			int	win_y = y * CASE_TILE;
-
-			if (m_map.getCharFromTile(x, y) == '1')
-				drawRectangle(win_x, win_y, m_wallColor);
-			else if (m_map.getCharFromTile(x, y) == '0')
-				drawRectangle(win_x, win_y, m_floorColor);
+			drawMapComponent(x, y, TextureID::FrontWall, 'h', 0);
+			drawMapComponent(x, y, TextureID::FrontWall2, 'H', 0);
+			drawMapComponent(x, y, TextureID::LeftWall, 'L', 0);
+			drawMapComponent(x, y, TextureID::LeftWall2, 'l', 0);
+			drawMapComponent(x, y, TextureID::CornerLeftWall, '{', 0);
+			drawMapComponent(x, y, TextureID::CornerRightWall2, '}', 0);
+			drawMapComponent(x, y, TextureID::CornerLeftWall2, '(', 0);
+			drawMapComponent(x, y, TextureID::CornerRightWall, ')', 0);
+			drawMapComponent(x, y, TextureID::FrontMovingCandle, 'Q', m_map.getCurrentFrame());
+			drawMapComponent(x, y, TextureID::Floor, '.', 0);
+			drawMapComponent(x, y, TextureID::DownWall, 'b', 0);
+			drawMapComponent(x, y, TextureID::DownWall2, 'B', 0);
+			drawMapComponent(x, y, TextureID::RightWall, 'r', 0);
+			drawMapComponent(x, y, TextureID::RightWall2, 'R', 0);
 		}
 	}
 }

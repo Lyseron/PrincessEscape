@@ -10,6 +10,7 @@ private:
 
 	int 						firstPlayerPosX;
 	int 						firstPlayerPosY;
+	Animation					m_animFloatingCandle;
 
 	std::vector<Chest>			m_chest;
 public:
@@ -24,10 +25,14 @@ public:
 	int 	getFirstPlayerPosX()	const;
 	int		getFirstPlayerPosY()	const;
 
+	int		getCurrentFrame()	const;
+
 	size_t	getChestCount()					const;
 	const std::vector<Chest> &getChests()	const;
 	std::vector<Chest>		 &getChestsNotConst();
 
 	bool	load(const std::string& filename);
+	void	initAnimations();
+	void	anim();
 };
 

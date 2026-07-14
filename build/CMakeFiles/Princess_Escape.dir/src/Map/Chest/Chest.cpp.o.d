@@ -1,6 +1,6 @@
 CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o: \
-  /Users/lyseron/Desktop/Princess_Escape/src/Map/Chest/Chest.cpp \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/src/Map/Chest/Chest.cpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \
@@ -995,4 +995,4 @@ CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Animation.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp

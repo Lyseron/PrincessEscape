@@ -24,6 +24,7 @@ bool	Textures::load(TextureID id)
 		case TextureID::Player_Drop_Down:
 			path = "assets/Player/drop_down.png";
 			break;
+
 		case TextureID::Chest_Close:
 			path = "assets/Chest/chest_close.png";
 			break;
@@ -33,6 +34,53 @@ bool	Textures::load(TextureID id)
 		case TextureID::Chest_Opened:
 			path = "assets/Chest/chest_open.png";
 			break;
+
+		case TextureID::FrontWall:
+			path = "assets/Wall/front/FrontWall.png";
+			break;
+		case TextureID::FrontWall2:
+			path = "assets/Wall/front/FrontWall2.png";
+			break;
+		case TextureID::FrontMovingCandle:
+			path = "assets/Wall/front/moving_candle.png";
+			break;
+		case TextureID::LeftWall:
+			path = "assets/Wall/left/wall_left.png";
+			break;
+		case TextureID::LeftWall2:
+			path = "assets/Wall/left/wall_left2.png";
+			break;
+
+		case TextureID::CornerLeftWall:
+			path = "assets/Wall/left/corner_left.png";
+			break;
+		case TextureID::CornerLeftWall2:
+			path = "assets/Wall/left/corner_left2.png";
+			break;
+
+		case TextureID::CornerRightWall:
+			path = "assets/Wall/right/corner_right.png";
+			break;
+		case TextureID::CornerRightWall2:
+			path = "assets/Wall/right/corner_right2.png";
+			break;
+		case TextureID::RightWall:
+			path = "assets/Wall/right/wall_right.png";
+			break;
+		case TextureID::RightWall2:
+			path = "assets/Wall/right/wall_right2.png";
+			break;
+		case TextureID::DownWall:
+			path = "assets/Wall/Down/wall_down.png";
+			break;
+		case TextureID::DownWall2:
+			path = "assets/Wall/Down/wall_down2.png";
+			break;
+
+		case TextureID::Floor:
+			path = "assets/floor/floor.png";
+			break;
+
 		// case TextureID::Player_Idle_up:
 		// 	path = "assets/sprites/idle_armed.png";
 		// 	break;
@@ -72,7 +120,7 @@ bool	Textures::load(TextureID id)
 		// 	path = "assets/sprites/drop_left.png";
 		// 	break;
 		default:
-			return (false);
+			break;
 	}
 	SDL_Surface*	surface = IMG_Load(path.c_str());			// img store in RAM
 	if (surface == nullptr)
@@ -83,7 +131,7 @@ bool	Textures::load(TextureID id)
 	);
 	if (texture == nullptr)
 	{
-		std::cerr << "texture not charged\n";
+		std::cerr << "texture not charged\n" << path << std::endl;
 		SDL_DestroySurface(surface);							// Free the memory
 		return (false);
 	}

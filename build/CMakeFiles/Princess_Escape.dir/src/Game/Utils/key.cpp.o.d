@@ -1,6 +1,6 @@
 CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o: \
-  /Users/lyseron/Desktop/Princess_Escape/src/Game/Utils/key.cpp \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Game.hpp \
+  /Users/lyseron/Desktop/princessEscape/src/Game/Utils/key.cpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \
@@ -996,8 +996,8 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /opt/homebrew/include/SDL3_image/SDL_image.h \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Textures.hpp \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Player.hpp \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Animation.hpp \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Map.hpp \
-  /Users/lyseron/Desktop/Princess_Escape/includes/Chest.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
