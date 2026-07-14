@@ -14,10 +14,6 @@ private:
 	static constexpr	double	SPRITE_WIDTH = 56;
 	static constexpr	double	SPRITE_HEIGHT = 56;
 	static constexpr	int		CASE_TILE = 64;
-	// static constexpr	double	PLAYER_FRONT_COLLISION_RIGHT = 64;
-	// static constexpr	double	PLAYER_FRONT_COLLISION_LEFT = 64;
-	// static constexpr	double	PLAYER_FRONT_COLLISION_TOP = 0.3;
-	// static constexpr	double	PLAYER_FRONT_COLLISION_BOTTOMM = 64;
 	static constexpr	double	SPEED_PLAYER = 0.001;
 	
 

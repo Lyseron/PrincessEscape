@@ -997,4 +997,5 @@ CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /opt/homebrew/include/SDL3_image/SDL_image.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp

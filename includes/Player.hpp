@@ -3,6 +3,7 @@
 #include "Animation.hpp"
 #include "Textures.hpp"
 #include <filesystem>
+#include "Collision.hpp"
 
 enum class PlayerState
 {
@@ -29,6 +30,11 @@ private:
 	static constexpr	int	TIMER_DURATION_WALK = 400;
 	static constexpr	int	TIMER_DURATION_DROP = 400;
 
+	static constexpr	double	PLAYER_OFFSET_X = 0.30;
+	static constexpr	double	PLAYER_OFFSET_Y = 0.58;
+	static constexpr	double	PLAYER_WIDTH = 0.40;
+	static constexpr	double	PLAYER_HEIGHT = 0.30;
+
 	double		m_x;
 	double		m_y;
 	int			m_dirX;
@@ -37,6 +43,8 @@ private:
 	PlayerState	m_state;
 	Direction	m_direction;
 	Animation	m_animation;
+
+	Collision	m_collision;
 
 public:
 // ---------------------- CONST/DEST -------------------- //
@@ -62,6 +70,8 @@ public:
 
 	int		getDirY()	const;
 	int		getDirX()	const;
+
+	const 	Collision	&getCollision()	const;
 	
 
 // ---------------------- OTHER METHOD ------------------ //

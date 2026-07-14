@@ -2,21 +2,13 @@
 
 #include "Textures.hpp"
 #include "Animation.hpp"
+#include "Collision.hpp"
 
 enum class DecorType
 {
 	Chandelier,
 	FloatingCandle,
 	Armure
-};
-
-struct Hitbox
-{
-	double		m_collisionOffsetX;
-	double		m_collisionOffsetY;
-
-	double		m_collisionWidth;
-	double		m_collisionHeight;
 };
 
 
@@ -34,6 +26,7 @@ private:
 
 	bool		m_blockingObject;
 	Animation	m_animation;
+	Collision	m_collision;
 public:
 
 	int		getCaseX()	const;
@@ -46,6 +39,7 @@ public:
 	int		getOffsetX()	const;
 	int		getOffsetY()	const;
 
+	const	Collision &getCollision()	const;
 	void	update();
 
 	bool	isblockingObject()	const;

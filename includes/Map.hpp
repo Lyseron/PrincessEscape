@@ -13,7 +13,7 @@ private:
 	int 						firstPlayerPosY;
 
 	std::vector<Chest>			m_chest;
-	std::vector<Decor>	m_decors;
+	std::vector<Decor>		m_decors;
 public:
 	Map();
 	~Map();

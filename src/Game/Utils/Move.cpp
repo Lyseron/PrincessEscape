@@ -2,25 +2,18 @@
 
 bool	Game::inCollisionDecor(double nextX, double nextY)
 {
-	double	playerTop		= nextY - 0.0;
-	double	playerLeft		= nextX - 0.0;
-	double	playerRight		= nextX + 0.0;
-	double	playerBottom	= nextY + 0.0;
-
-	int		intPlayerTop	= static_cast<int>(playerTop);
-	int		intPlayerLeft	= static_cast<int>(playerLeft);
-	int		intPlayerRight	= static_cast<int>(playerRight);
-	int		intPlayerBottom	= static_cast<int>(playerBottom);
-
-	for (const Decor &decor : m_map.getDecors())
+	for (const Decor &decor :m_map.getDecors())
 	{
 		if (decor.isblockingObject() == false)
 			continue;
-		if ((decor.getCaseX() == intPlayerLeft  && decor.getCaseY() == intPlayerTop)
-			|| (decor.getCaseX() == intPlayerRight && decor.getCaseY() == intPlayerTop)
-			|| (decor.getCaseX() == intPlayerLeft  && decor.getCaseY() == intPlayerBottom)
-			|| (decor.getCaseX() == intPlayerRight && decor.getCaseY() == intPlayerBottom))
-			return true;
+		if (m_player.getCollision().isColliding(
+			decor.getCollision(),
+			nextX,
+			nextY,
+			decor.getCaseX(),
+			decor.getCaseY()
+		))
+			return (true);
 	}
 	return (false);
 }

@@ -153,6 +153,30 @@ src/Animation/Animation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.s
 .PHONY : src/Animation/Animation.cpp.s
 
+src/Collision/Collision.o: src/Collision/Collision.cpp.o
+.PHONY : src/Collision/Collision.o
+
+# target to build an object file
+src/Collision/Collision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o
+.PHONY : src/Collision/Collision.cpp.o
+
+src/Collision/Collision.i: src/Collision/Collision.cpp.i
+.PHONY : src/Collision/Collision.i
+
+# target to preprocess a source file
+src/Collision/Collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.i
+.PHONY : src/Collision/Collision.cpp.i
+
+src/Collision/Collision.s: src/Collision/Collision.cpp.s
+.PHONY : src/Collision/Collision.s
+
+# target to generate assembly for a file
+src/Collision/Collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.s
+.PHONY : src/Collision/Collision.cpp.s
+
 src/Decor/Decor.o: src/Decor/Decor.cpp.o
 .PHONY : src/Decor/Decor.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... src/Animation/Animation.o"
 	@echo "... src/Animation/Animation.i"
 	@echo "... src/Animation/Animation.s"
+	@echo "... src/Collision/Collision.o"
+	@echo "... src/Collision/Collision.i"
+	@echo "... src/Collision/Collision.s"
 	@echo "... src/Decor/Decor.o"
 	@echo "... src/Decor/Decor.i"
 	@echo "... src/Decor/Decor.s"

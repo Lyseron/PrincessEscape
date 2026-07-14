@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp" "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o.d"
+  "/Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp" "CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp" "CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Game/Events.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Game/Game.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o.d"

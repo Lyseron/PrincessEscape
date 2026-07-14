@@ -5,6 +5,10 @@ CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o
  /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
 
+CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o
+ /Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
+
 CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o
  /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
@@ -942,6 +946,7 @@ CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp
  /opt/homebrew/include/SDL3/SDL.h
@@ -1963,6 +1968,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -2987,6 +2993,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -4011,6 +4018,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -5035,6 +5043,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -6059,6 +6068,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -7083,6 +7093,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -8107,6 +8118,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -9131,6 +9143,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -10155,6 +10168,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -11179,6 +11193,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
@@ -13203,6 +13218,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp
@@ -14224,6 +14240,7 @@ CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Player.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp
  /opt/homebrew/include/SDL3/SDL.h
@@ -16244,6 +16261,7 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp
+ /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Game.hpp
  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp

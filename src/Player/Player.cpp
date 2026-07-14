@@ -6,7 +6,9 @@ Player::Player()
 	m_state(PlayerState::Idle),
 	m_direction(Direction::Down),
 	m_dirX(0),
-	m_dirY(0) {}
+	m_dirY(0),
+	m_collision({PLAYER_OFFSET_X, PLAYER_OFFSET_Y, PLAYER_WIDTH, PLAYER_HEIGHT})
+	{}
 
 void	Player::setX(double x)
 {
@@ -56,6 +58,7 @@ void	Player::setState(PlayerState state) {
 	}
 }
 
+const 	Collision	&Player::getCollision()	const { return (this->m_collision); }
 double	Player::getPosX()	const { return (m_x); }
 double	Player::getPosY()	const { return (m_y); }
 int		Player::getDirX()	const { return (this->m_dirX); }

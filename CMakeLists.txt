@@ -48,6 +48,9 @@ add_executable(
 # ---------- ANIM -------- #
 	src/Animation/Animation.cpp
 
+# ---------- COLLISION -------- #
+	src/Collision/Collision.cpp
+
 )
 
 target_include_directories(

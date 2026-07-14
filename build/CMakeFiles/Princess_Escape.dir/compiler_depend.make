@@ -4,6 +4,9 @@
 CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp
 
+CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
+
 CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
@@ -940,6 +943,7 @@ CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o: /Users/lyseron/Desktop/pri
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
@@ -1960,6 +1964,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o: /Users/lyseron/Desktop/pri
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -2983,6 +2988,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o: /Users/lyseron/Desktop/princ
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -4006,6 +4012,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o: /Users/lyseron/Desktop/pri
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -5029,6 +5036,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o: /Users/lyseron/Desktop/pri
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -6052,6 +6060,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o: /Users/lyseron/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -7075,6 +7084,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o: /Users/lyseron/Desktop
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -8098,6 +8108,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o: /Users/lyseron/Desktop
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -9121,6 +9132,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o: /Users/lyseron/Desk
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -10144,6 +10156,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o: /Users/lyseron/Desktop
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -11167,6 +11180,7 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o: /Users/lyseron/Desktop/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -13189,6 +13203,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o: /Users/lyseron/Desktop/princes
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
@@ -14209,6 +14224,7 @@ CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: /Users/lyseron/Desktop/p
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Player.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
@@ -16227,6 +16243,7 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Game.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
@@ -16745,12 +16762,6 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_relocatable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_nth_element.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_destructor.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_mcontext.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_rotate_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_lexicographically_comparable.h:
@@ -17061,6 +17072,12 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_mcontext.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_nth_element.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_destructor.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
@@ -17188,6 +17205,8 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/vector.h:
 
 /opt/homebrew/include/SDL3/SDL_begin_code.h:
+
+/Users/lyseron/Desktop/princessEscape/includes/Collision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/simd_utils.h:
 
@@ -17385,9 +17404,9 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_push_heap.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/inout_ptr.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/limits:
 
@@ -17517,12 +17536,6 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/invert_if.h:
 
-/Users/lyseron/Desktop/princessEscape/src/Game/Utils/Move.cpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h:
@@ -17598,12 +17611,6 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:
 
@@ -17739,6 +17746,12 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h:
 
+/Users/lyseron/Desktop/princessEscape/src/Game/Utils/Move.cpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_shuffle.h:
@@ -17775,12 +17788,6 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_pop_heap.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_partition.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version:
@@ -17814,6 +17821,12 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_32_64_or_128_bit.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_merge.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
 
@@ -17951,6 +17964,8 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h:
 
+/Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/is_eq.h:
@@ -17960,12 +17975,6 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_adjacent_find.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_heap_until.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
 
@@ -17982,6 +17991,8 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h:
 
@@ -18054,6 +18065,12 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_copy_backward.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h:
 
@@ -18144,6 +18161,10 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_find_end.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_heap_until.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/includes.h:
 
@@ -18267,15 +18288,15 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_string.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h:
 
@@ -18341,15 +18362,15 @@ CMakeFiles/Princess_Escape.dir/src/main.cpp.o: /Users/lyseron/Desktop/princessEs
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_in_result.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_out_out_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_in_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
 
