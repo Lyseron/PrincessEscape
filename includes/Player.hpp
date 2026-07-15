@@ -30,10 +30,10 @@ private:
 	static constexpr	int	TIMER_DURATION_WALK = 400;
 	static constexpr	int	TIMER_DURATION_DROP = 400;
 
-	static constexpr	double	PLAYER_OFFSET_X = 0.30;
-	static constexpr	double	PLAYER_OFFSET_Y = 0.58;
-	static constexpr	double	PLAYER_WIDTH = 0.40;
-	static constexpr	double	PLAYER_HEIGHT = 0.30;
+	static constexpr	double	PLAYER_OFFSET_X = 0.25;
+	static constexpr	double	PLAYER_OFFSET_Y = 0.55;
+	static constexpr	double	PLAYER_WIDTH = 0.49;
+	static constexpr	double	PLAYER_HEIGHT = 0.45;
 
 	double		m_x;
 	double		m_y;
@@ -71,7 +71,7 @@ public:
 	int		getDirY()	const;
 	int		getDirX()	const;
 
-	const 	Collision	&getCollision()	const;
+	const 	Collision	&getCollisionValue()	const;
 	
 
 // ---------------------- OTHER METHOD ------------------ //

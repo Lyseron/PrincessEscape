@@ -14,7 +14,17 @@ void	Game::render()
 	drawMap();
 	drawDecor();
 	drawChests();
+	drawDoors();
 	drawPlayer();
+	drawDebugCollision(
+	m_player.getCollisionValue(),
+	m_player.getPosX(),
+	m_player.getPosY()
+	);
+	drawDebugCase(
+	m_player.getPosX(),
+	m_player.getPosY()
+);
 	
 	SDL_RenderPresent(m_renderer);	// Display the img
 }

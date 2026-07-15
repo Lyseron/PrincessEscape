@@ -15,8 +15,8 @@ add_executable(
 
 	src/Game/Game.cpp
 	src/Game/Events.cpp
-	src/Game/Render.cpp
-	src/Game/Update.cpp
+	src/Game/Visual.cpp
+	src/Game/VisualChange.cpp
 # -> Game_utils.c
 	src/Game/Utils/ActionInMap.cpp
 	src/Game/Utils/Draw.cpp
@@ -31,26 +31,25 @@ add_executable(
 
 # ---------- TEXTURE ------- #
 
-	src/Textures/Textures.cpp
+	src/UtilsObject/Textures/Textures.cpp
 
 # ---------- PLAYER -------- #
 
 	src/Player/Player.cpp
-# -> Player_utils.c
-	#src/utils/Player_utils.cpp
 
 # ---------- CHEST -------- #
-	src/Map/Chest/Chest.cpp
-	src/Map/Door/Door.cpp
+	src/Map/Interactable/Chest/Chest.cpp
+	src/Map/Interactable/Door/Door.cpp
+	src/Map/Interactable/Interactable.cpp
 
 # ---------- DECOR -------- #
-	src/Decor/Decor.cpp
+	src/Map/Decor/Decor.cpp
 
 # ---------- ANIM -------- #
-	src/Animation/Animation.cpp
+	src/UtilsObject/Animation/Animation.cpp
 
 # ---------- COLLISION -------- #
-	src/Collision/Collision.cpp
+	src/UtilsObject/Collision/Collision.cpp
 
 )
 

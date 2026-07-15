@@ -58,7 +58,7 @@ void	Player::setState(PlayerState state) {
 	}
 }
 
-const 	Collision	&Player::getCollision()	const { return (this->m_collision); }
+const 	Collision	&Player::getCollisionValue()	const { return (this->m_collision); }
 double	Player::getPosX()	const { return (m_x); }
 double	Player::getPosY()	const { return (m_y); }
 int		Player::getDirX()	const { return (this->m_dirX); }

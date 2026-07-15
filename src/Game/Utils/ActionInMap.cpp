@@ -10,7 +10,7 @@ void	Game::actionInMap()
 			if (m_player.getCaseXinFrontOfPlayer() == chest.getCaseX()
 				&& m_player.getCaseYinFrontOfPlayer() == chest.getCaseY())
 			{
-				chest.open();
+				chest.interact(m_player);
 				return ;
 			}
 		}

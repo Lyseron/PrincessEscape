@@ -1,37 +1,33 @@
 #include "Game.hpp"
 #include "Textures.hpp"
 
-// void	Game::drawRectangle(int x_win, int y_win,
-// 	SDL_Color color)
-// {
-// 	// if (x_win < 0 
-// 	// 	|| x_win > MAP_WIDTH)
-// 	// 	return ;
-// 	// if (y_win < 0 
-// 	// 	|| y_win > MAP_HEIGHT)
-// 	// 	return ;
-// 	if ((color.r < 0 || color.r > 255)
-// 		|| (color.g < 0 || color.g > 255)
-// 		|| (color.b < 0 || color.b > 255)
-// 		|| (color.a < 0 || color.a > 255))
-// 		return ;
+void Game::drawDebugCollision(const Collision &collision, double posX, double posY)
+{
+	Bound bound = collision.getBoundsObjectInCase(posX, posY);
 
-// 	SDL_FRect	rect;
+	SDL_FRect rect;
 
-// 	rect.x = x_win;
-// 	rect.y = y_win;
-// 	rect.w = CASE_TILE;
-// 	rect.h = CASE_TILE;
+	rect.x = bound.left * CASE_TILE;
+	rect.y = bound.top * CASE_TILE;
+	rect.w = (bound.right - bound.left) * CASE_TILE;
+	rect.h = (bound.bottom - bound.top) * CASE_TILE;
 
-// 	SDL_SetRenderDrawColor(
-// 		m_renderer,
-// 		color.r, color.g, color.b, color.a
-// 	);
-// 	SDL_RenderFillRect(
-// 		m_renderer,
-// 		&rect
-// 	);
-// }
+	SDL_SetRenderDrawColor(m_renderer, 255, 0, 0, 255);
+	SDL_RenderRect(m_renderer, &rect);
+}
+
+void Game::drawDebugCase(double caseX, double caseY)
+{
+	SDL_FRect rect;
+
+	rect.x = caseX * CASE_TILE;
+	rect.y = caseY * CASE_TILE;
+	rect.w = CASE_TILE;
+	rect.h = CASE_TILE;
+
+	SDL_SetRenderDrawColor(m_renderer, 0, 255, 0, 255);
+	SDL_RenderRect(m_renderer, &rect);
+}
 
 void	Game::drawTexture(int win_x, int win_y, TextureID id, int frame)
 {
@@ -91,6 +87,15 @@ void	Game::drawMap()
 			drawMapComponent(x, y, TextureID::DownWall2, 'B', 0);
 			drawMapComponent(x, y, TextureID::RightWall, 'r', 0);
 			drawMapComponent(x, y, TextureID::RightWall2, 'R', 0);
+			// drawDebugCase(
+			// x,
+			// y
+			// );
+			// drawDebugCollision(
+			// 	m_player.getCollisionValue(),
+			// 	x,
+			// 	y
+			// );
 
 // ---------------------------------------------------- FLOOR ---------------------------------------------------- //
 			drawMapComponent(x, y, TextureID::Floor, '.', 0);
@@ -101,8 +106,8 @@ void	Game::drawMap()
 void	Game::drawPlayer()
 {
 	drawTexture((
-		m_player.getPosX() - 0.5) * CASE_TILE,
-		(m_player.getPosY() - 0.5) * CASE_TILE, 
+		m_player.getPosX()) * CASE_TILE,
+		(m_player.getPosY()) * CASE_TILE, 
 		m_player.getTexture(),
 		m_player.getCurrentFrame()
 	);
@@ -126,12 +131,53 @@ void	Game::drawChests()
 			texture = TextureID::Chest_Opened;
 			break;
 		}
-			drawTexture(
-				chest.getCaseX() * CASE_TILE,
-				chest.getCaseY() * CASE_TILE + -20,
-				texture,
-				chest.getCurrentFrame()
-			);
+		drawTexture(
+			chest.getCaseX() * CASE_TILE,
+			chest.getCaseY() * CASE_TILE + -20,
+			texture,
+			chest.getCurrentFrame()
+		);
+		// drawDebugCollision(
+		// 	chest.getCollision(),
+		// 	chest.getCaseX(),
+		// 	chest.getCaseY()
+		// );
+		// drawDebugCase(
+		// 	chest.getCaseX(),
+		// 	chest.getCaseY()
+		// );
+	}
+}
+
+void	Game::drawDoors()
+{
+	TextureID	texture;
+
+	for (const Door &door : m_map.getDoors())
+	{
+		switch (door.getDoorState())
+		{
+		case DoorState::Closed:
+			texture = TextureID::Door_Close;
+			break;
+		case DoorState::Opening:
+			texture = TextureID::Door_Opening;
+			break;
+		case DoorState::Opened:
+			texture = TextureID::Door_Opened;
+			break;
+		}
+		// drawTexture(
+		// 	door.getCaseX() * CASE_TILE,
+		// 	door.getCaseY() * CASE_TILE,
+		// 	texture,
+		// 	door.getCurrentFrame()
+		// );
+		// drawDebugCollision(
+		// door.getCollision(),
+		// door.getCaseX(),
+		// door.getCaseY()
+		// );
 	}
 }
 
@@ -145,5 +191,14 @@ void	Game::drawDecor()
 			decor.getTexture(),
 			decor.getCurrentFrame()
 		);
+		drawDebugCase(
+			decor.getCaseX(),
+			decor.getCaseY()
+			);
+			drawDebugCollision(
+				decor.getCollision(),
+				decor.getCaseX(),
+			decor.getCaseY()
+			);
 	}
 }

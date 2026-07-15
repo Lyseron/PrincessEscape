@@ -34,7 +34,7 @@ void	Game::run()
 	while (m_running)
 	{
 		this->handleEvent();
-		this->update();
+		this->VisualChange();
 		this->render();
 	}
 	std::cout << "Game running\n";

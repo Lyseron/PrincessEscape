@@ -24,11 +24,11 @@ private:
 public:
 	Collision(const  Hitbox &hitbox);
 
-	Bound	getBounds(double posX, double posY)	const;
+	Bound	getBoundsObjectInCase(double posX, double posY)	const;
 
 	void	setHitbox(const Hitbox &hitbox);
 	bool	isColliding(
-		const Collision &col,
+		const Collision &hitBoxToTest,
 		double posX,
 		double posY,
 		double testPosX,

@@ -35,6 +35,7 @@ private:
 	bool		loadPlayer();
 	bool		loadWall();
 	bool		loadDecor();
+	bool		loadDoor();
 	bool		loadAllImg();								// load all the necessary img once
 	bool		initPlayerTextureFromSide(
 			TextureID idle,
@@ -65,7 +66,7 @@ private:
 
 // ---------------------- UPDATE ------------------------ //
 
-	void	update();									// to utpdate the value after an event
+	void	VisualChange();									// to utpdate the value after an event
 	void	handleMovement();
 
 // ---------------------- RENDER ------------------------- //
@@ -85,6 +86,9 @@ private:
 	void	drawDecor();
 	void	drawPlayer();
 	void	drawChests();
+	void	drawDoors();
+	void	drawDebugCollision(const Collision &collision, double posX, double posY);
+	void	drawDebugCase(double caseX, double caseY);
 
 // ---------------------- PLAYER ------------------------ //
 	Player	m_player;
@@ -95,6 +99,7 @@ private:
 	bool	inCollisionWall(double nextX, double nextY);
 	bool	inCollisionDecor(double nextX, double nextY);
 	bool	inCollisionChest(double nextX, double nextY);
+	bool	inCollisionDoor(double nextX, double nextY);
 	bool	collisionPlayer(double nextX, double nextY);
 
 public:

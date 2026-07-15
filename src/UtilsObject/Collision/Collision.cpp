@@ -9,7 +9,7 @@ void	Collision::setHitbox(const Hitbox &hitbox)
 	this->m_hitbox = hitbox;
 }
 // to calculate cactly the pos of a given pos objet 
-Bound	Collision::getBounds(double posX, double posY)	const 
+Bound	Collision::getBoundsObjectInCase(double posX, double posY)	const 
 {
 	Bound	bound;
 
@@ -21,15 +21,16 @@ Bound	Collision::getBounds(double posX, double posY)	const
 	return (bound);
 }
 
-bool	Collision::isColliding(const Collision &test,
+
+bool	Collision::isColliding(const Collision &hitBoxToTest,
 		double posX,
 		double posY,
 		double testPosX,
 		double testPosY
 	)	const
 {
-	Bound	bound = this->getBounds(posX, posY);
-	Bound	testBound = test.getBounds(testPosX, testPosY);
+	Bound	bound = this->getBoundsObjectInCase(posX, posY);
+	Bound	testBound = hitBoxToTest.getBoundsObjectInCase(testPosX, testPosY);
 
 	if (bound.right <= testBound.left
 		|| bound.left >= testBound.right

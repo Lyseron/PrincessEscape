@@ -6,7 +6,7 @@ bool	Game::inCollisionDecor(double nextX, double nextY)
 	{
 		if (decor.isblockingObject() == false)
 			continue;
-		if (m_player.getCollision().isColliding(
+		if (m_player.getCollisionValue().isColliding(
 			decor.getCollision(),
 			nextX,
 			nextY,
@@ -20,25 +20,32 @@ bool	Game::inCollisionDecor(double nextX, double nextY)
 
 bool	Game::inCollisionChest(double nextX, double nextY)
 {
-	double	playerTop		= nextY - 0.0;
-	double	playerLeft		= nextX - 0.0;
-	double	playerRight		= nextX + 0.0;
-	double	playerBottom	= nextY + 0.0;
-
-	int		intPlayerTop	= static_cast<int>(playerTop);
-	int		intPlayerLeft	= static_cast<int>(playerLeft);
-	int		intPlayerRight	= static_cast<int>(playerRight);
-	int		intPlayerBottom	= static_cast<int>(playerBottom);
-
 	for (const Chest &chest : m_map.getChests())
 	{
-		if ((chest.getCaseX() == intPlayerLeft
-			|| chest.getCaseX() == intPlayerRight)
-			&& (chest.getCaseY() == intPlayerTop
-			|| chest.getCaseY() == intPlayerBottom))
-			return true;
+		if (m_player.getCollisionValue().isColliding(
+				chest.getCollision(),
+				nextX,
+				nextY,
+				chest.getCaseX(),
+				chest.getCaseY()))
+			return (true);
 	}
 	return (false);
+}
+
+bool Game::inCollisionDoor(double nextX, double nextY)
+{
+	for (const Door &door : m_map.getDoors())
+	{
+		if (m_player.getCollisionValue().isColliding(
+				door.getCollision(),
+				nextX,
+				nextY,
+				door.getCaseX(),
+				door.getCaseY()))
+			return (true);
+	}
+	return false;
 }
 
 bool	isWall(char c)
@@ -56,7 +63,7 @@ bool	isWall(char c)
 
 bool	Game::inCollisionWall(double nextX, double nextY)
 {
-	Bound player = m_player.getCollision().getBounds(nextX, nextY);
+	Bound player = m_player.getCollisionValue().getBoundsObjectInCase(nextX, nextY);
 
 	int		intPlayerTop	= static_cast<int>(player.top);
 	int		intPlayerLeft	= static_cast<int>(player.left);
@@ -75,7 +82,8 @@ bool	Game::collisionPlayer(double nextX, double nextY)
 {
 	return (inCollisionWall(nextX, nextY)
 		|| inCollisionDecor(nextX, nextY)
-		|| inCollisionChest(nextX, nextY));
+		|| inCollisionChest(nextX, nextY)
+		|| inCollisionDoor(nextX, nextY));
 }
 
 bool	Game::move(double dirX, double dirY)

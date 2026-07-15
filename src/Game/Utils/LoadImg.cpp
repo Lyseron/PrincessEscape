@@ -150,6 +150,23 @@ bool	Game::loadChest()
 	return (true);
 }
 
+bool	Game::loadDoor()
+{
+	m_texture->load(TextureID::Door_Close);
+	if (!m_texture->load(TextureID::Door_Close))
+		return (std::cerr << "Texture not load\n", false);
+
+	m_texture->load(TextureID::Door_Opened);
+	if (!m_texture->load(TextureID::Door_Opened)) 
+		return (std::cerr << "Texture not load\n", false);
+
+	m_texture->load(TextureID::Door_Opening);
+	if (!m_texture->load(TextureID::Door_Opening))
+		return (std::cerr << "Texture not load\n", false);
+
+	return (true);
+}
+
 bool	Game::loadAllImg()
 {
 	if (loadPlayer() == false)
@@ -159,6 +176,8 @@ bool	Game::loadAllImg()
 	if (loadWall() == false)
 		return (false);
 	if (loadDecor() == false)
+		return (false);
+	if (loadDoor() == false)
 		return (false);
 	return (true);
 }

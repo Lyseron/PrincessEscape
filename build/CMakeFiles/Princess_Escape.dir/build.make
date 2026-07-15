@@ -114,33 +114,33 @@ CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Game/Events.cpp -o CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Game/Render.cpp
-CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Game/Render.cpp
+CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Game/Visual.cpp
+CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Game/Visual.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Game/Render.cpp > CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.i
+CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Game/Visual.cpp > CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Game/Render.cpp -o CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.s
+CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Game/Visual.cpp -o CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Game/Update.cpp
-CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Game/Update.cpp
+CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Game/VisualChange.cpp
+CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Game/VisualChange.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Game/Update.cpp > CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.i
+CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Game/VisualChange.cpp > CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Game/Update.cpp -o CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.s
+CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Game/VisualChange.cpp -o CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.s
 
 CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Game/Utils/ActionInMap.cpp
@@ -240,19 +240,19 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Map.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Textures/Textures.cpp
-CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Textures/Textures.cpp
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Textures/Textures.cpp > CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.i
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp > CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Textures/Textures.cpp -o CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.s
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.s
 
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Player/Player.cpp
@@ -268,69 +268,97 @@ CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Player/Player.cpp -o CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Chest/Chest.cpp
-CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Chest/Chest.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Map/Chest/Chest.cpp > CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.i
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp > CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Chest/Chest.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.s
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp
-CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp > CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.i
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp > CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Decor/Decor.cpp -o CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.s
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp
-CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp > CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.i
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp > CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Animation/Animation.cpp -o CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.s
+CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.s
 
-CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
-CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp
-CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Decor/Decor.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Decor/Decor.cpp
 
-CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp > CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.i
+CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Map/Decor/Decor.cpp > CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.i
 
-CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Collision/Collision.cpp -o CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.s
+CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Decor/Decor.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.s
+
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp
+
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp > CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.i
+
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.s
+
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp
+
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp > CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.i
+
+CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.s
 
 # Object files for target Princess_Escape
 Princess_Escape_OBJECTS = \
 "CMakeFiles/Princess_Escape.dir/src/main.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o" \
@@ -338,12 +366,14 @@ Princess_Escape_OBJECTS = \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o" \
-"CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o"
+"CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o"
 
 # External object files for target Princess_Escape
 Princess_Escape_EXTERNAL_OBJECTS =
@@ -351,8 +381,8 @@ Princess_Escape_EXTERNAL_OBJECTS =
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/main.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Render.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Update.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Visual.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/VisualChange.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o
@@ -360,17 +390,19 @@ Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Textures/Textures.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Chest/Chest.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Decor/Decor.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Animation/Animation.cpp.o
-Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Collision/Collision.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/build.make
 Princess_Escape: /opt/homebrew/lib/libSDL3_image.0.4.4.dylib
 Princess_Escape: /opt/homebrew/lib/libSDL3.0.dylib
 Princess_Escape: CMakeFiles/Princess_Escape.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Princess_Escape"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Princess_Escape"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Princess_Escape.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

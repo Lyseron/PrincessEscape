@@ -1021,4 +1021,6 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Door.hpp

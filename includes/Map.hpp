@@ -3,6 +3,7 @@
 #include <vector>
 #include "Chest.hpp"
 #include "Decor.hpp"
+#include "Door.hpp"
 
 class Map
 {
@@ -13,7 +14,8 @@ private:
 	int 						firstPlayerPosY;
 
 	std::vector<Chest>			m_chest;
-	std::vector<Decor>		m_decors;
+	std::vector<Decor>			m_decors;
+	std::vector<Door>			m_doors;
 public:
 	Map();
 	~Map();
@@ -33,6 +35,9 @@ public:
 
 	const	std::vector<Chest> &getChests()	const;
 	std::vector<Chest>			&getChestsNotConst();
+
+	const	std::vector<Door>	&getDoors()	const;
+	std::vector<Door>			&getDoorsNotConst();
 
 	bool	load(const std::string& filename);
 	void	anim();

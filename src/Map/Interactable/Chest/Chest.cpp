@@ -1,14 +1,13 @@
 #include "Chest.hpp"
 
 Chest::Chest(int x, int y)
-	: m_posY(y),
-	m_posX(x),
-	m_isOpen(false),
-	m_state(ChestState::Closed)
-	{}
+	: m_state(ChestState::Closed),
+	Interactable(x, y)
+{
+	m_collision.setHitbox({0, 0, 1, 0.70});
+}
 
-void	Chest::setIsOpen(bool isOpen) { this->m_isOpen = isOpen; }
-
+//armure m_collision.setHitbox({0.25, 0.3, 0.5, 0.65});
 void	Chest::setState(ChestState state)
 {
 	if (m_state == state)
@@ -17,9 +16,6 @@ void	Chest::setState(ChestState state)
 	
 	switch (state)
 	{
-	// case PlayerState::Idle_Up:
-	// case PlayerState::Idle_Left:
-	// case PlayerState::Idle_Right:
 	case ChestState::Opened:
 		m_animation.reset(1, 400);
 		break;
@@ -34,16 +30,9 @@ void	Chest::setState(ChestState state)
 	}
 }
 
-
-int		Chest::getCaseX(void)	const { return (this->m_posX); }
-int		Chest::getCaseY(void)	const { return (this->m_posY); }
-
 ChestState	Chest::getChestState()		const { return (this->m_state ); }
-int			Chest::getCurrentFrame()	const { return (this->m_animation.getCurrentFrame()); }
 
-bool	Chest::getIsOpenState()		const { return (this->m_isOpen); }
-
-void	Chest::anim()
+void	Chest::animChest()
 {
 	if (m_state == ChestState::Opening)
 	{
@@ -55,21 +44,14 @@ void	Chest::anim()
 	}
 }
 
-void	Chest::open()
+void	Chest::interact(Player &player)
 {
+	// openChest
 	if (m_state == ChestState::Closed)
 	{
 		m_state = ChestState::Opening;
 		m_animation.reset(1, 400);
 	}
-}
-
-void	Chest::render(SDL_Renderer* renderer,
-		Textures* texture,
-		int caseTile
-	)
-{
-	
 }
 
 Chest::~Chest() {}

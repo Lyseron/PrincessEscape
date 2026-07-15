@@ -63,8 +63,8 @@ bool	Game::initRenderer()
 
 void	Game::initPlayer()
 {
-	m_player.setX(static_cast<double>(m_map.getFirstPlayerPosX() + 0.5));
-	m_player.setY(static_cast<double>(m_map.getFirstPlayerPosY() + 0.5));
+	m_player.setX(static_cast<double>(m_map.getFirstPlayerPosX()));
+	m_player.setY(static_cast<double>(m_map.getFirstPlayerPosY()));
 }
 
 bool	Game::initAll()

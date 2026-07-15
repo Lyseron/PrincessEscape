@@ -23,9 +23,11 @@ const	std::vector<Decor>		&Map::getDecors()	const { return (this->m_decors); }
 std::vector<Decor>				&Map::getDecorsNotConst() { return (this->m_decors); }
 
 size_t	Map::getChestCount()					const { return (this->m_chest.size()); }
-
 const	std::vector<Chest> &Map::getChests()	const { return (this->m_chest); }
 std::vector<Chest> 			&Map::getChestsNotConst() { return (this->m_chest); }
+
+const	std::vector<Door> &Map::getDoors()	const { return (this->m_doors); }
+std::vector<Door> 			&Map::getDoorsNotConst() { return (this->m_doors); }
 
 void	Map::anim()
 {
@@ -55,6 +57,11 @@ bool	Map::load(const std::string& filename)
 			if (charCase == 'C')
 			{
 				m_chest.emplace_back(x, y);
+				this->m_map[y][x] = '.';
+			}
+			if (charCase == 'D')
+			{
+				m_doors.emplace_back(x, y);
 				this->m_map[y][x] = '.';
 			}
 			createDecor(charCase, x, y);
