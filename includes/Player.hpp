@@ -4,6 +4,8 @@
 #include "Textures.hpp"
 #include <filesystem>
 #include "Collision.hpp"
+#include "Interactable.hpp"
+#include "Inventory.hpp"
 
 enum class PlayerState
 {
@@ -40,11 +42,18 @@ private:
 	int			m_dirX;
 	int			m_dirY;
 
+	int 		m_healtPoint = 5;
+	int			m_maxHealthPoint = 5;
+	bool		m_tookDamage = false;
+
 	PlayerState	m_state;
 	Direction	m_direction;
 	Animation	m_animation;
 
 	Collision	m_collision;
+	Collision	m_interaction;
+
+	Inventory	m_inventory;
 
 public:
 // ---------------------- CONST/DEST -------------------- //
@@ -63,6 +72,8 @@ public:
 // ---------------------- GETTER ------------------------ //
 	double	getPosX()	const;
 	double	getPosY()	const;
+	int		getCaseX()	const;
+	int		getCaseY()	const;
 
 	PlayerState	getState()		const;
 	TextureID	getTexture()	const;
@@ -71,8 +82,11 @@ public:
 	int		getDirY()	const;
 	int		getDirX()	const;
 
+	int 	getHealthPoint();
+	int		getMaxHealthPoint();
+
 	const 	Collision	&getCollisionValue()	const;
-	
+	const 	Collision	&getInteractionValue()	const;
 
 // ---------------------- OTHER METHOD ------------------ //
 	
@@ -80,5 +94,14 @@ public:
 
 	int	getCaseXinFrontOfPlayer() const;
 	int	getCaseYinFrontOfPlayer() const;
+
+	bool 	canInteract(const Interactable &object) const;
+
+	void	addItem(Item item);
+	bool	hasItem(Item item)	const;
+	void	removeItem(Item item);
+
+	void	heal(int amount);
+	void	takeDamage(int amount);
 
 };

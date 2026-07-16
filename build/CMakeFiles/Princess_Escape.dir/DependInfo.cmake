@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lyseron/Desktop/princessEscape/src/Game/Events.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Game/Game.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.o.d"
-  "/Users/lyseron/Desktop/princessEscape/src/Game/Utils/ActionInMap.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Game/Utils/Draw.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Draw.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Game/Utils/Init.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Init.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Game/Utils/LoadImg.cpp" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o.d"
@@ -23,7 +22,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp" "CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp" "CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Map/Map.cpp" "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o.d"
+  "/Users/lyseron/Desktop/princessEscape/src/Player/Inventory.cpp" "CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/Player/Player.cpp" "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o.d"
+  "/Users/lyseron/Desktop/princessEscape/src/UI/UI.cpp" "CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp" "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp" "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o.d"
   "/Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp" "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o" "gcc" "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o.d"

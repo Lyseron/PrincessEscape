@@ -13,7 +13,7 @@ void	Game::keyPress(SDL_Event event)
 		else if (event.key.key == SDLK_RIGHT || event.key.key == SDLK_D)
 			m_rightPressed = true;
 		else if (event.key.key == SDLK_O)
-			m_openChest = true;
+			m_oPressed = true;
 	}
 }
 
@@ -29,5 +29,21 @@ void	Game::keyRelease(SDL_Event event)
 			m_rightPressed = false;
 		else if (event.key.key == SDLK_DOWN || event.key.key == SDLK_S)
 			m_downPressed = false;
+	}
+}
+
+void	Game::actionKeyPress()
+{
+	handleMovement();
+	if (m_oPressed)
+	{
+		for (Chest &chest : m_map.getChestsNotConst())
+		{
+			if (m_player.canInteract(chest))
+			{
+				chest.interact(m_player);
+				return ;
+			}
+		}
 	}
 }

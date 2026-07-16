@@ -26,10 +26,10 @@ void	Door::setState(DoorState state)
 		m_animation.reset(1, 400);
 		break;
 	case DoorState::Closed:
-		m_animation.reset(9, 400);
+		m_animation.reset(1, 400);
 		break;
 	case DoorState::Opening:
-		m_animation.reset(1, 400);
+		m_animation.reset(9, 400);
 		break;
 	default:
 		break;
@@ -45,6 +45,7 @@ void	Door::animDoor()
 			m_state = DoorState::Opened;
 			m_animation.reset(1, 400);
 		}
+		
 	}
 }
 

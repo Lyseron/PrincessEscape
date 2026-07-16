@@ -57,6 +57,7 @@ enum	class TextureID			// class -> use TextureID::
 	Door_Close,
 	Door_Opening,
 	Door_Opened,
+	Key_Door,
 
 	Enemy,
 	Wall,

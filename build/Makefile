@@ -177,30 +177,6 @@ src/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Game/Game.cpp.s
 .PHONY : src/Game/Game.cpp.s
 
-src/Game/Utils/ActionInMap.o: src/Game/Utils/ActionInMap.cpp.o
-.PHONY : src/Game/Utils/ActionInMap.o
-
-# target to build an object file
-src/Game/Utils/ActionInMap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.o
-.PHONY : src/Game/Utils/ActionInMap.cpp.o
-
-src/Game/Utils/ActionInMap.i: src/Game/Utils/ActionInMap.cpp.i
-.PHONY : src/Game/Utils/ActionInMap.i
-
-# target to preprocess a source file
-src/Game/Utils/ActionInMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.i
-.PHONY : src/Game/Utils/ActionInMap.cpp.i
-
-src/Game/Utils/ActionInMap.s: src/Game/Utils/ActionInMap.cpp.s
-.PHONY : src/Game/Utils/ActionInMap.s
-
-# target to generate assembly for a file
-src/Game/Utils/ActionInMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Game/Utils/ActionInMap.cpp.s
-.PHONY : src/Game/Utils/ActionInMap.cpp.s
-
 src/Game/Utils/Draw.o: src/Game/Utils/Draw.cpp.o
 .PHONY : src/Game/Utils/Draw.o
 
@@ -489,6 +465,30 @@ src/Map/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s
 .PHONY : src/Map/Map.cpp.s
 
+src/Player/Inventory.o: src/Player/Inventory.cpp.o
+.PHONY : src/Player/Inventory.o
+
+# target to build an object file
+src/Player/Inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o
+.PHONY : src/Player/Inventory.cpp.o
+
+src/Player/Inventory.i: src/Player/Inventory.cpp.i
+.PHONY : src/Player/Inventory.i
+
+# target to preprocess a source file
+src/Player/Inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.i
+.PHONY : src/Player/Inventory.cpp.i
+
+src/Player/Inventory.s: src/Player/Inventory.cpp.s
+.PHONY : src/Player/Inventory.s
+
+# target to generate assembly for a file
+src/Player/Inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.s
+.PHONY : src/Player/Inventory.cpp.s
+
 src/Player/Player.o: src/Player/Player.cpp.o
 .PHONY : src/Player/Player.o
 
@@ -512,6 +512,30 @@ src/Player/Player.s: src/Player/Player.cpp.s
 src/Player/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.s
 .PHONY : src/Player/Player.cpp.s
+
+src/UI/UI.o: src/UI/UI.cpp.o
+.PHONY : src/UI/UI.o
+
+# target to build an object file
+src/UI/UI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o
+.PHONY : src/UI/UI.cpp.o
+
+src/UI/UI.i: src/UI/UI.cpp.i
+.PHONY : src/UI/UI.i
+
+# target to preprocess a source file
+src/UI/UI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.i
+.PHONY : src/UI/UI.cpp.i
+
+src/UI/UI.s: src/UI/UI.cpp.s
+.PHONY : src/UI/UI.s
+
+# target to generate assembly for a file
+src/UI/UI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.s
+.PHONY : src/UI/UI.cpp.s
 
 src/UtilsObject/Animation/Animation.o: src/UtilsObject/Animation/Animation.cpp.o
 .PHONY : src/UtilsObject/Animation/Animation.o
@@ -624,9 +648,6 @@ help:
 	@echo "... src/Game/Game.o"
 	@echo "... src/Game/Game.i"
 	@echo "... src/Game/Game.s"
-	@echo "... src/Game/Utils/ActionInMap.o"
-	@echo "... src/Game/Utils/ActionInMap.i"
-	@echo "... src/Game/Utils/ActionInMap.s"
 	@echo "... src/Game/Utils/Draw.o"
 	@echo "... src/Game/Utils/Draw.i"
 	@echo "... src/Game/Utils/Draw.s"
@@ -663,9 +684,15 @@ help:
 	@echo "... src/Map/Map.o"
 	@echo "... src/Map/Map.i"
 	@echo "... src/Map/Map.s"
+	@echo "... src/Player/Inventory.o"
+	@echo "... src/Player/Inventory.i"
+	@echo "... src/Player/Inventory.s"
 	@echo "... src/Player/Player.o"
 	@echo "... src/Player/Player.i"
 	@echo "... src/Player/Player.s"
+	@echo "... src/UI/UI.o"
+	@echo "... src/UI/UI.i"
+	@echo "... src/UI/UI.s"
 	@echo "... src/UtilsObject/Animation/Animation.o"
 	@echo "... src/UtilsObject/Animation/Animation.i"
 	@echo "... src/UtilsObject/Animation/Animation.s"

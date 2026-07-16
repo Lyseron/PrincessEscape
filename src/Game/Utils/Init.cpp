@@ -74,7 +74,6 @@ bool	Game::initAll()
 		std::cout << "ERROR: Map not found or Player not there\n";
 		return (false);
 	}
-	std::cout << "CHest nb: " << m_map.getChestCount() << std::endl;
 	initColors();
 	initPlayer();
 	if (!initSDL() || !initWindow() || !initRenderer())			// in GameUtils.cpp

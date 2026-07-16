@@ -1,5 +1,6 @@
 #include "Player.hpp"
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
 Player::Player()
 	: m_x(0),
 	m_y(0),
@@ -7,9 +8,11 @@ Player::Player()
 	m_direction(Direction::Down),
 	m_dirX(0),
 	m_dirY(0),
-	m_collision({PLAYER_OFFSET_X, PLAYER_OFFSET_Y, PLAYER_WIDTH, PLAYER_HEIGHT})
+	m_collision({PLAYER_OFFSET_X, PLAYER_OFFSET_Y, PLAYER_WIDTH, PLAYER_HEIGHT}),
+	m_interaction({0, 0, 0.30, 0.30})
 	{}
 
+// ---------------------------------------------------- SETTER --------------------------------------------------------- //
 void	Player::setX(double x)
 {
 	if (x < 0)
@@ -58,14 +61,21 @@ void	Player::setState(PlayerState state) {
 	}
 }
 
+
+// ---------------------------------------------------- GETTER --------------------------------------------------------- //
+
 const 	Collision	&Player::getCollisionValue()	const { return (this->m_collision); }
+const 	Collision	&Player::getInteractionValue()	const { return (this->m_interaction); }
+
 double	Player::getPosX()	const { return (m_x); }
 double	Player::getPosY()	const { return (m_y); }
 int		Player::getDirX()	const { return (this->m_dirX); }
 int		Player::getDirY()	const { return (this->m_dirY); }
+int		Player::getCaseX()	const { return (static_cast<int>(m_x)); }
+int		Player::getCaseY()	const { return (static_cast<int>(m_y)); }
 
-int		Player::getCaseXinFrontOfPlayer()	const { return (this->getPosX() + this->getDirX()); }
-int		Player::getCaseYinFrontOfPlayer()	const { return (this->getPosY() + this->getDirY()); }
+int		Player::getCaseXinFrontOfPlayer()	const { return (this->getCaseX() + this->getDirX()); }
+int		Player::getCaseYinFrontOfPlayer()	const { return (this->getCaseY() + this->getDirY()); }
 
 PlayerState	Player::getState()			const { return (m_state); }
 
@@ -158,5 +168,51 @@ void	Player::anim()
 			break;
 	}
 }
+
+int 	Player::getHealthPoint() { return (this->m_healtPoint); }
+int		Player::getMaxHealthPoint() { return ( this->m_maxHealthPoint); }
+
+// ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
+
+void	Player::heal(int amount) { this->m_healtPoint += amount; }
+void	Player::takeDamage(int amount) { this->m_healtPoint -= amount; }
+
+bool Player::canInteract(const Interactable &object) const
+{
+	double interactionX = m_x;
+	double interactionY = m_y;
+
+	switch (m_direction)
+	{
+	case Direction::Up:
+		interactionY -= PLAYER_HEIGHT;
+		break;
+
+	case Direction::Down:
+		interactionY += PLAYER_HEIGHT;
+		break;
+
+	case Direction::Left:
+		interactionX -= PLAYER_WIDTH;
+		break;
+
+	case Direction::Right:
+		interactionX += PLAYER_WIDTH;
+		break;
+	}
+
+	return m_collision.isColliding(
+		object.getCollision(),
+		interactionX,
+		interactionY,
+		object.getCaseX(),
+		object.getCaseY()
+	);
+}
+
+void	Player::addItem(Item item) { this->m_inventory.addItem(item); }
+bool	Player::hasItem(Item item)	const { return (this->m_inventory.hasItem(item)); }
+void	Player::removeItem(Item item) { this->m_inventory.removeItem(item); }
+
 
 Player::~Player() {}

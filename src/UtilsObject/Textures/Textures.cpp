@@ -1,18 +1,34 @@
 #include "Textures.hpp"
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
+
 Textures::Textures(SDL_Renderer* renderer)
 	: m_renderer(renderer)
 {
 	m_textures.fill(nullptr);
 }
 
+Textures::~Textures()
+{
+	for (SDL_Texture* texture : m_textures)			// range-based loop for to parcours all element of a tab
+	{
+		if (texture != nullptr)						
+			SDL_DestroyTexture(texture);
+	}
+}
+
+// ---------------------------------------------------- GETTER --------------------------------------------------------- //
+
+SDL_Texture*	Textures::get(TextureID id)	const { return (m_textures[static_cast<size_t>(id)]); }
+
+// ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 bool	Textures::load(TextureID id)
 {
 	std::string	path;
 
 	switch (id)
 	{
-// ---------------------------- PLAYER ------------------------------ //
+// -------------------- PLAYER -------------------- //
 		case TextureID::Player_Idle_Down:
 			path = "assets/Player/idle_armed.png";
 			break;
@@ -65,7 +81,7 @@ bool	Textures::load(TextureID id)
 			path = "assets/Player/drop_left.png";
 			break;
 
-// ---------------------------- WALL ------------------------------ //
+// -------------------- WALL -------------------- //
 		case TextureID::FrontWall:
 			path = "assets/Wall/front/FrontWall.png";
 			break;
@@ -105,12 +121,12 @@ bool	Textures::load(TextureID id)
 			path = "assets/Wall/Down/wall_down2.png";
 			break;
 
-// ---------------------------- FLOOR ------------------------------ //
+// -------------------- FLOOR -------------------- //
 		case TextureID::Floor:
 			path = "assets/floor/floor.png";
 			break;
 
-// ---------------------------- DECOR ------------------------------ //
+// -------------------- DECOR -------------------- //
 
 		case TextureID::Chest_Close:
 			path = "assets/Chest/chest_close.png";
@@ -130,6 +146,9 @@ bool	Textures::load(TextureID id)
 			break;
 		case TextureID::Door_Opened:
 			path = "assets/Door/door_open.png";
+			break;
+		case TextureID::Key_Door:
+			path = "assets/Door/key.png";
 			break;
 
 		case TextureID::FloatingCandle:
@@ -160,18 +179,4 @@ bool	Textures::load(TextureID id)
 	SDL_DestroySurface(surface);
 	m_textures[static_cast<size_t>(id)] = texture;
 	return (true);
-}
-
-SDL_Texture*	Textures::get(TextureID id)	const
-{
-	return (m_textures[static_cast<size_t>(id)]);
-}
-
-Textures::~Textures()
-{
-	for (SDL_Texture* texture : m_textures)						// range-based loop for to parcours all element of a tab
-	{
-		if (texture != nullptr)						
-			SDL_DestroyTexture(texture);
-	}
 }

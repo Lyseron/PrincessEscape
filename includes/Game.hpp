@@ -3,10 +3,12 @@
 #include <SDL3/SDL.h>
 #include <iostream>
 #include <SDL3_image/SDL_image.h>
+#include <memory>
 #include "Textures.hpp"
 #include "Player.hpp"
 #include "Map.hpp"
 #include "Collision.hpp"
+#include "UI.hpp"
 
 class	Game
 {
@@ -56,13 +58,13 @@ private:
 	bool	m_leftPressed;
 	bool	m_rightPressed;
 	bool	m_downPressed;
-	bool	m_openChest;
+	bool	m_oPressed;
 
 	void	handleEvent();								// for the event like keypress, mouse ect
 	void	keyPress(SDL_Event event);
 	void	keyRelease(SDL_Event event);
 	bool 	movePlayer(double dirX, double dirY);
-	void	actionInMap();
+	void	actionKeyPress();
 
 // ---------------------- UPDATE ------------------------ //
 
@@ -70,6 +72,8 @@ private:
 	void	handleMovement();
 
 // ---------------------- RENDER ------------------------- //
+
+	UI		m_ui;
 	void	render();									// to display the element in the window
 	void	drawRectangle(
 		int x,
@@ -86,9 +90,13 @@ private:
 	void	drawDecor();
 	void	drawPlayer();
 	void	drawChests();
+	void	drawKeyDoor(Chest &chest);
 	void	drawDoors();
+
+// DEBUG
 	void	drawDebugCollision(const Collision &collision, double posX, double posY);
 	void	drawDebugCase(double caseX, double caseY);
+	void	drawDebugInteraction();
 
 // ---------------------- PLAYER ------------------------ //
 	Player	m_player;

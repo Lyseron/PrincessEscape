@@ -34,6 +34,8 @@ public:
 		double testPosX,
 		double testPosY
 	)	const;
+
+	void 	setOffset(double x, double y);
 	~Collision();
 };
 

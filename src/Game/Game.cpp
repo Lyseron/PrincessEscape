@@ -1,5 +1,7 @@
 #include "Game.hpp"
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
+
 Game::Game()
 	: m_running(false),
 	m_window(nullptr),
@@ -9,13 +11,12 @@ Game::Game()
 	m_leftPressed(false),
 	m_rightPressed(false),
 	m_downPressed(false),
-	m_openChest(false),
+	m_oPressed(false),
 	m_walCollision({0,0,1,1})
 {
 	if (!initAll())
 		return ;
-	m_running = true;											// bool to continue the game on a loop
-	std::cout << "SDL good\n";
+	m_running = true;									// bool to continue the game on a loop
 }
 
 Game::~Game()
@@ -25,9 +26,10 @@ Game::~Game()
 	if (m_window)
 		SDL_DestroyWindow(m_window);			// To destroy the pointer at the end
 	delete m_texture;
-	SDL_Quit();									// Clean everything
-	std::cout << "Game deleted\n";
+	SDL_Quit();											// Clean everything
 }
+
+// ---------------------------------------------------- OTHER METHOD ---------------------------------------------------- //
 
 void	Game::run()
 {

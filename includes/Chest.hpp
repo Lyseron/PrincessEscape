@@ -15,6 +15,9 @@ class Chest : public Interactable
 private:
 	ChestState	m_state;
 
+	bool		m_showLoot;
+	bool		m_lootTaken;
+
 public:
 // ---------------------- CONST/DEST -------------------- //
 	Chest(int x, int y);
@@ -22,10 +25,14 @@ public:
 
 // ---------------------- SETTER ------------------------ //
 	void	setState(ChestState state);
+	void	setShowLoot(bool showLoot);
+	void	setLootTaken(bool lootTaken);
 
 // ---------------------- GETTER ------------------------ //
 
 	ChestState	getChestState()		const;
+	bool		hasLootBeenTaken()	const;
+	bool		showLoot()			const;
 
 // ---------------------- OTHER METHOD ------------------ //
 

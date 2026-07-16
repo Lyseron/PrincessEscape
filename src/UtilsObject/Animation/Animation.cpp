@@ -1,21 +1,30 @@
 #include "Animation.hpp"
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
+
 Animation::Animation(/* args */)
 	: m_currentFrame(0),
 	m_frameDuration(0),
 	m_nbLoop(0),
 	m_nbFrame(0) {}
 
+Animation::~Animation() {}
+
+// ---------------------------------------------------- SETTER --------------------------------------------------------- //
+
 void	Animation::setCurrentFrame(int frame) 	{ this->m_currentFrame = frame; }
 void	Animation::setTimerFrame(int timer) 	{ this->m_frameDuration = timer; }
 void	Animation::setNbLoop(int nbLoop) 		{ this->m_nbLoop = nbLoop; }
 void	Animation::setNbFrame(int nbOfFrame)	{ this->m_nbFrame = nbOfFrame; }
 
+// ---------------------------------------------------- GETTER --------------------------------------------------------- //
 
 int		Animation::getCurrentFrame()	const { return (m_currentFrame); }
 int		Animation::getFrameDuration()	const { return (this->m_frameDuration); }
 int		Animation::getNbLoop()			const { return (this->m_nbLoop); }
 int		Animation::getNbFrame()			const { return (this->m_nbFrame); }
+
+// ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
 bool	Animation::moveOnLoop()
 {
@@ -54,5 +63,3 @@ void	Animation::reset(int nbFrame, int timerDuration)
 	m_nbLoop = 0;
 	m_nbFrame = nbFrame;
 }
-
-Animation::~Animation() {}

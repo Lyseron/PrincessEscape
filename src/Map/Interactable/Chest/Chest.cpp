@@ -1,11 +1,19 @@
 #include "Chest.hpp"
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
+
 Chest::Chest(int x, int y)
 	: m_state(ChestState::Closed),
-	Interactable(x, y)
+	Interactable(x, y),
+	m_showLoot(false),
+	m_lootTaken(false)
 {
 	m_collision.setHitbox({0, 0, 1, 0.70});
 }
+
+Chest::~Chest() {}
+
+// ---------------------------------------------------- SETTER --------------------------------------------------------- //
 
 //armure m_collision.setHitbox({0.25, 0.3, 0.5, 0.65});
 void	Chest::setState(ChestState state)
@@ -30,6 +38,11 @@ void	Chest::setState(ChestState state)
 	}
 }
 
+void 	Chest::setShowLoot(bool showLoot)	{ this->m_showLoot = showLoot; }
+void	Chest::setLootTaken(bool lootTaken) { this->m_lootTaken = lootTaken; }
+
+// ---------------------------------------------------- GETTER --------------------------------------------------------- //
+
 ChestState	Chest::getChestState()		const { return (this->m_state ); }
 
 void	Chest::animChest()
@@ -44,6 +57,11 @@ void	Chest::animChest()
 	}
 }
 
+// ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
+
+bool	Chest::hasLootBeenTaken()	const { return (this->m_lootTaken); }
+bool	Chest::showLoot()			const { return (this->m_showLoot); }
+
 void	Chest::interact(Player &player)
 {
 	// openChest
@@ -54,4 +72,3 @@ void	Chest::interact(Player &player)
 	}
 }
 
-Chest::~Chest() {}

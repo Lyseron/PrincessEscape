@@ -1,13 +1,28 @@
 #include "Collision.hpp"
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
+
 Collision::Collision(const  Hitbox &hitbox) 
 	:m_hitbox(hitbox)
 	{}
+
+Collision::~Collision() {}
+
+// ---------------------------------------------------- SETTER --------------------------------------------------------- //
 
 void	Collision::setHitbox(const Hitbox &hitbox)
 {
 	this->m_hitbox = hitbox;
 }
+
+void Collision::setOffset(double x, double y)
+{
+	m_hitbox.offsetX = x;
+	m_hitbox.offsetY = y;
+}
+
+// ---------------------------------------------------- GETTER --------------------------------------------------------- //
+
 // to calculate cactly the pos of a given pos objet 
 Bound	Collision::getBoundsObjectInCase(double posX, double posY)	const 
 {
@@ -21,6 +36,7 @@ Bound	Collision::getBoundsObjectInCase(double posX, double posY)	const
 	return (bound);
 }
 
+// ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
 bool	Collision::isColliding(const Collision &hitBoxToTest,
 		double posX,
@@ -39,5 +55,3 @@ bool	Collision::isColliding(const Collision &hitBoxToTest,
 		return (false);
 	return (true);
 }
-
-Collision::~Collision() {}

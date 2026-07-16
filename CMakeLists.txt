@@ -18,7 +18,6 @@ add_executable(
 	src/Game/Visual.cpp
 	src/Game/VisualChange.cpp
 # -> Game_utils.c
-	src/Game/Utils/ActionInMap.cpp
 	src/Game/Utils/Draw.cpp
 	src/Game/Utils/Init.cpp
 	src/Game/Utils/key.cpp
@@ -36,6 +35,7 @@ add_executable(
 # ---------- PLAYER -------- #
 
 	src/Player/Player.cpp
+	src/Player/Inventory.cpp
 
 # ---------- CHEST -------- #
 	src/Map/Interactable/Chest/Chest.cpp
@@ -50,6 +50,9 @@ add_executable(
 
 # ---------- COLLISION -------- #
 	src/UtilsObject/Collision/Collision.cpp
+
+# ---------- UI -------- #
+	src/UI/UI.cpp
 
 )
 

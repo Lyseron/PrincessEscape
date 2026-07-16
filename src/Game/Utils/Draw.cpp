@@ -1,6 +1,18 @@
 #include "Game.hpp"
 #include "Textures.hpp"
 
+void Game::drawDebugInteraction()
+{
+	double posX = m_player.getPosX() + m_player.getDirX();
+	double posY = m_player.getPosY() + m_player.getDirY();
+
+	drawDebugCollision(
+	m_player.getCollisionValue(),
+	posX,
+	posY
+);
+}
+
 void Game::drawDebugCollision(const Collision &collision, double posX, double posY)
 {
 	Bound bound = collision.getBoundsObjectInCase(posX, posY);
@@ -111,13 +123,14 @@ void	Game::drawPlayer()
 		m_player.getTexture(),
 		m_player.getCurrentFrame()
 	);
+	
 }
 
 void	Game::drawChests()
 {
 	TextureID	texture;
 
-	for (const Chest &chest : m_map.getChests())
+	for (Chest &chest : m_map.getChestsNotConst())
 	{
 		switch (chest.getChestState())
 		{
@@ -137,6 +150,10 @@ void	Game::drawChests()
 			texture,
 			chest.getCurrentFrame()
 		);
+		if (chest.getChestState() == ChestState::Opened)
+		{
+			drawKeyDoor(chest);
+		}
 		// drawDebugCollision(
 		// 	chest.getCollision(),
 		// 	chest.getCaseX(),
@@ -167,12 +184,12 @@ void	Game::drawDoors()
 			texture = TextureID::Door_Opened;
 			break;
 		}
-		// drawTexture(
-		// 	door.getCaseX() * CASE_TILE,
-		// 	door.getCaseY() * CASE_TILE,
-		// 	texture,
-		// 	door.getCurrentFrame()
-		// );
+		drawTexture(
+			door.getCaseX() * CASE_TILE,
+			door.getCaseY() * CASE_TILE,
+			texture,
+			door.getCurrentFrame()
+		);
 		// drawDebugCollision(
 		// door.getCollision(),
 		// door.getCaseX(),
@@ -191,14 +208,24 @@ void	Game::drawDecor()
 			decor.getTexture(),
 			decor.getCurrentFrame()
 		);
-		drawDebugCase(
-			decor.getCaseX(),
-			decor.getCaseY()
-			);
-			drawDebugCollision(
-				decor.getCollision(),
-				decor.getCaseX(),
-			decor.getCaseY()
-			);
+		// drawDebugCase(
+		// 	decor.getCaseX(),
+		// 	decor.getCaseY()
+		// 	);
+		// 	drawDebugCollision(
+		// 		decor.getCollision(),
+		// 		decor.getCaseX(),
+		// 	decor.getCaseY()
+		// 	);
 	}
+}
+
+void	Game::drawKeyDoor(Chest &chest)
+{
+	drawTexture(
+			chest.getCaseX() * CASE_TILE,
+			chest.getCaseY() * CASE_TILE + -40,
+			TextureID::Key_Door,
+			0
+		);
 }

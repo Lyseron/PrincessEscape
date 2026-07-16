@@ -37,6 +37,11 @@ void	Map::anim()
 
 bool	Map::load(const std::string& filename)
 {
+	m_map.clear();
+	m_chest.clear();
+	m_doors.clear();
+	m_decors.clear();
+
 	std::ifstream	file(filename);
 	if (!file)
 		return (false);
