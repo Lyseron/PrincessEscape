@@ -2037,3 +2037,162 @@ events:
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:73 (find_package)"
+    name: "SDL3_ttf"
+    configs:
+      -
+        filename: "SDL3_ttf.cps"
+        kind: "cps"
+      -
+        filename: "sdl3_ttf.cps"
+        kind: "cps"
+      -
+        filename: "SDL3_ttfConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "sdl3_ttf-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "SDL3_ttf"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/SDL3_ttfConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/sdl3_ttf-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/lib64/cps/SDL3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/lib64/cps/sdl3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/lib/cps/SDL3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/lib/cps/sdl3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/share/cps/SDL3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/lyseron/Desktop/princessEscape/build/CMakeFiles/pkgRedirects/share/cps/sdl3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/SDL3_ttfConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/sdl3_ttf-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib64/cps/SDL3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib64/cps/sdl3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cps/SDL3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cps/sdl3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/share/cps/SDL3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/share/cps/sdl3_ttf.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/opt/homebrew/lib/cmake/SDL3_ttf/SDL3_ttfConfig.cmake"
+      mode: "config"
+      version: "3.2.2"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/bin"
+        - "/Users/lyseron/Library/Python/3.9/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/opt/homebrew/opt/ruby/bin"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+        - "/Users/lyseron/.swiftly/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Users/lyseron/.local/bin"
+        - "/Users/lyseron/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...

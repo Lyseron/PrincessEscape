@@ -29,6 +29,9 @@ std::vector<Chest> 			&Map::getChestsNotConst() { return (this->m_chest); }
 const	std::vector<Door> &Map::getDoors()	const { return (this->m_doors); }
 std::vector<Door> 			&Map::getDoorsNotConst() { return (this->m_doors); }
 
+const	std::vector<Wall> &Map::getWalls()	const { return (this->m_walls); }
+std::vector<Wall> 			&Map::getWallsNotConst() { return (this->m_walls); }
+
 void	Map::anim()
 {
 	for (Decor &decor : m_decors)
@@ -53,6 +56,38 @@ bool	Map::load(const std::string& filename)
 		for (int x = 0;x < getWidth(); x++)
 		{
 			char	charCase = getCharFromTile(x, y);
+			if (charCase == 'L' || charCase == 'l')
+			{
+				m_walls.emplace_back(
+					x,
+					y,
+					Collision({0.0, 0.5, 0.5, 1.0})
+				);
+			}
+			if (charCase == 'R' || charCase == 'r')
+			{
+				m_walls.emplace_back(
+					x,
+					y,
+					Collision({0.5, 0, 0.5, 1})
+				);
+			}
+			if (charCase == 'H' || charCase == 'h' || charCase == '{' || charCase == '(')
+			{
+				m_walls.emplace_back(
+					x,
+					y,
+					Collision({0.0, 0, 1, 1})
+				);
+			}
+			if (charCase == 'B' || charCase == 'b' || charCase == '}' || charCase == ')')
+			{
+				m_walls.emplace_back(
+					x,
+					y,
+					Collision({0.0, 0.5, 1, 0.5})
+				);
+			}
 			if (charCase == 'P')
 			{
 				this->firstPlayerPosX = x;
@@ -61,7 +96,17 @@ bool	Map::load(const std::string& filename)
 			}
 			if (charCase == 'C')
 			{
-				m_chest.emplace_back(x, y);
+				m_chest.emplace_back(x, y, Item::Key_Door);
+				this->m_map[y][x] = '.';
+			}
+			if (charCase == 'F')
+			{
+				m_chest.emplace_back(x, y, Item::Potion);
+				this->m_map[y][x] = '.';
+			}
+			if (charCase == 'E')
+			{
+				m_chest.emplace_back(x, y, Item::Coin);
 				this->m_map[y][x] = '.';
 			}
 			if (charCase == 'D')

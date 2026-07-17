@@ -42,7 +42,7 @@ private:
 	int			m_dirX;
 	int			m_dirY;
 
-	int 		m_healtPoint = 5;
+	int 		m_healtPoint = 4;
 	int			m_maxHealthPoint = 5;
 	bool		m_tookDamage = false;
 
@@ -87,6 +87,9 @@ public:
 
 	const 	Collision	&getCollisionValue()	const;
 	const 	Collision	&getInteractionValue()	const;
+
+	Inventory	&getInventory();
+
 
 // ---------------------- OTHER METHOD ------------------ //
 	

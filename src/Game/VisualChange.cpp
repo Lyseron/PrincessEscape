@@ -13,7 +13,7 @@ void	Game::VisualChange()
 		if (chest.getChestState() == ChestState::Opened
 			&& chest.hasLootBeenTaken() == false)
 		{
-			m_player.addItem(Item::Key_Door);
+			m_player.addItem(chest.getLoot());
 			chest.setShowLoot(true);
 			chest.setLootTaken(true);
 		}

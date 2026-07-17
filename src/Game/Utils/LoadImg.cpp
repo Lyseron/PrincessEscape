@@ -128,6 +128,12 @@ bool	Game::loadChest()
 	if (!m_texture->load(TextureID::Key_Door))
 		return (std::cerr << "Texture not load\n", false);
 
+	if (!m_texture->load(TextureID::Potion))
+		return (std::cerr << "Texture not load\n", false);
+
+	if (!m_texture->load(TextureID::Coin))
+		return (std::cerr << "Texture not load\n", false);
+
 	return (true);
 }
 
@@ -145,6 +151,17 @@ bool	Game::loadDoor()
 	return (true);
 }
 
+bool	Game::loadUI()
+{
+	if (!m_texture->load(TextureID::Heart_Empty))
+		return (std::cerr << "Texture not load\n", false);
+
+	if (!m_texture->load(TextureID::Heart_Full))
+		return (std::cerr << "Texture not load\n", false);
+
+	return (true);
+}
+
 bool	Game::loadAllImg()
 {
 	if (loadPlayer() == false)
@@ -156,6 +173,8 @@ bool	Game::loadAllImg()
 	if (loadDecor() == false)
 		return (false);
 	if (loadDoor() == false)
+		return (false);
+	if (loadUI() == false)
 		return (false);
 	return (true);
 }

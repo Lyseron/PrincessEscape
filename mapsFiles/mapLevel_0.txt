@@ -1,9 +1,7 @@
-{HQHhHDhQhHQH}
-LC.A.....AC.KR
-l..P.........r
-l..{HhH}..C..r
-L..lKCKR.....R
-l..L.........r
-l..(BbB).....r
-L............R
-(BbBbBbBbBbBb)
+{HQhDhQh}
+lAP....Ar
+l{hH}..Fr
+LKCKR...R
+ll.....Er
+l(bB)...r
+(bBbBbBb)

@@ -27,6 +27,7 @@ add_executable(
 # ---------- MAP ----------- #
 
 	src/Map/Map.cpp
+	src/Map/Wall/wall.cpp
 
 # ---------- TEXTURE ------- #
 
@@ -67,4 +68,13 @@ target_link_libraries(
 	PRIVATE
 	SDL3::SDL3
 	SDL3_image::SDL3_image
+)
+
+find_package(SDL3_ttf REQUIRED)
+
+target_link_libraries(
+	Princess_Escape
+	PRIVATE
+	SDL3::SDL3
+	SDL3_ttf::SDL3_ttf
 )

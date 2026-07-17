@@ -147,9 +147,7 @@ bool	Textures::load(TextureID id)
 		case TextureID::Door_Opened:
 			path = "assets/Door/door_open.png";
 			break;
-		case TextureID::Key_Door:
-			path = "assets/Door/key.png";
-			break;
+		
 
 		case TextureID::FloatingCandle:
 			path = "assets/decor/moving_candle.png";
@@ -160,6 +158,29 @@ bool	Textures::load(TextureID id)
 		case TextureID::Armure:
 			path = "assets/decor/armure.png";
 			break;
+
+// -------------------- Loot -------------------- //
+
+		case TextureID::Key_Door:
+			path = "assets/loot/key.png";
+			break;
+
+		case TextureID::Potion:
+			path = "assets/loot/potion.png";
+			break;
+		
+		case TextureID::Coin:
+			path = "assets/loot/coin.png";
+			break;
+
+// -------------------- UI -------------------- //
+		case TextureID::Heart_Empty:
+			path = "assets/UI/heart_empty.png";
+			break;
+		case TextureID::Heart_Full:
+			path = "assets/UI/heart_full.png";
+			break;
+
 		default:
 			break;
 	}

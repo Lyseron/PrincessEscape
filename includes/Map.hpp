@@ -4,6 +4,7 @@
 #include "Chest.hpp"
 #include "Decor.hpp"
 #include "Door.hpp"
+#include "Wall.hpp"
 
 class Map
 {
@@ -16,6 +17,7 @@ private:
 	std::vector<Chest>			m_chest;
 	std::vector<Decor>			m_decors;
 	std::vector<Door>			m_doors;
+	std::vector<Wall>			m_walls;
 public:
 	Map();
 	~Map();
@@ -38,6 +40,9 @@ public:
 
 	const	std::vector<Door>	&getDoors()	const;
 	std::vector<Door>			&getDoorsNotConst();
+
+	const	std::vector<Wall> &getWalls()	const;
+	std::vector<Wall>			&getWallsNotConst();
 
 	bool	load(const std::string& filename);
 	void	anim();

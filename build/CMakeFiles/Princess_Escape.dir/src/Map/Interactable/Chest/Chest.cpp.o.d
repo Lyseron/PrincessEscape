@@ -999,4 +999,5 @@ CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
   /opt/homebrew/include/SDL3_image/SDL_image.h \
   /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Inventory.hpp

@@ -226,10 +226,24 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Map.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s
 
+CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
+CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Wall/wall.cpp
+CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Wall/wall.cpp
+
+CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lyseron/Desktop/princessEscape/src/Map/Wall/wall.cpp > CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.i
+
+CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lyseron/Desktop/princessEscape/src/Map/Wall/wall.cpp -o CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.s
+
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp
 
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.i: cmake_force
@@ -243,7 +257,7 @@ CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.s: cmake_fo
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Player/Player.cpp
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Player/Player.cpp
 
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.i: cmake_force
@@ -257,7 +271,7 @@ CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.s: cmake_force
 CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Player/Inventory.cpp
 CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Player/Inventory.cpp
 
 CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.i: cmake_force
@@ -271,7 +285,7 @@ CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.s: cmake_force
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp
 
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.i: cmake_force
@@ -285,7 +299,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.s: cmake_for
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Door/Door.cpp
 
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.i: cmake_force
@@ -299,7 +313,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.s: cmake_force
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Interactable.cpp
 
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.i: cmake_force
@@ -313,7 +327,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.s: cmake_fo
 CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o: /Users/lyseron/Desktop/princessEscape/src/Map/Decor/Decor.cpp
 CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Decor/Decor.cpp
 
 CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.i: cmake_force
@@ -327,7 +341,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.s: cmake_force
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation/Animation.cpp
 
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.i: cmake_force
@@ -341,7 +355,7 @@ CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.s: cmake_
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Collision/Collision.cpp
 
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.i: cmake_force
@@ -355,7 +369,7 @@ CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.s: cmake_
 CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o: CMakeFiles/Princess_Escape.dir/flags.make
 CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o: /Users/lyseron/Desktop/princessEscape/src/UI/UI.cpp
 CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o: CMakeFiles/Princess_Escape.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o -MF CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o.d -o CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UI/UI.cpp
 
 CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.i: cmake_force
@@ -379,6 +393,7 @@ Princess_Escape_OBJECTS = \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o" \
+"CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o" \
 "CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o" \
@@ -404,6 +419,7 @@ Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/key.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/LoadImg.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o
+Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o
@@ -416,9 +432,10 @@ Princess_Escape: CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collis
 Princess_Escape: CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.o
 Princess_Escape: CMakeFiles/Princess_Escape.dir/build.make
 Princess_Escape: /opt/homebrew/lib/libSDL3_image.0.4.4.dylib
+Princess_Escape: /opt/homebrew/lib/libSDL3_ttf.0.2.2.dylib
 Princess_Escape: /opt/homebrew/lib/libSDL3.0.dylib
 Princess_Escape: CMakeFiles/Princess_Escape.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Princess_Escape"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lyseron/Desktop/princessEscape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Princess_Escape"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Princess_Escape.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

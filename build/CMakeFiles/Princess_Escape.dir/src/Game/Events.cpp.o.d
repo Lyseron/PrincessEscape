@@ -1025,4 +1025,5 @@ CMakeFiles/Princess_Escape.dir/src/Game/Events.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/Door.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Wall.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/UI.hpp

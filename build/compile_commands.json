@@ -67,6 +67,12 @@
 },
 {
   "directory": "/Users/lyseron/Desktop/princessEscape/build",
+  "command": "/usr/bin/c++  -I/Users/lyseron/Desktop/princessEscape/includes -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/Map/Wall/wall.cpp",
+  "file": "/Users/lyseron/Desktop/princessEscape/src/Map/Wall/wall.cpp",
+  "output": "CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o"
+},
+{
+  "directory": "/Users/lyseron/Desktop/princessEscape/build",
   "command": "/usr/bin/c++  -I/Users/lyseron/Desktop/princessEscape/includes -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o -c /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp",
   "file": "/Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp",
   "output": "CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o"

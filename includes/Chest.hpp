@@ -2,6 +2,7 @@
 #include <SDL3/SDL.h>
 #include <iostream>
 #include "Interactable.hpp"
+#include "Inventory.hpp"
 
 enum class	ChestState
 {
@@ -17,10 +18,11 @@ private:
 
 	bool		m_showLoot;
 	bool		m_lootTaken;
+	Item		m_loot;
 
 public:
 // ---------------------- CONST/DEST -------------------- //
-	Chest(int x, int y);
+	Chest(int x, int y, Item loot = Item::None);
 	~Chest();
 
 // ---------------------- SETTER ------------------------ //
@@ -33,6 +35,7 @@ public:
 	ChestState	getChestState()		const;
 	bool		hasLootBeenTaken()	const;
 	bool		showLoot()			const;
+	Item		getLoot()			const;
 
 // ---------------------- OTHER METHOD ------------------ //
 

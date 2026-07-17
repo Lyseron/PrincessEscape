@@ -2,11 +2,12 @@
 
 // ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
 
-Chest::Chest(int x, int y)
+Chest::Chest(int x, int y, Item loot)
 	: m_state(ChestState::Closed),
 	Interactable(x, y),
 	m_showLoot(false),
-	m_lootTaken(false)
+	m_lootTaken(false),
+	m_loot(loot)
 {
 	m_collision.setHitbox({0, 0, 1, 0.70});
 }
@@ -61,6 +62,7 @@ void	Chest::animChest()
 
 bool	Chest::hasLootBeenTaken()	const { return (this->m_lootTaken); }
 bool	Chest::showLoot()			const { return (this->m_showLoot); }
+Item Chest::getLoot() const { return m_loot; }
 
 void	Chest::interact(Player &player)
 {

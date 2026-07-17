@@ -48,33 +48,31 @@ bool Game::inCollisionDoor(double nextX, double nextY)
 	return false;
 }
 
-bool	isWall(char c)
-{
-	if (c == 'h' || c == 'H'
-		|| c == 'l' || c == 'L'
-		|| c == 'R' || c == 'r'
-		|| c == '{' || c == '}'
-		|| c == '(' || c == ')'
-		|| c == 'Q'
-		|| c == 'b' || c == 'B')
-		return (true);
-	return (false);
-}
+// bool	isWall(char c)
+// {
+// 	if (c == 'h' || c == 'H'
+// 		|| c == 'l' || c == 'L'
+// 		|| c == 'R' || c == 'r'
+// 		|| c == '{' || c == '}'
+// 		|| c == '(' || c == ')'
+// 		|| c == 'Q'
+// 		|| c == 'b' || c == 'B')
+// 		return (true);
+// 	return (false);
+// }
 
 bool	Game::inCollisionWall(double nextX, double nextY)
 {
-	Bound player = m_player.getCollisionValue().getBoundsObjectInCase(nextX, nextY);
-
-	int		intPlayerTop	= static_cast<int>(player.top);
-	int		intPlayerLeft	= static_cast<int>(player.left);
-	int		intPlayerRight	= static_cast<int>(player.right);
-	int		intPlayerBottom	= static_cast<int>(player.bottom);
-
-	if (isWall(m_map.getCharFromTile(intPlayerLeft, intPlayerTop))
-		|| isWall(m_map.getCharFromTile(intPlayerRight, intPlayerTop))
-		|| isWall(m_map.getCharFromTile(intPlayerLeft, intPlayerBottom))
-		|| isWall(m_map.getCharFromTile(intPlayerRight, intPlayerBottom)))
-		return (true);
+	for (const Wall &wall : m_map.getWalls())
+	{
+		if (m_player.getCollisionValue().isColliding(
+				wall.getCollision(),
+				nextX,
+				nextY,
+				wall.getCaseX(),
+				wall.getCaseY()))
+			return true;
+	}
 	return (false);
 }
 

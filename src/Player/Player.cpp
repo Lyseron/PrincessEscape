@@ -79,6 +79,8 @@ int		Player::getCaseYinFrontOfPlayer()	const { return (this->getCaseY() + this->
 
 PlayerState	Player::getState()			const { return (m_state); }
 
+Inventory	&Player::getInventory() { return (m_inventory); }
+
 TextureID Player::getTexture()	const 
 {
 	

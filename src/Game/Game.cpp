@@ -29,7 +29,33 @@ Game::~Game()
 	SDL_Quit();											// Clean everything
 }
 
+// ---------------------------------------------------- GETTER ---------------------------------------------------------- //
+
+Player	&Game::getPlayer() { return (this->m_player); }
+
+SDL_Renderer*	Game::getRenderer() { return (this->m_renderer); }
+
+int	Game::getCaseTile() { return (CASE_TILE); }
+
+bool	Game::isInventoryOpen() { return (this->m_isInventoryOpen); }
+
 // ---------------------------------------------------- OTHER METHOD ---------------------------------------------------- //
+
+void Game::useSelectedItem()
+{
+	Item item = m_player.getInventory().getSelectedItem();
+
+	switch (item)
+	{
+		case Item::Potion:
+			m_player.heal(2);
+			m_player.getInventory().removeItem(item);
+			break;
+
+		default:
+			break;
+	}
+}
 
 void	Game::run()
 {

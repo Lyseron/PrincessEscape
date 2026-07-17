@@ -57,12 +57,17 @@ enum	class TextureID			// class -> use TextureID::
 	Door_Close,
 	Door_Opening,
 	Door_Opened,
-	Key_Door,
 
-	Enemy,
-	Wall,
+// --------------------- LOOT ------------------ //
+
+	Key_Door,
+	Potion,
+	Coin,
 	
-	Door,
+
+// --------------------- UI ------------------ //
+	Heart_Empty,
+	Heart_Full,
 	Count
 };
 

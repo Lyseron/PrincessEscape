@@ -38,6 +38,7 @@ private:
 	bool		loadWall();
 	bool		loadDecor();
 	bool		loadDoor();
+	bool		loadUI();
 	bool		loadAllImg();								// load all the necessary img once
 	bool		initPlayerTextureFromSide(
 			TextureID idle,
@@ -75,22 +76,13 @@ private:
 
 	UI		m_ui;
 	void	render();									// to display the element in the window
-	void	drawRectangle(
-		int x,
-		int y,
-		SDL_Color color
-	);
-	void	drawTexture(int win_x,
-		int win_y,
-		TextureID id,
-		int frame
-	);
+
 	void	drawMapComponent(int x, int y, TextureID texture, char c, int frame);
 	void	drawMap();
 	void	drawDecor();
 	void	drawPlayer();
 	void	drawChests();
-	void	drawKeyDoor(Chest &chest);
+	void	drawLoot(Chest &chest);
 	void	drawDoors();
 
 // DEBUG
@@ -110,12 +102,32 @@ private:
 	bool	inCollisionDoor(double nextX, double nextY);
 	bool	collisionPlayer(double nextX, double nextY);
 
+	bool	m_isInventoryOpen = false;
+
 public:
 // ---------------------- CONST/DEST -------------------- //
 	Game();												// Game constructor
 	~Game();											// Game destructor
 
+	Player	&getPlayer();
+	SDL_Renderer*	getRenderer();
+	int	getCaseTile();
+	bool	isInventoryOpen();
+
 // ---------------------- OTHER METHOC ------------------ //
 	void run();											// Master fonction
+	void	drawTexture(int win_x,
+		int win_y,
+		TextureID id,
+		int frame
+	);
 
+	void	useSelectedItem();
+
+	void	drawTextureScale(float win_x,
+		float win_y,
+		TextureID id,
+		int frame,
+		float scale
+	);
 };

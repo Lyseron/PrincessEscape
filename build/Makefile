@@ -465,6 +465,30 @@ src/Map/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s
 .PHONY : src/Map/Map.cpp.s
 
+src/Map/Wall/wall.o: src/Map/Wall/wall.cpp.o
+.PHONY : src/Map/Wall/wall.o
+
+# target to build an object file
+src/Map/Wall/wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o
+.PHONY : src/Map/Wall/wall.cpp.o
+
+src/Map/Wall/wall.i: src/Map/Wall/wall.cpp.i
+.PHONY : src/Map/Wall/wall.i
+
+# target to preprocess a source file
+src/Map/Wall/wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.i
+.PHONY : src/Map/Wall/wall.cpp.i
+
+src/Map/Wall/wall.s: src/Map/Wall/wall.cpp.s
+.PHONY : src/Map/Wall/wall.s
+
+# target to generate assembly for a file
+src/Map/Wall/wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.s
+.PHONY : src/Map/Wall/wall.cpp.s
+
 src/Player/Inventory.o: src/Player/Inventory.cpp.o
 .PHONY : src/Player/Inventory.o
 
@@ -684,6 +708,9 @@ help:
 	@echo "... src/Map/Map.o"
 	@echo "... src/Map/Map.i"
 	@echo "... src/Map/Map.s"
+	@echo "... src/Map/Wall/wall.o"
+	@echo "... src/Map/Wall/wall.i"
+	@echo "... src/Map/Wall/wall.s"
 	@echo "... src/Player/Inventory.o"
 	@echo "... src/Player/Inventory.i"
 	@echo "... src/Player/Inventory.s"

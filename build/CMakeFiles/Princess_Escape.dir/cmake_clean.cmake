@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Interactable.cpp.o.d"
   "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o"
   "CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o.d"
+  "CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o"
+  "CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o.d"
   "CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o"
   "CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o.d"
   "CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o"

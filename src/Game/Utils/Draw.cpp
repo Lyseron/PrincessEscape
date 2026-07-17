@@ -64,6 +64,29 @@ void	Game::drawTexture(int win_x, int win_y, TextureID id, int frame)
 	);
 }
 
+void	Game::drawTextureScale(float win_x, float win_y, TextureID id, int frame, float scale)
+{
+	SDL_FRect	src;
+
+	src.x = frame * SPRITE_WIDTH;
+	src.y = 0;
+	src.w = SPRITE_WIDTH;
+	src.h = SPRITE_HEIGHT;
+
+	SDL_FRect	dst;
+
+	dst.x = win_x;
+	dst.y = win_y;
+	dst.w = CASE_TILE * scale;
+	dst.h = CASE_TILE * scale;
+	SDL_RenderTexture(
+		m_renderer,
+		m_texture->get(id),
+		&src,
+		&dst
+	);
+}
+
 void	Game::drawMapComponent(int x, int y, TextureID texture, char c, int frame)
 {
 	int	win_x = x * CASE_TILE;
@@ -103,11 +126,14 @@ void	Game::drawMap()
 			// x,
 			// y
 			// );
-			// drawDebugCollision(
-			// 	m_player.getCollisionValue(),
-			// 	x,
-			// 	y
-			// );
+			// for (const Wall &wall : m_map.getWalls())
+			// {
+			// 	drawDebugCollision(
+			// 		wall.getCollision(),
+			// 		wall.getCaseX(),
+			// 		wall.getCaseY()
+			// 	);
+			// }
 
 // ---------------------------------------------------- FLOOR ---------------------------------------------------- //
 			drawMapComponent(x, y, TextureID::Floor, '.', 0);
@@ -123,6 +149,11 @@ void	Game::drawPlayer()
 		m_player.getTexture(),
 		m_player.getCurrentFrame()
 	);
+	// drawDebugCollision(
+	// 	m_player.getCollisionValue(),
+	// 	m_player.getCaseX(),
+	// 	m_player.getCaseY()
+	// );
 	
 }
 
@@ -151,9 +182,7 @@ void	Game::drawChests()
 			chest.getCurrentFrame()
 		);
 		if (chest.getChestState() == ChestState::Opened)
-		{
-			drawKeyDoor(chest);
-		}
+			drawLoot(chest);
 		// drawDebugCollision(
 		// 	chest.getCollision(),
 		// 	chest.getCaseX(),
@@ -220,12 +249,33 @@ void	Game::drawDecor()
 	}
 }
 
-void	Game::drawKeyDoor(Chest &chest)
+void	Game::drawLoot(Chest &chest)
 {
+	TextureID	texture;
+	int			offsetY;
+
+	switch (chest.getLoot())
+	{
+	case Item::Key_Door:
+		texture = TextureID::Key_Door;
+		offsetY = -40;
+		break;
+	case Item::Potion:
+		texture = TextureID::Potion;
+		offsetY = -40;
+		break;
+	case Item::Coin:
+		texture = TextureID::Coin;
+		offsetY = -40;
+		break;
+	
+	default:
+		break;
+	}
 	drawTexture(
 			chest.getCaseX() * CASE_TILE,
-			chest.getCaseY() * CASE_TILE + -40,
-			TextureID::Key_Door,
+			chest.getCaseY() * CASE_TILE + offsetY,
+			texture,
 			0
 		);
 }
