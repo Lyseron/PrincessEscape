@@ -49,7 +49,7 @@ void	Game::actionKeyPress()
 	handleMovement();
 	if (m_oPressed)
 	{
-		for (Chest &chest : m_map.getChestsNotConst())
+		for (Chest &chest : m_map.getChests())
 		{
 			if (m_player.canInteract(chest))
 			{

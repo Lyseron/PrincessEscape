@@ -122,6 +122,8 @@ public:
 		int frame
 	);
 
+// ---------------------- OTHER METHOD ------------------ //
+
 	void	useSelectedItem();
 
 	void	drawTextureScale(float win_x,

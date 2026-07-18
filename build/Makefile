@@ -369,53 +369,77 @@ src/Map/Decor/Decor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Decor/Decor.cpp.s
 .PHONY : src/Map/Decor/Decor.cpp.s
 
-src/Map/Interactable/Chest/Chest.o: src/Map/Interactable/Chest/Chest.cpp.o
-.PHONY : src/Map/Interactable/Chest/Chest.o
+src/Map/Interactable/Chest.o: src/Map/Interactable/Chest.cpp.o
+.PHONY : src/Map/Interactable/Chest.o
 
 # target to build an object file
-src/Map/Interactable/Chest/Chest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o
-.PHONY : src/Map/Interactable/Chest/Chest.cpp.o
+src/Map/Interactable/Chest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest.cpp.o
+.PHONY : src/Map/Interactable/Chest.cpp.o
 
-src/Map/Interactable/Chest/Chest.i: src/Map/Interactable/Chest/Chest.cpp.i
-.PHONY : src/Map/Interactable/Chest/Chest.i
+src/Map/Interactable/Chest.i: src/Map/Interactable/Chest.cpp.i
+.PHONY : src/Map/Interactable/Chest.i
 
 # target to preprocess a source file
-src/Map/Interactable/Chest/Chest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.i
-.PHONY : src/Map/Interactable/Chest/Chest.cpp.i
+src/Map/Interactable/Chest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest.cpp.i
+.PHONY : src/Map/Interactable/Chest.cpp.i
 
-src/Map/Interactable/Chest/Chest.s: src/Map/Interactable/Chest/Chest.cpp.s
-.PHONY : src/Map/Interactable/Chest/Chest.s
+src/Map/Interactable/Chest.s: src/Map/Interactable/Chest.cpp.s
+.PHONY : src/Map/Interactable/Chest.s
 
 # target to generate assembly for a file
-src/Map/Interactable/Chest/Chest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.s
-.PHONY : src/Map/Interactable/Chest/Chest.cpp.s
+src/Map/Interactable/Chest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest.cpp.s
+.PHONY : src/Map/Interactable/Chest.cpp.s
 
-src/Map/Interactable/Door/Door.o: src/Map/Interactable/Door/Door.cpp.o
-.PHONY : src/Map/Interactable/Door/Door.o
+src/Map/Interactable/Door.o: src/Map/Interactable/Door.cpp.o
+.PHONY : src/Map/Interactable/Door.o
 
 # target to build an object file
-src/Map/Interactable/Door/Door.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.o
-.PHONY : src/Map/Interactable/Door/Door.cpp.o
+src/Map/Interactable/Door.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door.cpp.o
+.PHONY : src/Map/Interactable/Door.cpp.o
 
-src/Map/Interactable/Door/Door.i: src/Map/Interactable/Door/Door.cpp.i
-.PHONY : src/Map/Interactable/Door/Door.i
+src/Map/Interactable/Door.i: src/Map/Interactable/Door.cpp.i
+.PHONY : src/Map/Interactable/Door.i
 
 # target to preprocess a source file
-src/Map/Interactable/Door/Door.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.i
-.PHONY : src/Map/Interactable/Door/Door.cpp.i
+src/Map/Interactable/Door.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door.cpp.i
+.PHONY : src/Map/Interactable/Door.cpp.i
 
-src/Map/Interactable/Door/Door.s: src/Map/Interactable/Door/Door.cpp.s
-.PHONY : src/Map/Interactable/Door/Door.s
+src/Map/Interactable/Door.s: src/Map/Interactable/Door.cpp.s
+.PHONY : src/Map/Interactable/Door.s
 
 # target to generate assembly for a file
-src/Map/Interactable/Door/Door.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door/Door.cpp.s
-.PHONY : src/Map/Interactable/Door/Door.cpp.s
+src/Map/Interactable/Door.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Door.cpp.s
+.PHONY : src/Map/Interactable/Door.cpp.s
+
+src/Map/Interactable/Enemy.o: src/Map/Interactable/Enemy.cpp.o
+.PHONY : src/Map/Interactable/Enemy.o
+
+# target to build an object file
+src/Map/Interactable/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Enemy.cpp.o
+.PHONY : src/Map/Interactable/Enemy.cpp.o
+
+src/Map/Interactable/Enemy.i: src/Map/Interactable/Enemy.cpp.i
+.PHONY : src/Map/Interactable/Enemy.i
+
+# target to preprocess a source file
+src/Map/Interactable/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Enemy.cpp.i
+.PHONY : src/Map/Interactable/Enemy.cpp.i
+
+src/Map/Interactable/Enemy.s: src/Map/Interactable/Enemy.cpp.s
+.PHONY : src/Map/Interactable/Enemy.s
+
+# target to generate assembly for a file
+src/Map/Interactable/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Enemy.cpp.s
+.PHONY : src/Map/Interactable/Enemy.cpp.s
 
 src/Map/Interactable/Interactable.o: src/Map/Interactable/Interactable.cpp.o
 .PHONY : src/Map/Interactable/Interactable.o
@@ -465,29 +489,29 @@ src/Map/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.s
 .PHONY : src/Map/Map.cpp.s
 
-src/Map/Wall/wall.o: src/Map/Wall/wall.cpp.o
-.PHONY : src/Map/Wall/wall.o
+src/Map/wall.o: src/Map/wall.cpp.o
+.PHONY : src/Map/wall.o
 
 # target to build an object file
-src/Map/Wall/wall.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.o
-.PHONY : src/Map/Wall/wall.cpp.o
+src/Map/wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/wall.cpp.o
+.PHONY : src/Map/wall.cpp.o
 
-src/Map/Wall/wall.i: src/Map/Wall/wall.cpp.i
-.PHONY : src/Map/Wall/wall.i
+src/Map/wall.i: src/Map/wall.cpp.i
+.PHONY : src/Map/wall.i
 
 # target to preprocess a source file
-src/Map/Wall/wall.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.i
-.PHONY : src/Map/Wall/wall.cpp.i
+src/Map/wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/wall.cpp.i
+.PHONY : src/Map/wall.cpp.i
 
-src/Map/Wall/wall.s: src/Map/Wall/wall.cpp.s
-.PHONY : src/Map/Wall/wall.s
+src/Map/wall.s: src/Map/wall.cpp.s
+.PHONY : src/Map/wall.s
 
 # target to generate assembly for a file
-src/Map/Wall/wall.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/Wall/wall.cpp.s
-.PHONY : src/Map/Wall/wall.cpp.s
+src/Map/wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Map/wall.cpp.s
+.PHONY : src/Map/wall.cpp.s
 
 src/Player/Inventory.o: src/Player/Inventory.cpp.o
 .PHONY : src/Player/Inventory.o
@@ -537,6 +561,30 @@ src/Player/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.s
 .PHONY : src/Player/Player.cpp.s
 
+src/UI/DrawInventory.o: src/UI/DrawInventory.cpp.o
+.PHONY : src/UI/DrawInventory.o
+
+# target to build an object file
+src/UI/DrawInventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/DrawInventory.cpp.o
+.PHONY : src/UI/DrawInventory.cpp.o
+
+src/UI/DrawInventory.i: src/UI/DrawInventory.cpp.i
+.PHONY : src/UI/DrawInventory.i
+
+# target to preprocess a source file
+src/UI/DrawInventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/DrawInventory.cpp.i
+.PHONY : src/UI/DrawInventory.cpp.i
+
+src/UI/DrawInventory.s: src/UI/DrawInventory.cpp.s
+.PHONY : src/UI/DrawInventory.s
+
+# target to generate assembly for a file
+src/UI/DrawInventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/DrawInventory.cpp.s
+.PHONY : src/UI/DrawInventory.cpp.s
+
 src/UI/UI.o: src/UI/UI.cpp.o
 .PHONY : src/UI/UI.o
 
@@ -561,77 +609,77 @@ src/UI/UI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UI/UI.cpp.s
 .PHONY : src/UI/UI.cpp.s
 
-src/UtilsObject/Animation/Animation.o: src/UtilsObject/Animation/Animation.cpp.o
-.PHONY : src/UtilsObject/Animation/Animation.o
+src/UtilsObject/Animation.o: src/UtilsObject/Animation.cpp.o
+.PHONY : src/UtilsObject/Animation.o
 
 # target to build an object file
-src/UtilsObject/Animation/Animation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.o
-.PHONY : src/UtilsObject/Animation/Animation.cpp.o
+src/UtilsObject/Animation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation.cpp.o
+.PHONY : src/UtilsObject/Animation.cpp.o
 
-src/UtilsObject/Animation/Animation.i: src/UtilsObject/Animation/Animation.cpp.i
-.PHONY : src/UtilsObject/Animation/Animation.i
+src/UtilsObject/Animation.i: src/UtilsObject/Animation.cpp.i
+.PHONY : src/UtilsObject/Animation.i
 
 # target to preprocess a source file
-src/UtilsObject/Animation/Animation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.i
-.PHONY : src/UtilsObject/Animation/Animation.cpp.i
+src/UtilsObject/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation.cpp.i
+.PHONY : src/UtilsObject/Animation.cpp.i
 
-src/UtilsObject/Animation/Animation.s: src/UtilsObject/Animation/Animation.cpp.s
-.PHONY : src/UtilsObject/Animation/Animation.s
+src/UtilsObject/Animation.s: src/UtilsObject/Animation.cpp.s
+.PHONY : src/UtilsObject/Animation.s
 
 # target to generate assembly for a file
-src/UtilsObject/Animation/Animation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation/Animation.cpp.s
-.PHONY : src/UtilsObject/Animation/Animation.cpp.s
+src/UtilsObject/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation.cpp.s
+.PHONY : src/UtilsObject/Animation.cpp.s
 
-src/UtilsObject/Collision/Collision.o: src/UtilsObject/Collision/Collision.cpp.o
-.PHONY : src/UtilsObject/Collision/Collision.o
+src/UtilsObject/Collision.o: src/UtilsObject/Collision.cpp.o
+.PHONY : src/UtilsObject/Collision.o
 
 # target to build an object file
-src/UtilsObject/Collision/Collision.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.o
-.PHONY : src/UtilsObject/Collision/Collision.cpp.o
+src/UtilsObject/Collision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision.cpp.o
+.PHONY : src/UtilsObject/Collision.cpp.o
 
-src/UtilsObject/Collision/Collision.i: src/UtilsObject/Collision/Collision.cpp.i
-.PHONY : src/UtilsObject/Collision/Collision.i
+src/UtilsObject/Collision.i: src/UtilsObject/Collision.cpp.i
+.PHONY : src/UtilsObject/Collision.i
 
 # target to preprocess a source file
-src/UtilsObject/Collision/Collision.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.i
-.PHONY : src/UtilsObject/Collision/Collision.cpp.i
+src/UtilsObject/Collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision.cpp.i
+.PHONY : src/UtilsObject/Collision.cpp.i
 
-src/UtilsObject/Collision/Collision.s: src/UtilsObject/Collision/Collision.cpp.s
-.PHONY : src/UtilsObject/Collision/Collision.s
+src/UtilsObject/Collision.s: src/UtilsObject/Collision.cpp.s
+.PHONY : src/UtilsObject/Collision.s
 
 # target to generate assembly for a file
-src/UtilsObject/Collision/Collision.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision/Collision.cpp.s
-.PHONY : src/UtilsObject/Collision/Collision.cpp.s
+src/UtilsObject/Collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Collision.cpp.s
+.PHONY : src/UtilsObject/Collision.cpp.s
 
-src/UtilsObject/Textures/Textures.o: src/UtilsObject/Textures/Textures.cpp.o
-.PHONY : src/UtilsObject/Textures/Textures.o
+src/UtilsObject/Textures.o: src/UtilsObject/Textures.cpp.o
+.PHONY : src/UtilsObject/Textures.o
 
 # target to build an object file
-src/UtilsObject/Textures/Textures.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o
-.PHONY : src/UtilsObject/Textures/Textures.cpp.o
+src/UtilsObject/Textures.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures.cpp.o
+.PHONY : src/UtilsObject/Textures.cpp.o
 
-src/UtilsObject/Textures/Textures.i: src/UtilsObject/Textures/Textures.cpp.i
-.PHONY : src/UtilsObject/Textures/Textures.i
+src/UtilsObject/Textures.i: src/UtilsObject/Textures.cpp.i
+.PHONY : src/UtilsObject/Textures.i
 
 # target to preprocess a source file
-src/UtilsObject/Textures/Textures.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.i
-.PHONY : src/UtilsObject/Textures/Textures.cpp.i
+src/UtilsObject/Textures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures.cpp.i
+.PHONY : src/UtilsObject/Textures.cpp.i
 
-src/UtilsObject/Textures/Textures.s: src/UtilsObject/Textures/Textures.cpp.s
-.PHONY : src/UtilsObject/Textures/Textures.s
+src/UtilsObject/Textures.s: src/UtilsObject/Textures.cpp.s
+.PHONY : src/UtilsObject/Textures.s
 
 # target to generate assembly for a file
-src/UtilsObject/Textures/Textures.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.s
-.PHONY : src/UtilsObject/Textures/Textures.cpp.s
+src/UtilsObject/Textures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Princess_Escape.dir/build.make CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures.cpp.s
+.PHONY : src/UtilsObject/Textures.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -696,39 +744,45 @@ help:
 	@echo "... src/Map/Decor/Decor.o"
 	@echo "... src/Map/Decor/Decor.i"
 	@echo "... src/Map/Decor/Decor.s"
-	@echo "... src/Map/Interactable/Chest/Chest.o"
-	@echo "... src/Map/Interactable/Chest/Chest.i"
-	@echo "... src/Map/Interactable/Chest/Chest.s"
-	@echo "... src/Map/Interactable/Door/Door.o"
-	@echo "... src/Map/Interactable/Door/Door.i"
-	@echo "... src/Map/Interactable/Door/Door.s"
+	@echo "... src/Map/Interactable/Chest.o"
+	@echo "... src/Map/Interactable/Chest.i"
+	@echo "... src/Map/Interactable/Chest.s"
+	@echo "... src/Map/Interactable/Door.o"
+	@echo "... src/Map/Interactable/Door.i"
+	@echo "... src/Map/Interactable/Door.s"
+	@echo "... src/Map/Interactable/Enemy.o"
+	@echo "... src/Map/Interactable/Enemy.i"
+	@echo "... src/Map/Interactable/Enemy.s"
 	@echo "... src/Map/Interactable/Interactable.o"
 	@echo "... src/Map/Interactable/Interactable.i"
 	@echo "... src/Map/Interactable/Interactable.s"
 	@echo "... src/Map/Map.o"
 	@echo "... src/Map/Map.i"
 	@echo "... src/Map/Map.s"
-	@echo "... src/Map/Wall/wall.o"
-	@echo "... src/Map/Wall/wall.i"
-	@echo "... src/Map/Wall/wall.s"
+	@echo "... src/Map/wall.o"
+	@echo "... src/Map/wall.i"
+	@echo "... src/Map/wall.s"
 	@echo "... src/Player/Inventory.o"
 	@echo "... src/Player/Inventory.i"
 	@echo "... src/Player/Inventory.s"
 	@echo "... src/Player/Player.o"
 	@echo "... src/Player/Player.i"
 	@echo "... src/Player/Player.s"
+	@echo "... src/UI/DrawInventory.o"
+	@echo "... src/UI/DrawInventory.i"
+	@echo "... src/UI/DrawInventory.s"
 	@echo "... src/UI/UI.o"
 	@echo "... src/UI/UI.i"
 	@echo "... src/UI/UI.s"
-	@echo "... src/UtilsObject/Animation/Animation.o"
-	@echo "... src/UtilsObject/Animation/Animation.i"
-	@echo "... src/UtilsObject/Animation/Animation.s"
-	@echo "... src/UtilsObject/Collision/Collision.o"
-	@echo "... src/UtilsObject/Collision/Collision.i"
-	@echo "... src/UtilsObject/Collision/Collision.s"
-	@echo "... src/UtilsObject/Textures/Textures.o"
-	@echo "... src/UtilsObject/Textures/Textures.i"
-	@echo "... src/UtilsObject/Textures/Textures.s"
+	@echo "... src/UtilsObject/Animation.o"
+	@echo "... src/UtilsObject/Animation.i"
+	@echo "... src/UtilsObject/Animation.s"
+	@echo "... src/UtilsObject/Collision.o"
+	@echo "... src/UtilsObject/Collision.i"
+	@echo "... src/UtilsObject/Collision.s"
+	@echo "... src/UtilsObject/Textures.o"
+	@echo "... src/UtilsObject/Textures.i"
+	@echo "... src/UtilsObject/Textures.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

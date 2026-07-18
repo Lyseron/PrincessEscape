@@ -22,11 +22,22 @@ class Collision
 private:
 	Hitbox	m_hitbox;
 public:
+
+// ---------------------- CONST/DEST -------------------- //
 	Collision(const  Hitbox &hitbox);
+	~Collision();
+
+// ---------------------- SETTER ------------------------ //
+
+	void	setHitbox(const Hitbox &hitbox);
+	void 	setOffset(double x, double y);
+
+// ---------------------- GETTER ------------------------ //
 
 	Bound	getBoundsObjectInCase(double posX, double posY)	const;
 
-	void	setHitbox(const Hitbox &hitbox);
+// ---------------------- OTHER METHOD ------------------ //
+
 	bool	isColliding(
 		const Collision &hitBoxToTest,
 		double posX,
@@ -34,9 +45,7 @@ public:
 		double testPosX,
 		double testPosY
 	)	const;
-
-	void 	setOffset(double x, double y);
-	~Collision();
+	
 };
 
 

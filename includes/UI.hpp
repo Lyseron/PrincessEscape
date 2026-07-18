@@ -33,11 +33,13 @@ private:
 
 public:
 
-// default tell the compilateur that there is nothing in it
+// ---------------------- CONST/DEST -------------------- //
+
+	// default tell the compilateur that there is nothing in it
 	UI() = default;
 	~UI() = default;
 
-	
+// ---------------------- OTHER METHOD ------------------ //
 
 	void	drawUI(Game &game);
 

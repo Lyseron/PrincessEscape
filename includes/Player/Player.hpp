@@ -57,10 +57,12 @@ private:
 
 public:
 // ---------------------- CONST/DEST -------------------- //
+
 	Player();
 	~Player();
 
 // ---------------------- SETTER ------------------------ //
+
 	void	setX(double x);
 	void	setY(double y);
 	void	setDirX(int dirX);
@@ -70,6 +72,7 @@ public:
 	void	setDirection(Direction direction, int dirX, int dirY);
 
 // ---------------------- GETTER ------------------------ //
+
 	double	getPosX()	const;
 	double	getPosY()	const;
 	int		getCaseX()	const;
@@ -97,6 +100,8 @@ public:
 
 	int	getCaseXinFrontOfPlayer() const;
 	int	getCaseYinFrontOfPlayer() const;
+
+// ---------------------- OTHER METHOD ------------------ //
 
 	bool 	canInteract(const Interactable &object) const;
 

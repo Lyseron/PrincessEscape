@@ -9,9 +9,12 @@ private:
 
 	Collision	m_collision;
 public:
+
+// ---------------------- CONST/DEST -------------------- //
 	Wall(int caseXX, int caseY, Collision collision);
 	~Wall();
 
+// ---------------------- GETTER ------------------------ //
 	int	getCaseX()	const;
 	int	getCaseY()	const;
 

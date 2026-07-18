@@ -14,9 +14,9 @@ enum class DecorType
 class Decor
 {
 private:
+
 	int	m_caseY;
 	int	m_caseX;
-
 
 	int	m_offsetX;
 	int	m_offsetY;
@@ -29,6 +29,11 @@ private:
 	Collision	m_collision;
 public:
 
+// ---------------------- CONST/DEST -------------------- //
+	Decor(DecorType decor, int caseX, int caseY);
+	~Decor();
+
+// ---------------------- GETTER ------------------------ //
 	int		getCaseX()	const;
 	int		getCaseY()	const;
 
@@ -40,12 +45,11 @@ public:
 	int		getOffsetY()	const;
 
 	const	Collision &getCollision()	const;
-	void	update();
 
+// ---------------------- OTHER METHOD ------------------ //
+
+	void	update();
 	bool	isblockingObject()	const;
 
-
-	Decor(DecorType decor, int caseX, int caseY);
-	~Decor();
 };
 

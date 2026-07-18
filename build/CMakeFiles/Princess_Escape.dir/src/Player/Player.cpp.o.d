@@ -1,8 +1,8 @@
 CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/src/Player/Player.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Player.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player/Player.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Textures.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \
@@ -1017,6 +1017,6 @@ CMakeFiles/Princess_Escape.dir/src/Player/Player.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Inventory.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Collision.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Interactable.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player/Inventory.hpp

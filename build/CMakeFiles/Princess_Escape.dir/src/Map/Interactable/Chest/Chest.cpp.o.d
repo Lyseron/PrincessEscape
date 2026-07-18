@@ -1,6 +1,6 @@
 CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/src/Map/Interactable/Chest/Chest.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Chest.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \
@@ -995,9 +995,9 @@ CMakeFiles/Princess_Escape.dir/src/Map/Interactable/Chest/Chest.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Interactable.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Textures.hpp \
   /opt/homebrew/include/SDL3_image/SDL_image.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Inventory.hpp
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Collision.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player/Inventory.hpp

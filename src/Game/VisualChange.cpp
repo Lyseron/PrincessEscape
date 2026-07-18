@@ -7,7 +7,7 @@ void	Game::VisualChange()
 	actionKeyPress();
 	m_player.anim();
 	m_map.anim();
-	for (Chest &chest : m_map.getChestsNotConst())
+	for (Chest &chest : m_map.getChests())
 	{
 		chest.animChest();
 		if (chest.getChestState() == ChestState::Opened
@@ -18,7 +18,7 @@ void	Game::VisualChange()
 			chest.setLootTaken(true);
 		}
 	}
-	for (Door &door : m_map.getDoorsNotConst())
+	for (Door &door : m_map.getDoors())
 	{
 		if (door.getDoorState() == DoorState::Closed
 			&& m_player.canInteract(door)

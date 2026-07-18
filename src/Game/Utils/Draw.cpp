@@ -161,7 +161,7 @@ void	Game::drawChests()
 {
 	TextureID	texture;
 
-	for (Chest &chest : m_map.getChestsNotConst())
+	for (Chest &chest : m_map.getChests())
 	{
 		switch (chest.getChestState())
 		{

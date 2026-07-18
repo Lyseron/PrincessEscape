@@ -27,6 +27,8 @@ Item Inventory::getSelectedItem() const
 	return Item::None;
 }
 
+const std::unordered_map<Item, int> &Inventory::getItems() const { return (this->m_items); }
+
 // ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
 void	Inventory::addItem(Item item) { this->m_items[item]++; }
@@ -79,6 +81,3 @@ void Inventory::moveSelection(InventoryDirection direction)
 	}
 }
 
-
-
-const std::unordered_map<Item, int> &Inventory::getItems() const { return (this->m_items); }

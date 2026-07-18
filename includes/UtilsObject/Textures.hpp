@@ -79,9 +79,14 @@ private:
 	static_cast<size_t>(TextureID::Count)>	m_textures;
 	
 public:
+
+// ---------------------- CONST/DEST -------------------- //
 	Textures(SDL_Renderer*	renderer);
 	~Textures();
 
 	bool			load(TextureID id);
+
+// ---------------------- GETTER ------------------------ //
+
 	SDL_Texture*	get(TextureID id)	const;
 };

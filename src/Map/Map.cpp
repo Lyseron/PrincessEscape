@@ -3,8 +3,12 @@
 #include <fstream>
 #include <string>
 
+// ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
+
 Map::Map() {}
 Map::~Map() {}
+
+// ---------------------------------------------------- GETTER --------------------------------------------------------- //
 
 int		Map::getWidth()		const 
 {
@@ -20,17 +24,20 @@ int 	Map::getFirstPlayerPosX()			const { return (this->firstPlayerPosX); }
 int		Map::getFirstPlayerPosY()			const { return (this->firstPlayerPosY); }
 
 const	std::vector<Decor>		&Map::getDecors()	const { return (this->m_decors); }
-std::vector<Decor>				&Map::getDecorsNotConst() { return (this->m_decors); }
+std::vector<Decor>				&Map::getDecors() { return (this->m_decors); }
 
 size_t	Map::getChestCount()					const { return (this->m_chest.size()); }
 const	std::vector<Chest> &Map::getChests()	const { return (this->m_chest); }
-std::vector<Chest> 			&Map::getChestsNotConst() { return (this->m_chest); }
+std::vector<Chest> 			&Map::getChests() { return (this->m_chest); }
 
 const	std::vector<Door> &Map::getDoors()	const { return (this->m_doors); }
-std::vector<Door> 			&Map::getDoorsNotConst() { return (this->m_doors); }
+std::vector<Door> 			&Map::getDoors() { return (this->m_doors); }
 
 const	std::vector<Wall> &Map::getWalls()	const { return (this->m_walls); }
-std::vector<Wall> 			&Map::getWallsNotConst() { return (this->m_walls); }
+std::vector<Wall> 			&Map::getWalls() { return (this->m_walls); }
+
+
+// ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
 void	Map::anim()
 {
@@ -61,7 +68,7 @@ bool	Map::load(const std::string& filename)
 				m_walls.emplace_back(
 					x,
 					y,
-					Collision({0.0, 0.5, 0.5, 1.0})
+					Collision({0.0, 0.0, 0.2, 1.0})
 				);
 			}
 			if (charCase == 'R' || charCase == 'r')
@@ -69,23 +76,39 @@ bool	Map::load(const std::string& filename)
 				m_walls.emplace_back(
 					x,
 					y,
-					Collision({0.5, 0, 0.5, 1})
+					Collision({0.8, 0.0, 0.2, 1.0})
 				);
 			}
-			if (charCase == 'H' || charCase == 'h' || charCase == '{' || charCase == '(')
+			if (charCase == 'H' || charCase == 'h')
 			{
 				m_walls.emplace_back(
 					x,
 					y,
-					Collision({0.0, 0, 1, 1})
+					Collision({0.0, 0.0, 1.0, 1.0})
 				);
 			}
-			if (charCase == 'B' || charCase == 'b' || charCase == '}' || charCase == ')')
+			if (charCase == 'B' || charCase == 'b')
 			{
 				m_walls.emplace_back(
 					x,
 					y,
-					Collision({0.0, 0.5, 1, 0.5})
+					Collision({0.0, 0.5, 1.0, 0.2})
+				);
+			}
+			if (charCase == '}' || charCase == '{')
+			{
+				m_walls.emplace_back(
+					x,
+					y,
+					Collision({0.0, 0, 1.0, 1})
+				);
+			}
+			if (charCase == ')' || charCase == '(')
+			{
+				m_walls.emplace_back(
+					x,
+					y,
+					Collision({0.0, 0.5, 1.0, 0.5})
 				);
 			}
 			if (charCase == 'P')

@@ -37,20 +37,29 @@ private:
 
 	static constexpr int INVENTORY_SIZE = INVENTORY_ROWS * INVENTORY_COLUMNS;
 public:
+// ---------------------- CONST/DEST -------------------- //
+
 	Inventory(/* args */);
 	~Inventory();
+
+// ---------------------- SETTER ------------------------ //
+
+	void	setSelectedSlot(int slot);
+
+// ---------------------- GETTER ------------------------ //
+
+	Item	getSelectedItem()	const;
+	int		getSelectedSlot()	const;
+
+	const std::unordered_map<Item, int> &getItems() const;
+
+// ---------------------- OTHER METHOD ------------------ //
 
 	void	addItem(Item item);
 	bool	hasItem(Item item)	const;
 	void	removeItem(Item itemp);
-
-	void	setSelectedSlot(int slot);
-	int 	getSelectedSlot()	const;
-
-	Item	 getSelectedItem() const;
-
 	void 	moveSelection(InventoryDirection dir);
 
-	const std::unordered_map<Item, int> &getItems() const;
+	
 };
 

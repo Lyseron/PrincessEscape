@@ -1,6 +1,6 @@
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Textures/Textures.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Textures/Textures.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Textures.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \

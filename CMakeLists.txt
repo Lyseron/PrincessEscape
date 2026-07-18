@@ -27,33 +27,27 @@ add_executable(
 # ---------- MAP ----------- #
 
 	src/Map/Map.cpp
-	src/Map/Wall/wall.cpp
+	src/Map/wall.cpp
+	src/Map/Interactable/Chest.cpp
+	src/Map/Interactable/Door.cpp
+	src/Map/Interactable/Interactable.cpp
+	src/Map/Interactable/Enemy.cpp
+	src/Map/Decor/Decor.cpp
 
-# ---------- TEXTURE ------- #
+# ---------- UTILS OBJECT ------- #
 
-	src/UtilsObject/Textures/Textures.cpp
+	src/UtilsObject/Textures.cpp
+	src/UtilsObject/Animation.cpp
+	src/UtilsObject/Collision.cpp
 
 # ---------- PLAYER -------- #
 
 	src/Player/Player.cpp
 	src/Player/Inventory.cpp
 
-# ---------- CHEST -------- #
-	src/Map/Interactable/Chest/Chest.cpp
-	src/Map/Interactable/Door/Door.cpp
-	src/Map/Interactable/Interactable.cpp
-
-# ---------- DECOR -------- #
-	src/Map/Decor/Decor.cpp
-
-# ---------- ANIM -------- #
-	src/UtilsObject/Animation/Animation.cpp
-
-# ---------- COLLISION -------- #
-	src/UtilsObject/Collision/Collision.cpp
-
 # ---------- UI -------- #
 	src/UI/UI.cpp
+	src/UI/DrawInventory.cpp
 
 )
 
@@ -61,6 +55,10 @@ target_include_directories(
 	Princess_Escape
 	PRIVATE
 	includes
+	includes/UtilsObject
+	includes/Interactable
+	includes/Map
+	includes/Player
 )
 
 target_link_libraries(

@@ -1,6 +1,6 @@
 CMakeFiles/Princess_Escape.dir/src/Player/Inventory.cpp.o: \
   /Users/lyseron/Desktop/princessEscape/src/Player/Inventory.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Inventory.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player/Inventory.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_permutation.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

@@ -996,9 +996,9 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /opt/homebrew/include/SDL3_image/SDL_image.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Textures.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Player.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Animation.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Textures.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player/Player.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Animation.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
@@ -1018,12 +1018,13 @@ CMakeFiles/Princess_Escape.dir/src/Game/Utils/Move.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Collision.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Inventory.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Map.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Chest.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Decor.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Door.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Wall.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Collision.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Interactable.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Player/Inventory.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Map/Map.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Chest.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Map/Decor.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Door.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Map/Wall.hpp \
+  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Enemy.hpp \
   /Users/lyseron/Desktop/princessEscape/includes/UI.hpp
