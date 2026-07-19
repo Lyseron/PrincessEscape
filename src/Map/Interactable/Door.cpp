@@ -21,13 +21,13 @@ void	Door::setState(DoorState state)
 	switch (state)
 	{
 	case DoorState::Opened:
-		m_animation.reset(1, 400);
+		m_animation.reset(1, 0.2);
 		break;
 	case DoorState::Closed:
-		m_animation.reset(1, 400);
+		m_animation.reset(1, 0.2);
 		break;
 	case DoorState::Opening:
-		m_animation.reset(9, 400);
+		m_animation.reset(9, 0.2);
 		break;
 	default:
 		break;
@@ -41,14 +41,14 @@ DoorState	Door::getDoorState()	const { return (this->m_state ); }
 
 // ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
-void	Door::animDoor()
+void	Door::animDoor(double deltaTime)
 {
 	if (m_state == DoorState::Opening)
 	{
-		if (m_animation.moveOnce())
+		if (m_animation.moveOnce(deltaTime))
 		{
-			m_state = DoorState::Opened;
-			m_animation.reset(1, 400);
+			this->setState(DoorState::Opened);
+			m_animation.reset(1, 0.2);
 		}
 		
 	}
@@ -60,4 +60,3 @@ void	Door::interact(Player &player)
 	if (m_state == DoorState::Closed)
 		this->setState(DoorState::Opening);
 }
-

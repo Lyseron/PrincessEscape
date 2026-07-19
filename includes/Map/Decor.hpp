@@ -48,8 +48,7 @@ public:
 
 // ---------------------- OTHER METHOD ------------------ //
 
-	void	update();
+	void	update(double deltaTime);
 	bool	isblockingObject()	const;
 
 };
-

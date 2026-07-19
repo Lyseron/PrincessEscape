@@ -26,13 +26,13 @@ void	Chest::setState(ChestState state)
 	switch (state)
 	{
 	case ChestState::Opened:
-		m_animation.reset(1, 400);
+		m_animation.reset(1, 0.1);
 		break;
 	case ChestState::Closed:
-		m_animation.reset(1, 400);
+		m_animation.reset(1, 0.1);
 		break;
 	case ChestState::Opening:
-		m_animation.reset(1, 400);
+		m_animation.reset(1, 0.1);
 		break;
 	default:
 		break;
@@ -46,14 +46,14 @@ void	Chest::setLootTaken(bool lootTaken) { this->m_lootTaken = lootTaken; }
 
 ChestState	Chest::getChestState()		const { return (this->m_state ); }
 
-void	Chest::animChest()
+void	Chest::animChest(double deltaTime)
 {
 	if (m_state == ChestState::Opening)
 	{
-		if (m_animation.moveOnce())
+		if (m_animation.moveOnce(deltaTime))
 		{
 			m_state = ChestState::Opened;
-			m_animation.reset(1, 400);
+			m_animation.reset(1, 0.4);
 		}
 	}
 }
@@ -69,8 +69,7 @@ void	Chest::interact(Player &player)
 	// openChest
 	if (m_state == ChestState::Closed)
 	{
-		m_state = ChestState::Opening;
-		m_animation.reset(1, 400);
+		setState(ChestState::Opening);
+		m_animation.reset(1, 0.1);
 	}
 }
-

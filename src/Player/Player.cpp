@@ -9,7 +9,8 @@ Player::Player()
 	m_dirX(0),
 	m_dirY(0),
 	m_collision({PLAYER_OFFSET_X, PLAYER_OFFSET_Y, PLAYER_WIDTH, PLAYER_HEIGHT}),
-	m_interaction({0, 0, 0.30, 0.30})
+	m_interaction({0, 0, 0.30, 0.30}),
+	m_playerIsDead(false)
 	{}
 
 // ---------------------------------------------------- SETTER --------------------------------------------------------- //
@@ -145,24 +146,24 @@ TextureID Player::getTexture()	const
 
 int			Player::getCurrentFrame()	const { return (m_animation.getCurrentFrame()); }
 
-void	Player::anim()
+void	Player::anim(double deltaTime)
 {
 	switch (this->m_state)
 	{
 		case PlayerState::Idle:
 			break;
 		case PlayerState::Lift:
-			if (m_animation.moveOnce())
+			if (m_animation.moveOnce(deltaTime))
 			{
 				setState(PlayerState::Walk);
 				m_animation.reset(2, TIMER_DURATION_WALK);
 			}
 			break;
 		case PlayerState::Walk:
-			m_animation.moveOnLoop();
+			m_animation.moveOnLoop(deltaTime);
 			break;
 		case PlayerState::Drop:
-			if (m_animation.moveOnce())
+			if (m_animation.moveOnce(deltaTime))
 			{
 				setState(PlayerState::Idle);
 				m_animation.reset(3, TIMER_DURATION_IDLE);
@@ -176,8 +177,23 @@ int		Player::getMaxHealthPoint() { return ( this->m_maxHealthPoint); }
 
 // ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
-void	Player::heal(int amount) { this->m_healtPoint += amount; }
-void	Player::takeDamage(int amount) { this->m_healtPoint -= amount; }
+void	Player::heal(int amount) 
+{ 
+	if (this->m_healtPoint + amount > this->m_maxHealthPoint)
+		amount = this->m_maxHealthPoint - this->m_healtPoint;
+	this->m_healtPoint += amount;
+}
+
+void	Player::takeDamage(int amount) 
+{
+	m_healtPoint -= amount;
+
+	if (m_healtPoint <= 0)
+	{
+		m_healtPoint = 0;
+		m_playerIsDead = true;
+	}
+}
 
 bool Player::canInteract(const Interactable &object) const
 {

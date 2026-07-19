@@ -17,6 +17,7 @@ void	Game::render()
 	drawChests();
 	drawDoors();
 	drawPlayer();
+	m_enemy.draw(*this);
 	// drawDebugInteraction();
 	m_ui.drawUI(*this);
 	SDL_RenderPresent(m_renderer);	// Display the img

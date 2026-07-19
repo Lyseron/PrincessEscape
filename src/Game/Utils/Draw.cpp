@@ -41,7 +41,7 @@ void Game::drawDebugCase(double caseX, double caseY)
 	SDL_RenderRect(m_renderer, &rect);
 }
 
-void	Game::drawTexture(int win_x, int win_y, TextureID id, int frame)
+void	Game::drawTexture(float win_x, float win_y, TextureID id, int frame)
 {
 	SDL_FRect	src;
 

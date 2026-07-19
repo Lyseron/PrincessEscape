@@ -61,11 +61,11 @@ bool Game::inCollisionDoor(double nextX, double nextY)
 // 	return (false);
 // }
 
-bool	Game::inCollisionWall(double nextX, double nextY)
+bool	Game::inCollisionWall(const Collision &collision, double nextX, double nextY)
 {
 	for (const Wall &wall : m_map.getWalls())
 	{
-		if (m_player.getCollisionValue().isColliding(
+		if (collision.isColliding(
 				wall.getCollision(),
 				nextX,
 				nextY,
@@ -78,7 +78,7 @@ bool	Game::inCollisionWall(double nextX, double nextY)
 
 bool	Game::collisionPlayer(double nextX, double nextY)
 {
-	return (inCollisionWall(nextX, nextY)
+	return (inCollisionWall(m_player.getCollisionValue() ,nextX, nextY)
 		|| inCollisionDecor(nextX, nextY)
 		|| inCollisionChest(nextX, nextY)
 		|| inCollisionDoor(nextX, nextY));
@@ -89,8 +89,8 @@ bool	Game::move(double dirX, double dirY)
 	bool	moved;
 	double	posX = m_player.getPosX();
 	double	posY = m_player.getPosY();
-	double	nextPosX = posX + dirX * SPEED_PLAYER;
-	double	nextPosY = posY + dirY * SPEED_PLAYER;
+	double	nextPosX = posX + dirX * SPEED_PLAYER * m_deltaTime;
+	double	nextPosY = posY + dirY * SPEED_PLAYER * m_deltaTime;
 
 	moved = false;
 	if (nextPosX < 0 || nextPosY < 0)
@@ -124,30 +124,38 @@ bool Game::movePlayer(double dirX, double dirY)
 
 void	Game::handleMovement()
 {
-	bool	moving = false;
-
-	if (m_upPressed)
-	{
-		m_player.setDirection(Direction::Up, 0, -1);
-		moving = movePlayer(0, -1);
-	}
+	double	dirX = 0.0;
+	double	dirY = 0.0;
 
 	if (m_leftPressed)
-	{
-		m_player.setDirection(Direction::Left, -1, 0);
-		moving = movePlayer(-1, 0);
-	}
-
+		dirX -= 1.0;
 	if (m_rightPressed)
-	{
-		m_player.setDirection(Direction::Right, 1, 0);
-		moving = movePlayer(1, 0);
-	}
-
+		dirX += 1.0;
+	if (m_upPressed)
+		dirY -= 1.0;
 	if (m_downPressed)
+		dirY += 1.0;
+
+	bool	moving = false;
+	if (dirX != 0.0 || dirY != 0.0)
 	{
-		m_player.setDirection(Direction::Down, 0, 1);
-		moving = movePlayer(0, 1);
+		// Keep the same total speed when moving diagonally.
+		if (dirX != 0.0 && dirY != 0.0)
+		{
+			constexpr double diagonalFactor = 0.70710678118;
+			dirX *= diagonalFactor;
+			dirY *= diagonalFactor;
+		}
+
+		if (dirY > 0.0)
+			m_player.setDirection(Direction::Down, 0, 1);
+		else if (dirY < 0.0)
+			m_player.setDirection(Direction::Up, 0, -1);
+		else if (dirX > 0.0)
+			m_player.setDirection(Direction::Right, 1, 0);
+		else
+			m_player.setDirection(Direction::Left, -1, 0);
+		moving = movePlayer(dirX, dirY);
 	}
 
 	if (moving == false)

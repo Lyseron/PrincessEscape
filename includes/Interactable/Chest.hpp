@@ -39,8 +39,7 @@ public:
 
 // ---------------------- OTHER METHOD ------------------ //
 
-	void	animChest();
+	void	animChest(double deltaTime);
 	void	interact(Player &player);
 	
 };
-

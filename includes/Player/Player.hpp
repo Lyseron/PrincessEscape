@@ -27,10 +27,11 @@ class Player
 {
 private:
 
-	static constexpr	int	TIMER_DURATION_IDLE = 0;
-	static constexpr	int	TIMER_DURATION_LIFT = 400;
-	static constexpr	int	TIMER_DURATION_WALK = 400;
-	static constexpr	int	TIMER_DURATION_DROP = 400;
+	// Duration of one animation frame, in seconds.
+	static constexpr	double	TIMER_DURATION_IDLE = 0.0;
+	static constexpr	double	TIMER_DURATION_LIFT = 0.4;
+	static constexpr	double	TIMER_DURATION_WALK = 0.4;
+	static constexpr	double	TIMER_DURATION_DROP = 0.4;
 
 	static constexpr	double	PLAYER_OFFSET_X = 0.25;
 	static constexpr	double	PLAYER_OFFSET_Y = 0.55;
@@ -54,6 +55,7 @@ private:
 	Collision	m_interaction;
 
 	Inventory	m_inventory;
+	bool		m_playerIsDead;
 
 public:
 // ---------------------- CONST/DEST -------------------- //
@@ -96,7 +98,7 @@ public:
 
 // ---------------------- OTHER METHOD ------------------ //
 	
-	void	anim();
+	void	anim(double deltaTime);
 
 	int	getCaseXinFrontOfPlayer() const;
 	int	getCaseYinFrontOfPlayer() const;

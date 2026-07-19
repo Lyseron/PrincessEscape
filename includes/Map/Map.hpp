@@ -54,7 +54,6 @@ public:
 // ---------------------- OTHER METHOD ------------------ //
 
 	bool	load(const std::string& filename);
-	void	anim();
+	void	anim(double deltaTime);
 	void	createDecor(char tile, int x, int y);
 };
-

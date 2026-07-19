@@ -9,6 +9,7 @@
 #include "Map.hpp"
 #include "Collision.hpp"
 #include "UI.hpp"
+#include "Enemy.hpp"
 
 class	Game
 {
@@ -17,7 +18,8 @@ private:
 	static constexpr	double	SPRITE_WIDTH = 56;
 	static constexpr	double	SPRITE_HEIGHT = 56;
 	static constexpr	int		CASE_TILE = 64;
-	static constexpr	double	SPEED_PLAYER = 0.001;
+	// Speed in tiles per second.
+	static constexpr	double	SPEED_PLAYER = 2.6;
 
 	Map 	m_map;
 
@@ -53,6 +55,7 @@ private:
 	bool			m_running;							// to continue the loop until it's false
 	SDL_Window*		m_window;							// pointeur to create the window
 	SDL_Renderer*	m_renderer;							// pointeur to draw int the window
+	double			m_deltaTime = 0.0;						// elapsed time since the previous frame, in seconds
 
 // ---------------------- EVENT ------------------------ //
 	bool	m_upPressed;
@@ -94,15 +97,12 @@ private:
 	Player	m_player;
 	Collision	m_walCollision;
 
-
 	bool	move(double dirX, double dirY);
-	bool	inCollisionWall(double nextX, double nextY);
-	bool	inCollisionDecor(double nextX, double nextY);
-	bool	inCollisionChest(double nextX, double nextY);
-	bool	inCollisionDoor(double nextX, double nextY);
-	bool	collisionPlayer(double nextX, double nextY);
+	
 
 	bool	m_isInventoryOpen = false;
+
+	Enemy	m_enemy;
 
 public:
 // ---------------------- CONST/DEST -------------------- //
@@ -113,17 +113,23 @@ public:
 	SDL_Renderer*	getRenderer();
 	int	getCaseTile();
 	bool	isInventoryOpen();
+	double	getDeltaTime() const;
 
 // ---------------------- OTHER METHOC ------------------ //
 	void run();											// Master fonction
-	void	drawTexture(int win_x,
-		int win_y,
+	void	drawTexture(float win_x,
+		float win_y,
 		TextureID id,
 		int frame
 	);
 
 // ---------------------- OTHER METHOD ------------------ //
 
+	bool	inCollisionWall(const Collision &collision, double nextX, double nextY);
+	bool	inCollisionDecor(double nextX, double nextY);
+	bool	inCollisionChest(double nextX, double nextY);
+	bool	inCollisionDoor(double nextX, double nextY);
+	bool	collisionPlayer(double nextX, double nextY);
 	void	useSelectedItem();
 
 	void	drawTextureScale(float win_x,

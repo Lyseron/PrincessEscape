@@ -31,5 +31,5 @@ public:
 
 // override to say that i changed the heritade fonction tp this one
 	void	interact(Player &player)	override;
-	void	animDoor();
+	void	animDoor(double deltaTime);
 };

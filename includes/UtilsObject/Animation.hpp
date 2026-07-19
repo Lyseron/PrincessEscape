@@ -5,8 +5,8 @@ class Animation
 private:
 
 	int		m_currentFrame;
-	int		m_frameDuration;
-	int		m_nbLoop;
+	double	m_frameDuration;
+	double	m_elapsedTime;
 	int		m_nbFrame;
 
 public:
@@ -17,22 +17,21 @@ public:
 
 // ---------------------- SETTER ------------------------ //
 	void	setCurrentFrame(int frame);
-	void	setTimerFrame(int timer);
-	void	setNbLoop(int nbLoop);
+	void	setTimerFrame(double duration);
+	void	setElapsedTime(double elapsedTime);
 	void	setNbFrame(int nbOfFrame);
 
 // ---------------------- GETTER ------------------------ //
 	int	getCurrentFrame()	const;
-	int	getFrameDuration()	const;
-	int	getNbLoop()			const;
+	double	getFrameDuration()	const;
+	double	getElapsedTime()	const;
 	int	getNbFrame()		const;
 
 // ---------------------- OTHER METHOD ------------------ //
-	bool	moveOnLoop();
-	bool	moveOnce();
+	bool	moveOnLoop(double deltaTime);
+	bool	moveOnce(double deltaTime);
 
-	void	reset(int nbFrame, int timerDuration);
+	void	reset(int nbFrame, double frameDuration);
 
 };
-
 

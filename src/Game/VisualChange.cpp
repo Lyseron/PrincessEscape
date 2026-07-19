@@ -5,11 +5,11 @@
 void	Game::VisualChange()
 {
 	actionKeyPress();
-	m_player.anim();
-	m_map.anim();
+	m_player.anim(m_deltaTime);
+	m_map.anim(m_deltaTime);
 	for (Chest &chest : m_map.getChests())
 	{
-		chest.animChest();
+		chest.animChest(m_deltaTime);
 		if (chest.getChestState() == ChestState::Opened
 			&& chest.hasLootBeenTaken() == false)
 		{
@@ -28,7 +28,7 @@ void	Game::VisualChange()
 				door.interact(m_player);
 			}
 
-		door.animDoor();
+		door.animDoor(m_deltaTime);
 		if (door.getDoorState() == DoorState::Opened)
 		{
 			if (m_map.load("mapsFiles/mapLevel_1.txt") == false)
@@ -37,5 +37,6 @@ void	Game::VisualChange()
 			return ;
 		}
 	}
+	m_enemy.update(*this);
 	m_oPressed = false;
 }

@@ -39,10 +39,10 @@ std::vector<Wall> 			&Map::getWalls() { return (this->m_walls); }
 
 // ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
-void	Map::anim()
+void	Map::anim(double deltaTime)
 {
 	for (Decor &decor : m_decors)
-		decor.update();
+		decor.update(deltaTime);
 }
 
 bool	Map::load(const std::string& filename)
@@ -51,6 +51,7 @@ bool	Map::load(const std::string& filename)
 	m_chest.clear();
 	m_doors.clear();
 	m_decors.clear();
+	m_walls.clear();
 
 	std::ifstream	file(filename);
 	if (!file)

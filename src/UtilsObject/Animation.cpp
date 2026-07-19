@@ -5,7 +5,7 @@
 Animation::Animation(/* args */)
 	: m_currentFrame(0),
 	m_frameDuration(0),
-	m_nbLoop(0),
+	m_elapsedTime(0),
 	m_nbFrame(0) {}
 
 Animation::~Animation() {}
@@ -13,53 +13,56 @@ Animation::~Animation() {}
 // ---------------------------------------------------- SETTER --------------------------------------------------------- //
 
 void	Animation::setCurrentFrame(int frame) 	{ this->m_currentFrame = frame; }
-void	Animation::setTimerFrame(int timer) 	{ this->m_frameDuration = timer; }
-void	Animation::setNbLoop(int nbLoop) 		{ this->m_nbLoop = nbLoop; }
+void	Animation::setTimerFrame(double duration) { this->m_frameDuration = duration; }
+void	Animation::setElapsedTime(double elapsedTime) { this->m_elapsedTime = elapsedTime; }
 void	Animation::setNbFrame(int nbOfFrame)	{ this->m_nbFrame = nbOfFrame; }
 
 // ---------------------------------------------------- GETTER --------------------------------------------------------- //
 
 int		Animation::getCurrentFrame()	const { return (m_currentFrame); }
-int		Animation::getFrameDuration()	const { return (this->m_frameDuration); }
-int		Animation::getNbLoop()			const { return (this->m_nbLoop); }
+double	Animation::getFrameDuration()	const { return (this->m_frameDuration); }
+double	Animation::getElapsedTime()		const { return (this->m_elapsedTime); }
 int		Animation::getNbFrame()			const { return (this->m_nbFrame); }
 
 // ---------------------------------------------------- OTHER METHOD --------------------------------------------------- //
 
-bool	Animation::moveOnLoop()
+bool	Animation::moveOnLoop(double deltaTime)
 {
-	this->m_nbLoop++;
-	if (this->m_nbLoop >= this->m_frameDuration)
+	if (m_frameDuration <= 0 || m_nbFrame <= 0)
+		return (false);
+	m_elapsedTime += deltaTime;
+	bool	frameChanged = false;
+	while (m_elapsedTime >= m_frameDuration)
 	{
-		this->m_nbLoop = 0;
-		this->m_currentFrame++;
-		if (this->m_currentFrame >= this->m_nbFrame)
-			this->m_currentFrame = 0;
-		return (true);
+		m_elapsedTime -= m_frameDuration;
+		m_currentFrame = (m_currentFrame + 1) % m_nbFrame;
+		frameChanged = true;
 	}
-	return (false);
+	return (frameChanged);
 }
 
-bool	Animation::moveOnce()
+bool	Animation::moveOnce(double deltaTime)
 {
-	this->m_nbLoop++;
-	if (this->m_nbLoop >= this->m_frameDuration)
+	if (m_frameDuration <= 0 || m_nbFrame <= 0)
+		return (false);
+	m_elapsedTime += deltaTime;
+	while (m_elapsedTime >= m_frameDuration)
 	{
-		this->m_nbLoop = 0;
-		this->m_currentFrame++;
-		if (this->m_currentFrame >= this->m_nbFrame)
+		m_elapsedTime -= m_frameDuration;
+		m_currentFrame++;
+		if (m_currentFrame >= m_nbFrame)
 		{
-			this->m_currentFrame = this->m_nbFrame -1;
+			m_currentFrame = m_nbFrame - 1;
 			return (true);
 		}
 	}
 	return (false);
 }
 
-void	Animation::reset(int nbFrame, int timerDuration)
+void	Animation::reset(int nbFrame, double frameDuration)
 {
 	m_currentFrame = 0;
-	m_frameDuration = timerDuration;
-	m_nbLoop = 0;
+	m_frameDuration = frameDuration;
+	m_elapsedTime = 0;
 	m_nbFrame = nbFrame;
 }
