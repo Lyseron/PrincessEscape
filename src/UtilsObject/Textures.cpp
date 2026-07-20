@@ -80,6 +80,23 @@ bool	Textures::load(TextureID id)
 		case TextureID::Player_Drop_Left:
 			path = "assets/Player/drop_left.png";
 			break;
+		case TextureID::Player_Attack_Up:
+			path = "assets/Player/player_attack_up.png";
+			break;
+		case TextureID::Player_Attack_Down:
+			path = "assets/Player/player_attack_down.png";
+			break;
+	
+
+		case TextureID::Player_Damage_Down:
+			path = "assets/Player/take_damage_down.png";
+			break;
+
+
+
+		case TextureID::Player_Dead:
+			path = "assets/Player/player_dead.png";
+			break;
 
 // -------------------- WALL -------------------- //
 		case TextureID::FrontWall:

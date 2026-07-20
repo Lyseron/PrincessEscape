@@ -15,6 +15,8 @@ class Door : public Interactable
 {
 private:
 	DoorState	m_state;
+
+	void	setAnimation(DoorState state);
 public:
 // ---------------------- CONST/DEST -------------------- //
 	Door(int caseX, int caseY);

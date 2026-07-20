@@ -10,6 +10,7 @@ Chest::Chest(int x, int y, Item loot)
 	m_loot(loot)
 {
 	m_collision.setHitbox({0, 0, 1, 0.70});
+	setAnimation(m_state);
 }
 
 Chest::~Chest() {}
@@ -17,12 +18,8 @@ Chest::~Chest() {}
 // ---------------------------------------------------- SETTER --------------------------------------------------------- //
 
 //armure m_collision.setHitbox({0.25, 0.3, 0.5, 0.65});
-void	Chest::setState(ChestState state)
+void	Chest::setAnimation(ChestState state)
 {
-	if (m_state == state)
-		return ;
-	this->m_state = state;
-	
 	switch (state)
 	{
 	case ChestState::Opened:
@@ -39,6 +36,14 @@ void	Chest::setState(ChestState state)
 	}
 }
 
+void	Chest::setState(ChestState state)
+{
+	if (m_state == state)
+		return ;
+	this->m_state = state;
+	setAnimation(state);
+}
+
 void 	Chest::setShowLoot(bool showLoot)	{ this->m_showLoot = showLoot; }
 void	Chest::setLootTaken(bool lootTaken) { this->m_lootTaken = lootTaken; }
 
@@ -51,10 +56,7 @@ void	Chest::animChest(double deltaTime)
 	if (m_state == ChestState::Opening)
 	{
 		if (m_animation.moveOnce(deltaTime))
-		{
-			m_state = ChestState::Opened;
-			m_animation.reset(1, 0.4);
-		}
+			setState(ChestState::Opened);
 	}
 }
 
@@ -66,10 +68,6 @@ Item Chest::getLoot() const { return m_loot; }
 
 void	Chest::interact(Player &player)
 {
-	// openChest
 	if (m_state == ChestState::Closed)
-	{
 		setState(ChestState::Opening);
-		m_animation.reset(1, 0.1);
-	}
 }

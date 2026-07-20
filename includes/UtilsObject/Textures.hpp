@@ -8,6 +8,7 @@
 
 enum	class TextureID			// class -> use TextureID::
 {
+// --------------------- PLAYER ---------------- //
 	Player_Idle_Down,
 	Player_Lift_Down,
 	Player_Walk_Down,
@@ -27,6 +28,16 @@ enum	class TextureID			// class -> use TextureID::
 	Player_Lift_Right,
 	Player_Walk_Right,
 	Player_Drop_Right,
+
+	Player_Attack_Down,
+	Player_Attack_Up,
+	Player_Attack_Left,
+	Player_Attack_Right,
+
+	Player_Damage_Down,
+
+	Player_Dead,
+
 
 // --------------------- WALL ------------------ //
 	FrontWall,

@@ -20,6 +20,8 @@ private:
 	bool		m_lootTaken;
 	Item		m_loot;
 
+	void	setAnimation(ChestState state);
+
 public:
 // ---------------------- CONST/DEST -------------------- //
 	Chest(int x, int y, Item loot = Item::None);

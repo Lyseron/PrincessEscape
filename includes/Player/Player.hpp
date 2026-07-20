@@ -57,6 +57,8 @@ private:
 	Inventory	m_inventory;
 	bool		m_playerIsDead;
 
+	void	setAnimation(PlayerState state);
+
 public:
 // ---------------------- CONST/DEST -------------------- //
 
@@ -82,7 +84,7 @@ public:
 
 	PlayerState	getState()		const;
 	TextureID	getTexture()	const;
-	int		getCurrentFrame()	const;
+	int			getCurrentFrame()	const;
 
 	int		getDirY()	const;
 	int		getDirX()	const;

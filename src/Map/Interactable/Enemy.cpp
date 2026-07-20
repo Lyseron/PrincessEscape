@@ -1,5 +1,6 @@
 #include "Enemy.hpp"
 #include "Game.hpp"
+#include <cmath>
 
 // ---------------------------------------------------- CONST/DEST ----------------------------------------------------- //
 
@@ -18,10 +19,45 @@ Enemy::Enemy(double x, double y,
 		m_dirY(dirYPatrol),
 		m_attackPoint(attackPoint),
 		m_hasAttacked(false),
-		m_healthPoint(maxHealthPoint)
-{}
+		m_healthPoint(maxHealthPoint),
+		m_direction(EnemyDirection::Down),
+		m_currentAnimation(EnemyAnimation::Idle)
+		
+{
+	m_animation.reset(1, 0.14);
+}
 
 Enemy::~Enemy() {}
+
+// ---------------------------------------------------- SETTER --------------------------------------------------------- //
+
+void	Enemy::setDirection(EnemyDirection direction) { this->m_direction = direction; }
+
+void	Enemy::setAnimation(EnemyAnimation animation)
+{
+	if (m_currentAnimation == animation)
+		return ;
+
+	m_currentAnimation = animation;
+	switch (m_currentAnimation)
+	{
+		case EnemyAnimation::Idle:
+			m_animation.reset(1, 0.14);
+			break;
+		case EnemyAnimation::Walk:
+			m_animation.reset(4, 0.14);
+			break;
+		case EnemyAnimation::Attack:
+			m_animation.reset(7, 0.2);
+			break;
+		case EnemyAnimation::Damage:
+			m_animation.reset(2, 0.2);
+			break;
+		case EnemyAnimation::Dead:
+			m_animation.reset(4, 0.2);
+			break;
+	}
+}
 
 // ---------------------------------------------------- GETTER --------------------------------------------------------- //
 
@@ -52,6 +88,25 @@ double Enemy::distToPlayer(const Player &player)
 	// calcule the distance from player throught the hypothenus of the triangle position of the ennemy and aplayer (the diagonal distance between them)
 	double dist = std::sqrt(dx * dx + dy * dy);
 	return (dist);
+}
+
+void 	Enemy::updateDirection(double dirX, double dirY)
+{
+	// choose axe où le déplacement est le plus grand
+	if (std::abs(dirX) > std::abs(dirY))
+	{
+		if (dirX > 0)
+			m_direction = EnemyDirection::Right;
+		else if (dirX < 0)
+			m_direction = EnemyDirection::Left;
+	}
+	else
+	{
+		if (dirY > 0)
+			m_direction = EnemyDirection::Down;
+		else if (dirY < 0)
+			m_direction = EnemyDirection::Up;
+	}
 }
 
 void Enemy::update(Game &game)
@@ -85,8 +140,20 @@ void Enemy::update(Game &game)
 	}
 }
 
+bool	Enemy::anim(double deltaTime)
+{
+	if (m_currentAnimation == EnemyAnimation::Walk)
+		return (m_animation.moveOnLoop(deltaTime));
+	if (m_currentAnimation == EnemyAnimation::Attack
+		|| m_currentAnimation == EnemyAnimation::Damage
+		|| m_currentAnimation == EnemyAnimation::Dead)
+		return (m_animation.moveOnce(deltaTime));
+	return (false);
+}
+
 void	Enemy::updateIdle(Game &game)
 {
+	setAnimation(EnemyAnimation::Idle);
 	if (canSeePlayer(game.getPlayer()))
 	{
 		m_state = EnemyState::Chase;
@@ -102,6 +169,7 @@ void	Enemy::updateIdle(Game &game)
 void	Enemy::updateChase(Game &game)
 {
 	Player &player = game.getPlayer();
+	setAnimation(EnemyAnimation::Walk);
 
 	if (canSeePlayer(player) == false)
 	{
@@ -123,6 +191,8 @@ void	Enemy::updateChase(Game &game)
 	if (dist <= 1.0)
 	{
 		m_state = EnemyState::Attack;
+		setAnimation(EnemyAnimation::Attack);
+		m_hasAttacked = false;
 		return;
 	}
 
@@ -133,7 +203,8 @@ void	Enemy::updateChase(Game &game)
 	dx /= dist;
 	dy /= dist;
 
-
+// to follow the player
+	updateDirection(dx, dy);
 	//	make the ennemy go the the player location 
 	double nextX = m_posX + dx * m_speed * game.getDeltaTime();
 	double nextY = m_posY + dy * m_speed * game.getDeltaTime();
@@ -142,25 +213,28 @@ void	Enemy::updateChase(Game &game)
 	{
 		m_posX = nextX;
 		m_posY = nextY;
+		anim(game.getDeltaTime());
 	}
 }
 
 void	Enemy::updatePatrol(Game &game)
 {
 	Player &player = game.getPlayer();
+	setAnimation(EnemyAnimation::Walk);
 
 	if (canSeePlayer(player))
 	{
 		m_state = EnemyState::Chase;
 		return ;
 	}
+	updateDirection(m_dirX, m_dirY);
 	double nextX = m_posX + m_dirX * m_speed * game.getDeltaTime();
 	double nextY = m_posY + m_dirY * m_speed * game.getDeltaTime();
 
 	if (game.inCollisionWall(m_collision, nextX, nextY))
 	{
 		// std::cout << "collision wall\n";
-		// Demi-tour
+		// Demi tour
 		m_dirX *= -1;
 		m_dirY *= -1;
 		return;
@@ -170,39 +244,44 @@ void	Enemy::updatePatrol(Game &game)
 		// std::cout << "moove\n";
 		m_posX = nextX;
 		m_posY = nextY;
+		anim(game.getDeltaTime());
 	}
 }
 
 void	Enemy::updateDamage(Game &game)
 {
-	// play anim damage
+	setAnimation(EnemyAnimation::Damage);
+	if (anim(game.getDeltaTime()))
+	{
+		if (canSeePlayer(game.getPlayer()))
+			m_state = EnemyState::Chase;
+		else if (m_isPatroling)
+			m_state = EnemyState::Patrol;
+		else
+			m_state = EnemyState::Idle;
+	}
 }
 
 void	Enemy::updateAttack(Game &game)
 {
 	Player &player = game.getPlayer();
+	setAnimation(EnemyAnimation::Attack);
 
-// quand jaurai mis les anim
-	// if (m_animation.getCurrentFrame() == 2 && !m_hasAttacked)
-	// {
-	// 	player.takeDamage(m_attackPoint);
-	// 	m_hasAttacked = true;
-	// }
-
-	// if (m_animation.getCurrentFrame() == m_animation.getNbFrame() - 1) // replace par if (m_animation.moveOnce()) genre tant quelle est pas fini quoi 
-	// {
-	// 	m_hasAttacked = false;
-	// 	if (canSeePlayer(player))
-	// 		m_state = EnemyState::Chase;
-	// 	else if (m_isPatroling)
-	// 		m_state = EnemyState::Patrol;
-	// 	else
-	// 		m_state = EnemyState::Idle;
-	// }
-	if (distToPlayer(player) > 1.0)
+	if (m_animation.getCurrentFrame() >= 2 && !m_hasAttacked)
 	{
-		m_state = EnemyState::Chase;
-		return;
+		player.takeDamage(m_attackPoint);
+		m_hasAttacked = true;
+	}
+
+	if (anim(game.getDeltaTime()))
+	{
+		m_hasAttacked = false;
+		if (canSeePlayer(player))
+			m_state = EnemyState::Chase;
+		else if (m_isPatroling)
+			m_state = EnemyState::Patrol;
+		else
+			m_state = EnemyState::Idle;
 	}
 }
 
@@ -222,16 +301,70 @@ void	Enemy::takeDamage(int amount)
 
 void	Enemy::updateDead(Game &game)
 {
-	// play dead anim and disapear
+	setAnimation(EnemyAnimation::Dead);
+	anim(game.getDeltaTime());
 }
 
 void	Enemy::draw(Game &game)
 {
+	TextureID	texture;
+
+	if (m_currentAnimation == EnemyAnimation::Attack)
+	{
+		// if (m_direction == EnemyDirection::Left)
+		// 	texture = TextureID::Player_Attack_Left;
+		// else if (m_direction == EnemyDirection::Right)
+		// 	texture = TextureID::Player_Attack_Right;
+		// else if (m_direction == EnemyDirection::Up)
+		// 	texture = TextureID::Player_Attack_Up;
+		// else if (m_direction == EnemyDirection::Down)
+		// 	texture = TextureID::Player_Attack_Down;
+		texture = TextureID::Player_Attack_Down;
+	}
+	else if (m_currentAnimation == EnemyAnimation::Damage)
+	{
+		// if (m_direction == EnemyDirection::Left)
+		// 	texture = TextureID::Player_Damage_Left;
+		// else if (m_direction == EnemyDirection::Right)
+		// 	texture = TextureID::Player_Damage_Right;
+		// else if (m_direction == EnemyDirection::Up)
+		// 	texture = TextureID::Player_Damage_Up;
+		// else if (m_direction == EnemyDirection::Down)
+		// 	texture = TextureID::Player_Damage_Down;
+		texture = TextureID::Player_Damage_Down;
+	}
+	else if (m_currentAnimation == EnemyAnimation::Dead)
+		texture = TextureID::Player_Dead;
+	else
+	{
+		switch (m_direction)
+		{
+			case EnemyDirection::Up:
+				texture = (m_currentAnimation == EnemyAnimation::Walk)
+					? TextureID::Player_Walk_Up : TextureID::Player_Idle_Up;
+				break;
+			case EnemyDirection::Left:
+				texture = (m_currentAnimation == EnemyAnimation::Walk)
+					? TextureID::Player_Walk_Left : TextureID::Player_Idle_Left;
+				break;
+			case EnemyDirection::Right:
+				texture = (m_currentAnimation == EnemyAnimation::Walk)
+					? TextureID::Player_Walk_Right : TextureID::Player_Idle_Right;
+				break;
+			case EnemyDirection::Down:
+				texture = (m_currentAnimation == EnemyAnimation::Walk)
+					? TextureID::Player_Walk_Down : TextureID::Player_Idle_Down;
+				break;
+			default:
+				texture = TextureID::Player_Idle_Down;
+				break;
+		}
+	}
 	// swicth for each state a different spritesheet
 	game.drawTexture(
 		m_posX * game.getCaseTile(),
 		m_posY * game.getCaseTile(),
-		TextureID::Player_Idle_Up,
-		0
+		texture,
+		m_animation.getCurrentFrame()
 	);
 }

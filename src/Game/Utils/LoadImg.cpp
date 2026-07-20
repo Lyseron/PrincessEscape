@@ -54,6 +54,19 @@ bool	Game::loadPlayer()
 		TextureID::Player_Walk_Right,
 		TextureID::Player_Drop_Right) == false)
 			return (false);
+
+	if (!m_texture->load(TextureID::Player_Attack_Down))
+		return (std::cerr << "Texture not load\n", false);
+
+	if (!m_texture->load(TextureID::Player_Attack_Up))
+		return (std::cerr << "Texture not load\n", false);
+	
+	if (!m_texture->load(TextureID::Player_Damage_Down))
+		return (std::cerr << "Texture not load\n", false);
+	
+	if (!m_texture->load(TextureID::Player_Dead))
+		return (std::cerr << "Texture not load\n", false);
+
 	return (true);
 }
 

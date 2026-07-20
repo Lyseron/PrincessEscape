@@ -7,17 +7,14 @@ Door::Door(int caseX, int caseY)
 	m_state(DoorState::Closed)
 {
 	m_collision.setHitbox({0.2,0.2,0.6,0.6});
+	setAnimation(m_state);
 }
 Door::~Door() {}
 
 // ---------------------------------------------------- SETTER --------------------------------------------------------- //
 
-void	Door::setState(DoorState state)
+void	Door::setAnimation(DoorState state)
 {
-	if (m_state == state)
-		return ;
-	this->m_state = state;
-	
 	switch (state)
 	{
 	case DoorState::Opened:
@@ -34,6 +31,14 @@ void	Door::setState(DoorState state)
 	}
 }
 
+void	Door::setState(DoorState state)
+{
+	if (m_state == state)
+		return ;
+	this->m_state = state;
+	setAnimation(state);
+}
+
 
 // ---------------------------------------------------- GETTER --------------------------------------------------------- //
 
@@ -46,17 +51,12 @@ void	Door::animDoor(double deltaTime)
 	if (m_state == DoorState::Opening)
 	{
 		if (m_animation.moveOnce(deltaTime))
-		{
 			this->setState(DoorState::Opened);
-			m_animation.reset(1, 0.2);
-		}
-		
 	}
 }
 
 void	Door::interact(Player &player)
 {
-	// openDoor
 	if (m_state == DoorState::Closed)
 		this->setState(DoorState::Opening);
 }

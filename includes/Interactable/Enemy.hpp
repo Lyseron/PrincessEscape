@@ -16,6 +16,25 @@ enum class EnemyState
 	Dead
 };
 
+enum class EnemyDirection
+{
+	Up,
+	Down,
+	Left,
+	Right
+};
+
+// L'animation visuelle est séparée de l'état de jeu : Patrol et Chase,
+// par exemple, utilisent tous les deux l'animation Walk.
+enum class EnemyAnimation
+{
+	Idle,
+	Walk,
+	Attack,
+	Damage,
+	Dead
+};
+
 class Enemy
 {
 private:
@@ -31,7 +50,10 @@ private:
 	double	m_speed;
 	bool	m_isPatroling;
 
-	EnemyState	m_state;
+	EnemyState		m_state;
+	EnemyDirection	m_direction;
+	EnemyAnimation	m_currentAnimation;
+
 	int 	m_healthPoint;
 	int 	m_maxHealthPoint;
 
@@ -51,6 +73,12 @@ public:
 		);
 	~Enemy();
 
+// ---------------------- SETTER ------------------------ //
+
+	// void	setState(EnemyState state);
+	void	setDirection(EnemyDirection direction);
+	void	setAnimation(EnemyAnimation animation);
+
 // ---------------------- GETTER ------------------------ //
 
 	double	getPosX()	const;
@@ -68,6 +96,8 @@ public:
 	double	dirToPlayerY(const Player &player);
 	double	distToPlayer(const Player &player);
 
+	void 	updateDirection(double dirX, double dirY);
+
 	void	updateIdle(Game &game);
 	void	updatePatrol(Game &game);
 	void	updateChase(Game &game);
@@ -78,7 +108,7 @@ public:
 
 	void	takeDamage(int amount);
 
+	bool	anim(double deltaTime);
+
 	void	draw(Game &game);
 };
-
-

@@ -11,7 +11,9 @@ Player::Player()
 	m_collision({PLAYER_OFFSET_X, PLAYER_OFFSET_Y, PLAYER_WIDTH, PLAYER_HEIGHT}),
 	m_interaction({0, 0, 0.30, 0.30}),
 	m_playerIsDead(false)
-	{}
+	{
+	setAnimation(m_state);
+}
 
 // ---------------------------------------------------- SETTER --------------------------------------------------------- //
 void	Player::setX(double x)
@@ -37,12 +39,8 @@ void	Player::setDirection(Direction direction, int dirX, int dirY)
 	this->setDirX(dirX);
 	this->setDirY(dirY);
 }
-void	Player::setState(PlayerState state) {
-
-	if (m_state == state)
-		return ;
-	this->m_state = state;
-	
+void	Player::setAnimation(PlayerState state)
+{
 	switch (state)
 	{
 	case PlayerState::Idle:
@@ -60,6 +58,14 @@ void	Player::setState(PlayerState state) {
 	default:
 		break;
 	}
+}
+
+void	Player::setState(PlayerState state)
+{
+	if (m_state == state)
+		return ;
+	this->m_state = state;
+	setAnimation(state);
 }
 
 
@@ -154,20 +160,14 @@ void	Player::anim(double deltaTime)
 			break;
 		case PlayerState::Lift:
 			if (m_animation.moveOnce(deltaTime))
-			{
 				setState(PlayerState::Walk);
-				m_animation.reset(2, TIMER_DURATION_WALK);
-			}
 			break;
 		case PlayerState::Walk:
 			m_animation.moveOnLoop(deltaTime);
 			break;
 		case PlayerState::Drop:
 			if (m_animation.moveOnce(deltaTime))
-			{
 				setState(PlayerState::Idle);
-				m_animation.reset(3, TIMER_DURATION_IDLE);
-			}
 			break;
 	}
 }
