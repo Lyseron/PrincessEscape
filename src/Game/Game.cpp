@@ -13,7 +13,7 @@ Game::Game()
 	m_downPressed(false),
 	m_oPressed(false),
 	m_walCollision({0,0,1,1}),
-	m_enemy(7, 7, 5, 1, true, 1, 0)
+	m_enemy(1, 1, 5, 1, true, 1, 0)
 {
 	if (!initAll())
 		return ;
