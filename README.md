@@ -1,7 +1,7 @@
 # 👑 Princess Escape
 
 <p align="center">
-<img src="images/banner.png" alt="Princess Escape Banner">
+<img src="assets/git/banner.png" alt="Princess Escape Banner">
 </p>
 
 > *A handcrafted 2D adventure game built in modern C++ with SDL3.*
