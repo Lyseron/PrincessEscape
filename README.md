@@ -147,24 +147,6 @@ Main systems include:
 
 ---
 
-# 🚀 Build
-
-```bash
-git clone https://github.com/Lyseron/PrincessEscape.git
-
-cd PrincessEscape
-
-mkdir build
-cd build
-
-cmake ..
-make
-
-./Princess_Escape
-```
-
----
-
 # 🌱 Future Plans
 
 Princess Escape is still under development.
