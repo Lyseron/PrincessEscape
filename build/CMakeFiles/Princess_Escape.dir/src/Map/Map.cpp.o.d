@@ -1,6 +1,6 @@
 CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o: \
-  /Users/lyseron/Desktop/princessEscape/src/Map/Map.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Map/Map.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/src/Map/Map.cpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Map/Map.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \
@@ -871,7 +871,7 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Chest.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Interactable/Chest.hpp \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \
@@ -996,17 +996,17 @@ CMakeFiles/Princess_Escape.dir/src/Map/Map.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Interactable.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Textures.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Interactable/Interactable.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/UtilsObject/Textures.hpp \
   /opt/homebrew/include/SDL3_image/SDL_image.h \
-  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Animation.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Collision.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Player/Inventory.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Map/Decor.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Door.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Map/Wall.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Interactable/Enemy.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Player/Player.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/UtilsObject/Animation.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/UtilsObject/Collision.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Player/Inventory.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Map/Decor.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Interactable/Door.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Map/Wall.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Interactable/Enemy.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Player/Player.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \

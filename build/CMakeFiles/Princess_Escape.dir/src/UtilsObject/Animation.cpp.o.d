@@ -1,3 +1,3 @@
 CMakeFiles/Princess_Escape.dir/src/UtilsObject/Animation.cpp.o: \
-  /Users/lyseron/Desktop/princessEscape/src/UtilsObject/Animation.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Animation.hpp
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/src/UtilsObject/Animation.cpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/UtilsObject/Animation.hpp

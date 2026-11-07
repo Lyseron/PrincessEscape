@@ -1,4 +1,4 @@
 CMakeFiles/Princess_Escape.dir/src/Map/wall.cpp.o: \
-  /Users/lyseron/Desktop/princessEscape/src/Map/wall.cpp \
-  /Users/lyseron/Desktop/princessEscape/includes/Map/Wall.hpp \
-  /Users/lyseron/Desktop/princessEscape/includes/UtilsObject/Collision.hpp
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/src/Map/wall.cpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/Map/Wall.hpp \
+  /Users/lyseron/Desktop/All_my_git/PrincessEscapeGit/includes/UtilsObject/Collision.hpp

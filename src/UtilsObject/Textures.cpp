@@ -29,6 +29,7 @@ bool	Textures::load(TextureID id)
 	switch (id)
 	{
 // -------------------- PLAYER -------------------- //
+
 		case TextureID::Player_Idle_Down:
 			path = "assets/Player/idle_armed.png";
 			break;
