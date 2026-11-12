@@ -81,7 +81,9 @@ This includes:
 | Attack | <img src="assets/git/player_attack.png" width="500"> | <img src="assets/git/player_attack.gif" width="100"> |
 | Damage | <img src="assets/git/domage.png" width="400"> | <img src="assets/git/domage.gif" width="100"> |
 
-### ☠️ Enemy
+### 💀 Enemy
+
+### ☠️ Boss
 
 | Sprite Sheet | GIF |
 |:---:|:---:|
