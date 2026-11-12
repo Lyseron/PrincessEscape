@@ -111,6 +111,9 @@ This includes:
 |:---:|:---:|
 | <img src="assets/git/door_opening.png" width="600"> | <img src="assets/git/door.gif" width="100"> |
 
+These are my very first attempts at creating pixel art and animations! 🎨
+
+I'm still learning and improving, so they might not be perfect yet. All sprites and animations are a work in progress, and I'll keep updating them as I gain more experience. 
 
 ---
 
