@@ -87,7 +87,7 @@ This includes:
 
 | Sprite Sheet | GIF |
 |:---:|:---:|
-| <img src="assets/git/boss_elf.png" width="500"> | <img src="assets/git/boss_elf.gif" width="150"> |
+| Idle | <img src="assets/git/boss_elf.png" width="500"> | <img src="assets/git/boss_elf.gif" width="150"> |
 
 ### 📦 Chest
 
