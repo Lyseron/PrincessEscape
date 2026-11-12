@@ -85,8 +85,8 @@ This includes:
 
 <h3>☠️ Ennemy</h3>
 <p align="center">
-  <img src="assets/git/boss_elf_sprite.png" width="400" alt="Boss Elf Sprite Sheet">
-  <img src="assets/git/boss_elf.gif" width="400" alt="Boss Elf Gif">
+  <img src="assets/git/boss_elf.png" width="400" alt="Boss Elf Sprite Sheet">
+  <img src="assets/git/boss_elf.gif" width="200" alt="Boss Elf Gif">
 </p>
 
 <h3>📦 Chest</h3>
