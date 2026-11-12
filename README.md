@@ -45,10 +45,6 @@ Throughout the adventure, the player will:
 - 🏰 Find a way to escape the cursed castle
 <br>
 
-
-
-
-
 ---
 
 # 🎨 Handmade Pixel Art
@@ -70,51 +66,50 @@ This includes:
 - Environment Tiles
 - User Interface Icons
 
-## Sprite Showcase
 
-<h3>👸 Princess</h3>
-<p align="center">
-  <img src="assets/git/PlayerDown.png" width="900" alt="Princess Sprite Sheet">
-  <img src="assets/git/PlayerDown.gif" width="300" alt="Princess Sprite Sheet">
-  <img src="assets/git/PlayerLeft.png" width="800" alt="Princess Sprite Sheet">
-  <img src="assets/git/PlayerRight.png" width="800" alt="Princess Sprite Sheet">
-  <img src="assets/git/PlayerUp.png" width="900" alt="Princess Sprite Sheet">
-  <img src="assets/git/player_attack_down.png" width="500" alt="Princess Sprite Sheet">
-  <img src="assets/git/player_attack.png" width="700" alt="Princess Sprite Sheet">
-  <img src="assets/git/domage.png" width="400" alt="Princess Sprite Sheet">
-</p>
+## 🎮 Sprite Showcase
 
-<h3>☠️ Ennemy</h3>
-<p align="center">
-  <img src="assets/git/boss_elf.png" width="600" alt="Boss Elf Sprite Sheet">
-  <img src="assets/git/boss_elf.gif" width="200" alt="Boss Elf Gif">
-</p>
+### 👸 Princess
 
-<h3>📦 Chest</h3>
-<p align="center">
-  <img src="assets/git/Chest.png" width="400" alt="Chest Sprite Sheet">
-</p>
+| Animation | Sprite Sheet | GIF |
+|:---:|:---:|:---:|
+| Walk Down | <img src="assets/git/PlayerDown.png" width="500"> | <img src="assets/git/PlayerDown.gif" width="100"> |
+| Walk Left | <img src="assets/git/PlayerLeft.png" width="500"> | <img src="assets/git/PlayerLeft.gif" width="100"> |
+| Walk Right | <img src="assets/git/PlayerRight.png" width="500"> | <img src="assets/git/PlayerRight.gif" width="100"> |
+| Walk Up | <img src="assets/git/PlayerUp.png" width="500"> | <img src="assets/git/PlayerUp.gif" width="100"> |
+| Attack Down | <img src="assets/git/player_attack_down.png" width="500"> | <img src="assets/git/attackDown.gif" width="100"> |
+| Attack | <img src="assets/git/player_attack.png" width="500"> | <img src="assets/git/player_attack.gif" width="100"> |
+| Damage | <img src="assets/git/domage.png" width="400"> | <img src="assets/git/domage.gif" width="100"> |
 
-<h3>🏰 Castle Decoration</h3>
-<p align="center">
-  <img src="assets/git/chandelier.png" width="200" alt="Castle Decoration Sprite Sheet">
-</p>
+### ☠️ Enemy
 
-<h3>🖼️ Walls</h3>
-<p align="center">
-  <img src="assets/git/moving_candle.png" width="400" alt="Castle Decoration Sprite Sheet">
-</p>
+| Sprite Sheet | GIF |
+|:---:|:---:|
+| <img src="assets/git/boss_elf.png" width="500"> | <img src="assets/git/boss_elf.gif" width="150"> |
 
-<h3>🚪 Door</h3>
-<p align="center">
-  <img src="assets/git/door_opening.png" width="900" alt="Door Sprite Sheet">
-</p>
+### 📦 Chest
 
-<!-- <h3>☠️ Ennemy</h3>
-<p align="center">
-  <img src="assets/git/enemyDown.png" width="900" alt="Ennemy Sprite Sheet">
-</p> -->
+| Sprite Sheet | GIF |
+|:---:|:---:|
+| <img src="assets/git/Chest.png" width="400"> | <img src="assets/git/chest.gif" width="100"> |
 
+### 🏰 Castle Decoration
+
+| Sprite Sheet | GIF |
+|:---:|:---:|
+| <img src="assets/git/chandelier.png" width="200"> | <img src="assets/git/chandelier.gif" width="100"> |
+
+### 🕯️ Walls
+
+| Sprite Sheet | GIF |
+|:---:|:---:|
+| <img src="assets/git/moving_candle.png" width="400"> | <img src="assets/git/floatingCandle.gif" width="100"> |
+
+### 🚪 Door
+
+| Sprite Sheet | GIF |
+|:---:|:---:|
+| <img src="assets/git/door_opening.png" width="600"> | <img src="assets/git/door.gif" width="100"> |
 
 
 ---
