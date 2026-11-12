@@ -75,6 +75,7 @@ This includes:
 <h3>👸 Princess</h3>
 <p align="center">
   <img src="assets/git/PlayerDown.png" width="900" alt="Princess Sprite Sheet">
+  <img src="assets/git/PlayerDown.gif" width="300" alt="Princess Sprite Sheet">
   <img src="assets/git/PlayerLeft.png" width="800" alt="Princess Sprite Sheet">
   <img src="assets/git/PlayerRight.png" width="800" alt="Princess Sprite Sheet">
   <img src="assets/git/PlayerUp.png" width="900" alt="Princess Sprite Sheet">
@@ -85,7 +86,7 @@ This includes:
 
 <h3>☠️ Ennemy</h3>
 <p align="center">
-  <img src="assets/git/boss_elf.png" width="400" alt="Boss Elf Sprite Sheet">
+  <img src="assets/git/boss_elf.png" width="600" alt="Boss Elf Sprite Sheet">
   <img src="assets/git/boss_elf.gif" width="200" alt="Boss Elf Gif">
 </p>
 
